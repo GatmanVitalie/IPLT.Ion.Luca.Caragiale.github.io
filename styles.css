@@ -29,8 +29,8 @@ header {
 {
     z-index: 1;
     position: fixed;
-    top: 0px; /* Specifică distanța de la partea de sus a ferestrei browser-ului */
-    left: 0px; /* Specifică distanța de la partea dreaptă a ferestrei browser-ului */
+    top: 0px; 
+    left: 0px; 
     background-color: #fff;
     padding: 10px;
     border: 1px solid #ccc;
