@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Specific styles */
+.Continut {
+    position: relative;
+    top: 2cm;
+    margin-top: 2cm;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+#Antet 
+{
+    z-index: 1;
+    position: fixed;
+    top: 0px; /* Specifică distanța de la partea de sus a ferestrei browser-ului */
+    left: 0px; /* Specifică distanța de la partea dreaptă a ferestrei browser-ului */
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 2cm;
+    
+}
