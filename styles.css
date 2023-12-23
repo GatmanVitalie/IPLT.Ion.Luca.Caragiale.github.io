@@ -33,17 +33,58 @@ header {
   top: 0px;
   left: 0px;
   background-color: #ffffff;
-  padding: 10px;
-  border: 1px solid #ccc;
-  width: 100%;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+
+  border-bottom: 2px solid #ccc;
+  width: 100vw;
   height: 3.4cm;
 }
 
-.Div1
+.Dreapta
 {
   display: flex;
   justify-content: space-between;
 }
+
+.stanga
+{
+  margin-right: 0.7cm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Contacte
+{
+  margin-top: 0.36cm;
+  margin-bottom: 0.56cm;
+  display: flex;
+  flex-direction: row;
+  gap: 1cm;
+}
+
+.Contacte::after
+{
+  content: "";
+  border-bottom: 2px solid #9e0000;
+}
+
+.Contacte *
+{
+  display: flex;
+  align-items: center;
+}
+
+.Contacte img 
+{
+  position: relative;
+  margin-right: 0.2cm;
+  height: 0.5cm;
+  width: 0.5cm;
+  object-fit: contain;
+}
+
 
 .Logo {
   margin-left: 0.5cm;
