@@ -1,40 +1,69 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
 
 /* Specific styles */
 .Continut {
-    position: relative;
-    top: 2cm;
-    margin-top: 2cm;
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    z-index: -1;
+  position: relative;
+  top: 2cm;
+  margin-top: 2cm;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: -1;
 }
 
-#Antet 
+#Antet {
+  display: flex;
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 2cm;
+}
+
+.Butons {
+  margin-left: 0.3cm;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0px; /* Adjust the space between buttons */
+}
+
+.Butons button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-right: 0.05cm solid #ccc;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  position: relative;
+}
+
+.Butons button:first-child{
+    border-left: 0.05cm solid #ccc;
+}
+
+.Butons button::after
 {
-    z-index: 1;
-    position: fixed;
-    top: 0px; 
-    left: 0px; 
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    width: 100%;
-    height: 2cm;
-    
+    content: "";
+    border-right: 2px solid #000000;
 }
