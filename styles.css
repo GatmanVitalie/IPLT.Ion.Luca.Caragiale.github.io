@@ -4,24 +4,23 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 header {
   background-color: #333;
-  color: #fff;
+  color: #ffffff;
   padding: 10px 0;
   text-align: center;
 }
 
-/* Specific styles */
+
 .Continut {
   position: relative;
-  top: 2cm;
-  margin-top: 2cm;
-  margin: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 100%;
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
   z-index: -1;
 }
 
@@ -37,7 +36,7 @@ header {
   padding: 0; /* Reset padding */
 
   border-bottom: 0.1cm solid #fdc800;
-  width: 100vw;
+  width: 100%;
   height: 3.4cm;
 }
 
@@ -53,6 +52,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
 
 }
 
