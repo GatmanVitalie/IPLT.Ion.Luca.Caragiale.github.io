@@ -25,7 +25,7 @@ header {
   z-index: -1;
 }
 
-#Antet_Imob {
+.Antet_Imob {
   display: flex;
   z-index: 1;
   position: relative;
@@ -68,7 +68,7 @@ header {
 
 .Butons {
   position: relative;
-  right: 100px;
+  right: 10px;
   margin-left: 0.3cm;
   display: flex;
   justify-content: left;
