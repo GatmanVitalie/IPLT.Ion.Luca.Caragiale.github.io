@@ -36,7 +36,7 @@ header {
   margin: 0; /* Reset margin */
   padding: 0; /* Reset padding */
 
-  border-bottom: 2px solid #ccc;
+  border-bottom: 0.1cm solid #fdc800;
   width: 100vw;
   height: 3.4cm;
 }
@@ -59,21 +59,22 @@ header {
 .Contacte
 {
   position: relative;
-  left: 0.6cm;
   width: 100%;
   margin-top: 0.36cm;
   margin-bottom: 0.56cm;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: center; 
+  gap: 1cm;
+
 
 }
 
-.Contacte::after
+/* .Contacte::after
 {
   content: "";
   border-bottom: 2px solid #920000;
-}
+} */
 
 .Contacte *
 {
