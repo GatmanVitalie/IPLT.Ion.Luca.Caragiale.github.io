@@ -127,7 +127,13 @@ header {
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 0px; /* Adjust the space between buttons */
+  border: 2px solid #ccc;
+  bottom: 0.01cm;
+  border-left: none;
+  border-right: none;
+  
+  gap: 0px;
+  /*Adjustthespacebetweenbuttons*/:;
 }
 
 .Butons button {
@@ -135,7 +141,7 @@ header {
   background-color: #ffffff;
   color: #000000;
   border: none;
-  border-right: 0.05cm solid #ccc;
+  /* border-right: 0.05cm solid #ccc; */
   font-size: 16px;
   cursor: pointer;
   text-decoration: none;
@@ -143,9 +149,9 @@ header {
   position: relative;
 }
 
-.Butons button:first-child {
+/* .Butons button:first-child {
   border-left: 0.05cm solid #ccc;
-}
+} */
 
 .Butons button:hover {
   text-decoration: underline;
