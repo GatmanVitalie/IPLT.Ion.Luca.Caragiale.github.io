@@ -52,6 +52,8 @@ header {
 }
 
 .Denumirea {
+  position: inherit;
+  top: 2%;
   margin-left: 0.5cm;
   display: flex;
   align-items: center;
@@ -65,6 +67,8 @@ header {
 }
 
 .Butons {
+  position: relative;
+  right: 100px;
   margin-left: 0.3cm;
   display: flex;
   justify-content: left;
