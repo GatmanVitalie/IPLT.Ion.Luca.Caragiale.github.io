@@ -27,6 +27,7 @@ header {
 
 .Antet_Imob {
   display: flex;
+  justify-content: space-between;
   z-index: 1;
   position: relative;
   top: 0px;
@@ -36,6 +37,12 @@ header {
   border: 1px solid #ccc;
   width: 100%;
   height: 3.4cm;
+}
+
+.Div1
+{
+  display: flex;
+  justify-content: space-between;
 }
 
 .Logo {
