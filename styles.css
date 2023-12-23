@@ -53,15 +53,20 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .Contacte
 {
+  position: relative;
+  left: 0.6cm;
+  width: 100%;
   margin-top: 0.36cm;
   margin-bottom: 0.56cm;
   display: flex;
   flex-direction: row;
-  gap: 1cm;
+  justify-content: space-between; 
+
 }
 
 .Contacte::after
@@ -126,7 +131,7 @@ header {
 
 .Butons button {
   padding: 0.4cm 0.6cm;
-  background-color: #fffafa;
+  background-color: #ffffff;
   color: #000000;
   border: none;
   border-right: 0.05cm solid #ccc;
