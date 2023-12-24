@@ -12,6 +12,32 @@ window.addEventListener('scroll', function () {
     }
 });
 
+var imag = 1;
+function back()
+{
+    imag = imag - 1;
+    if (imag < 1)
+    {
+        imag = 3;
+    }
+    swich();
+}
+
+function next()
+{
+    imag = imag + 1;
+    
+    if (imag > 3)
+    {
+        imag = 1;
+    }
+    swich();
+}
+
+function swich()
+{
+    alert(imag);
+}
 
 
 function More1() {

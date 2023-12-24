@@ -151,6 +151,48 @@ header {
   border: 0;
 }
 
+.backButon {
+  position: absolute;
+  background-color: #00000022;
+  height: 3cm;
+  width: 3cm;
+  left: 0px;
+  top: 8cm;
+  transition: 0.2s ease-in-out;
+}
+
+.backButon:hover {
+  cursor: pointer;
+  background-color: #0000005e;
+}
+
+.backButon img {
+  height: 60%;
+  width: 60%;
+  object-fit: contain;
+}
+
+.nextButon {
+  position: absolute;
+  background-color: #00000022;
+  height: 3cm;
+  width: 3cm;
+  right: 0px;
+  top: 8cm;
+  transition: 0.2s ease-in-out;
+}
+
+.nextButon:hover {
+  cursor: pointer;
+  background-color: #0000005e;
+}
+
+.nextButon img {
+  height: 60%;
+  width: 60%;
+  object-fit: contain;
+}
+
 .img1 {
   position: relative;
   width: 100%;
@@ -193,7 +235,7 @@ header {
 
 .text button {
   cursor: pointer;
-  z-index: 1  ;
+  z-index: 1;
   width: 6cm;
   height: 1.6cm;
   font-size: 0.6cm;
@@ -205,7 +247,6 @@ header {
   -webkit-backdrop-filter: blur(20px);
   transition: 0.2s ease-in-out;
   transition-delay: 0.1s;
- 
 }
 
 .text button:hover {
@@ -215,8 +256,7 @@ header {
   background-size: 200%;
 }
 
-.text button.clicked
-{
+.text button.clicked {
   background: #ffffff12;
   color: #fdc800;
 }
