@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #000000;
   color: #333;
   margin: 0;
   padding: 0;
@@ -12,16 +12,6 @@ header {
   color: #ffffff;
   padding: 10px 0;
   text-align: center;
-}
-
-
-.Continut {
-  position: relative;
-  width: 100%;
-  margin: 0; 
-  padding: 0; 
-  border: 0; 
-  z-index: -1;
 }
 
 .Antet_Imob {
@@ -40,34 +30,28 @@ header {
   height: 3.4cm;
 }
 
-.Dreapta
-{
+.Dreapta {
   display: flex;
   justify-content: space-between;
 }
 
-.stanga
-{
+.stanga {
   margin-right: 0.7cm;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-
 }
 
-.Contacte
-{
+.Contacte {
   position: relative;
   width: 100%;
   margin-top: 0.36cm;
   margin-bottom: 0.56cm;
   display: flex;
   flex-direction: row;
-  justify-content: center; 
+  justify-content: center;
   gap: 1cm;
-
-
 }
 
 /* .Contacte::after
@@ -76,21 +60,18 @@ header {
   border-bottom: 2px solid #920000;
 } */
 
-.Contacte *
-{
+.Contacte * {
   display: flex;
   align-items: center;
 }
 
-.Contacte img 
-{
+.Contacte img {
   position: relative;
   margin-right: 0.2cm;
   height: 0.5cm;
   width: 0.5cm;
   object-fit: contain;
 }
-
 
 .Logo {
   margin-left: 0.5cm;
@@ -131,9 +112,8 @@ header {
   bottom: 0.01cm;
   border-left: none;
   border-right: none;
-  
-  gap: 0px;
 
+  gap: 0px;
 }
 
 .Butons button {
@@ -162,3 +142,72 @@ header {
     content: "";
     border-right: 2px solid #000000;
 } */
+
+.Continut * {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.img1 {
+  position: relative;
+  width: 100%;
+  height: 16.5cm;
+}
+
+.img1 img {
+  object-fit: scale-down;
+  max-width: 100%;
+  height: auto;
+  outline-color: black;
+  opacity: 0.4;
+}
+
+.text {
+  position: absolute;
+  height: auto;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.text h1 {
+  font-size: 1.6cm;
+  color: #fdc800;
+  vertical-align: text-bottom;
+  top: 10px;
+}
+
+.text h2 {
+  text-align: text-top;
+  font-size: 0.8cm;
+  color: #ffffff;
+}
+
+.text button {
+  z-index: 1  ;
+  width: 6cm;
+  height: 1.6cm;
+  font-size: 0.6cm;
+  color: #fdc800;
+  border: 0.1cm solid #fdc800;
+  border-radius: 0.4cm;
+  background: rgba(255, 255, 255, 0.071);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.text button:hover {
+  color: #ffffff;
+  background-image: radial-gradient( closest-side, #fdc800, #ffffff); /* Culori folosite la hover */
+  background-position: center;
+  background-size: 200%;
+}
+
