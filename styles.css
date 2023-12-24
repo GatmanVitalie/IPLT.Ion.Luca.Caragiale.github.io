@@ -192,6 +192,7 @@ header {
 }
 
 .text button {
+  cursor: pointer;
   z-index: 1  ;
   width: 6cm;
   height: 1.6cm;
@@ -199,15 +200,23 @@ header {
   color: #fdc800;
   border: 0.1cm solid #fdc800;
   border-radius: 0.4cm;
-  background: rgba(255, 255, 255, 0.071);
+  background: #ffffff12;
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(20px);
+  transition: 0.2s ease-in-out;
+  transition-delay: 0.1s;
+ 
 }
 
 .text button:hover {
   color: #ffffff;
-  background-image: radial-gradient( closest-side, #fdc800, #ffffff); /* Culori folosite la hover */
+  background: #fdc800; /* Culori folosite la hover */
   background-position: center;
   background-size: 200%;
 }
 
+.text button.clicked
+{
+  background: #ff0000;
+  color: #fdc800;
+}

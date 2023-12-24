@@ -14,17 +14,16 @@ window.addEventListener('scroll', function () {
 
 
 
-function changeLanguage(lang) {
-    if (lang === 'en') {
-        document.getElementById('title-en').style.display = 'block';
-        document.getElementById('title-es').style.display = 'none';
-        document.getElementById('content-en').style.display = 'block';
-        document.getElementById('content-es').style.display = 'none';
-    } else if (lang === 'es') {
-        document.getElementById('title-en').style.display = 'none';
-        document.getElementById('title-es').style.display = 'block';
-        document.getElementById('content-en').style.display = 'none';
-        document.getElementById('content-es').style.display = 'block';
-    }
+function More1() {
+    var button = document.getElementById("MoreB");
+    button.classList.add("clicked"); // Adds the 'clicked' class to change the color
 
+    setTimeout(More1a, 1000);
+    // Perform your desired onClick function here
+
+}
+
+function More1a() {
+    // For example, you can add code to alert a message
+    alert("Button clicked!");
 }
