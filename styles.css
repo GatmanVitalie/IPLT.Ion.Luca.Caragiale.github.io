@@ -150,6 +150,10 @@ header {
   padding: 0;
   border: 0;
 }
+
+.Continut *{
+  border: 0;
+}
 /**/
 .backButon {
   position: absolute;
@@ -173,6 +177,7 @@ header {
 }
 
 .nextButon {
+  border: 0;
   position: absolute;
   background-color: #00000022;
   height: 3cm;
