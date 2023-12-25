@@ -15,17 +15,21 @@ window.addEventListener('scroll', function () {
 
 let intervalID;
 var interval = 7000;
+var x = document.getElementsByClassName("slide");
+let SliderA = new Array(x.length);
 
 window.onload = function () {
-    var x = document.getElementsByClassName("slide");
-    x[0].classList.add("slidein");
-    x[x.length - 1].classList.add("slideout");
+    for (var i = 0; i < x.length; i++) {
+        SliderA[i] = 0;
+    }
+    SliderA[0] = 1;
+    SliderA[x.length] = 2;
     switchSlides();
     intervalID = setInterval(next, interval);
 
 };
 
-
+var cont = true;
 
 var imag = 0;
 function back() {
@@ -40,7 +44,7 @@ function next() {
     resetInterval();
 }
 
-var cont = true;
+
 
 function resetInterval() {
     clearInterval(intervalID);
