@@ -50,11 +50,11 @@ function back() {
         x[imag].classList.add("slidein");
         x[0].style.transitionDuration = '2s';
         if (imag == x.length-1) {
-           x[0].style.transitionDuration = '2s';
+           x[0].style.transitionDuration = '0s';
           
 
         } else {
-            x[imag + 1].style.transitionDuration = '2s';
+            x[imag + 1].style.transitionDuration = '0s';
         }
 
         if (imag == 0) {
