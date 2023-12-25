@@ -154,11 +154,12 @@ header {
 .Continut *{
   border: 0;
 }
+
 .backButon {
   position: absolute;
-  background-color: #00000022;
-  height: 3cm;
-  width: 3cm;
+  background-color: #00000000;
+  height: 2.4cm;
+  width: 2cm;
   left: 0px;
   top: 8cm;
   transition: 0.2s ease-in-out;
@@ -166,7 +167,6 @@ header {
 
 .backButon:hover {
   cursor: pointer;
-  background-color: #0000005e;
 }
 
 .backButon img {
@@ -176,11 +176,10 @@ header {
 }
 
 .nextButon {
-  border: 0;
   position: absolute;
-  background-color: #00000022;
-  height: 3cm;
-  width: 3cm;
+  background-color: #00000000;
+  height: 2.4cm;
+  width: 2cm;
   right: 0px;
   top: 8cm;
   transition: 0.2s ease-in-out;
@@ -188,7 +187,6 @@ header {
 
 .nextButon:hover {
   cursor: pointer;
-  background-color: #0000005e;
 }
 
 .nextButon img {
