@@ -289,8 +289,12 @@ header {
   background: #ffffff12;
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(20px);
-  transition: 0.1s linear;
+  transition: 0.2s ease-in-out;
   box-shadow: inset 0cm 0cm 0cm 0cm #fdc800;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
 }
 
 .text button:hover {
