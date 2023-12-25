@@ -18,7 +18,8 @@ var interval = 7000;
 
 window.onload = function () {
     var x = document.getElementsByClassName("slide");
-    x[imag].classList.add("slidein");
+    x[0].classList.add("slidein");
+    x[x.length - 1].classList.add("slideout");
     switchSlides();
     intervalID = setInterval(next, interval);
 
@@ -56,6 +57,7 @@ function beginSlides() {
     resetInterval();
 }
 
+
 function switchSlides() {
     if (cont) {
         var x = document.getElementsByClassName("slide");
@@ -80,21 +82,18 @@ function switchSlides() {
         if (imag == x.length - 1)
         {
             x[0].classList.add("slidein");
-            x[0].style.display = "flex";
         }
         else
         {
             x[imag+1].classList.add("slidein");
-            x[imag+1].style.display = "flex";
         }
-
         if (imag == 0)
         {
             x[x.length-1].classList.remove("slideout");
         }
         else
         {
-            x[imag].classList.remove("slideout");
+            x[imag-1].classList.remove("slideout");
         }
         
     }
