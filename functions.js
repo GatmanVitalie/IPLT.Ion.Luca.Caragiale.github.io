@@ -14,7 +14,7 @@ window.addEventListener('scroll', function () {
 
 
 let intervalID;
-var interval = 500;
+var interval = 7000;
 
 window.onload = function () {
     switchSlides();
