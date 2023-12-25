@@ -36,6 +36,7 @@ function next() {
     resetInterval();
 }
 
+var cont = true;
 
 function resetInterval() {
     clearInterval(intervalID);
@@ -44,30 +45,30 @@ function resetInterval() {
 
 function stopSlides() {
 
-    interval = 20000000;
-    resetInterval();
+    cont = false;
 }
 
-function beginSlides()
-{
-    interval = timer;
+function beginSlides() {
+    cont = true;
     resetInterval();
 }
 
 function switchSlides() {
-    var x = document.getElementsByClassName("slide");
-    if (imag < 0) {
-        imag = x.length - 1;
-    }
-    else if (imag > x.length - 1) {
-        imag = 0;
-    }
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    if (cont) {
+        var x = document.getElementsByClassName("slide");
+        if (imag < 0) {
+            imag = x.length - 1;
+        }
+        else if (imag > x.length - 1) {
+            imag = 0;
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
 
 
+        }
+        x[imag].style.display = "flex";
     }
-    x[imag].style.display = "flex";
 
 }
 
