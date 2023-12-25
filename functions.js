@@ -12,31 +12,49 @@ window.addEventListener('scroll', function () {
     }
 });
 
-var imag = 1;
-function back()
-{
+let intervalID;
+var interval = 7000;
+
+window.onload = function () {
+    switchSlides();
+    intervalID = setInterval(next, interval);
+};
+
+
+
+var imag = 0;
+function back() {
     imag = imag - 1;
-    if (imag < 1)
-    {
-        imag = 3;
-    }
-    swich();
+    switchSlides();
+    resetInterval(); 
 }
 
-function next()
-{
+function next() {
     imag = imag + 1;
-    
-    if (imag > 3)
-    {
-        imag = 1;
-    }
-    swich();
+    switchSlides();
+    resetInterval(); 
 }
 
-function swich()
-{
-    alert(imag);
+function resetInterval() {
+    clearInterval(intervalID); 
+    intervalID = setInterval(next, interval); 
+}
+
+function switchSlides() {
+    var x = document.getElementsByClassName("slide");
+    if (imag < 0) {
+        imag = x.length - 1;
+    }
+    else if (imag > x.length - 1) {
+        imag = 0;
+    }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+
+
+    }
+    x[imag].style.display = "flex";
+
 }
 
 
