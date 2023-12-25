@@ -12,8 +12,9 @@ window.addEventListener('scroll', function () {
     }
 });
 
+
 let intervalID;
-var interval = 7000;
+var interval = 500;
 
 window.onload = function () {
     switchSlides();
@@ -26,18 +27,31 @@ var imag = 0;
 function back() {
     imag = imag - 1;
     switchSlides();
-    resetInterval(); 
+    resetInterval();
 }
 
 function next() {
     imag = imag + 1;
     switchSlides();
-    resetInterval(); 
+    resetInterval();
 }
 
+
 function resetInterval() {
-    clearInterval(intervalID); 
-    intervalID = setInterval(next, interval); 
+    clearInterval(intervalID);
+    intervalID = setInterval(next, interval);
+}
+
+function stopSlides() {
+
+    interval = 20000000;
+    resetInterval();
+}
+
+function beginSlides()
+{
+    interval = timer;
+    resetInterval();
 }
 
 function switchSlides() {
