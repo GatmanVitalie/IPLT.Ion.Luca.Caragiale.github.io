@@ -14,7 +14,7 @@ window.addEventListener('scroll', function () {
 
 
 let intervalID;
-var interval = 7000;
+var interval = 6000;
 var x = document.getElementsByClassName("slide");
 let SliderA = new Array(x.length);
 
