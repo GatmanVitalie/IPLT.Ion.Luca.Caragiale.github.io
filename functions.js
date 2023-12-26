@@ -43,7 +43,7 @@ function back() {
         for (var i = 0; i < x.length; i++) {
             x[i].classList.remove("slidein");
             x[i].classList.remove("slideout");
-           
+
         }
 
         x[imag].style.display = "flex";
@@ -68,24 +68,15 @@ function back() {
             x[imag - 1].style.transitionDuration = '0s';
 
         }
-
-
-
-        // for (let i = 0; i < x.length; i++) {
-        //     if (SliderA[i] == 0)
-        //     {
-        //         x[i].style.display = "none";
-        //     }
-        // }
     }
     resetInterval();
 }
 
 function next() {
 
-    // imag = imag + 1;
-    // switchSlides();
-    // resetInterval();
+    imag = imag + 1;
+    switchSlides();
+    resetInterval();
 
 }
 
@@ -109,31 +100,38 @@ function beginSlides() {
 
 function switchSlides() {
     if (cont) {
-        if (imag < 0) {
-            imag = x.length - 1;
-        }
-        else if (imag > x.length - 1) {
+        if (imag > x.length - 1) {
             imag = 0;
         }
 
         for (var i = 0; i < x.length; i++) {
-            SliderA[i] = 0;
-            x[i].style.display = "none";
             x[i].classList.remove("slidein");
             x[i].classList.remove("slideout");
+            x[i].style.display = "flex";
+            x[i].style.transitionDuration = "0s"
         }
+
         x[imag].classList.add("slidein");
-        x[imag].style.display = "flex";
-
+        x[imag].style.transitionDuration = '1s';
         if (imag == 0) {
+
+            x[x.length - 1].style.transitionDuration = '1s';
             x[x.length - 1].classList.add("slideout");
-            x[x.length - 1].style.display = "flex";
-        }
-        else {
+
+
+        } else {
             x[imag - 1].classList.add("slideout");
-            x[imag - 1].style.display = "flex";
+            x[imag - 1].style.transitionDuration = '1s';
+
         }
 
+        // if (imag == x.length - 1) {
+        //     x[0].style.transitionDuration = '0s';
+        // } else {
+
+        //     x[imag + 1].style.transitionDuration = '0s';
+
+        // }
     }
 }
 
