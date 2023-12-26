@@ -49,14 +49,14 @@ function back() {
         x[imag].style.display = "flex";
         x[imag].classList.add("slidein");
 
-        x[imag].style.transitionDuration = '2s';
+        x[imag].style.transitionDuration = '1s';
         if (imag == x.length - 1) {
-            x[0].style.transitionDuration = '2s';
+            x[0].style.transitionDuration = '1s';
 
 
 
         } else {
-            x[imag + 1].style.transitionDuration = '2s';
+            x[imag + 1].style.transitionDuration = '1s';
 
         }
 

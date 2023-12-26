@@ -217,14 +217,21 @@ header {
   height: 16.5cm;
   right: -100%;
   transition: 0s ease-in-out;
-  
+  -webkit-transition: 0s ease-in-out;
+  -moz-transition: 0s ease-in-out;
+  -ms-transition: 0s ease-in-out;
+  -o-transition: 0s ease-in-out;
 }
 
 .slide.slidein 
 {
   display: flex;
   right: 0%;
-  transition: 0s ease-in-out;
+  transition: 0s linear;
+  -webkit-transition: 0s ease-in-out;
+  -moz-transition: 0s linear;
+  -ms-transition: 0s linear;
+  -o-transition: 0s linear;
 }
 
 .slide.slideout
@@ -232,7 +239,10 @@ header {
   display: flex;
   right: 100%;
   transition: 0s ease-in-out;
- 
+  -webkit-transition: 0s ease-in-out;
+  -moz-transition: 0s ease-in-out;
+  -ms-transition: 0s ease-in-out;
+  -o-transition: 0s ease-in-out;
 }
 
 .slide img {
