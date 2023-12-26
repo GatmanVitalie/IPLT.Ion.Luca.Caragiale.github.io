@@ -24,18 +24,55 @@ window.onload = function () {
         x[i].style.display = "none";
     }
 
+    milliseconds = 3000;
     switchSlides();
+    milliseconds = 3000;
     intervalID = setInterval(next, interval);
 
 };
 
-var cont = true;
+let timerID;
+let milliseconds = 0;
+let isTimerRunning = false;
+function startTimer() {
+    if (!isTimerRunning) {
+        const startTime = Date.now() - milliseconds;
+        timerID = setInterval(function () {
+            milliseconds = Date.now() - startTime;
+            //        console.log(`Timer: ${milliseconds} milliseconds`);
+        }, 1);
+    } else {
+        //      console.log('Timer is already running!');
+    }
+}
 
+function resetTimer() {
+    clearInterval(timerID);
+    milliseconds = 0;
+    isTimerRunning = false;
+    // console.log('Timer reset');
+}
+
+
+
+var cont = true;
+var isd = false;
 var imag = 0;
 function back() {
     imag = imag - 1;
 
     if (cont) {
+        if (milliseconds < 800) {
+            if (isd == false) {
+                imag += 1;
+                isd = true;
+            }
+        }
+        else {
+            isd = false;
+        }
+        console.log(isd);
+
         if (imag < 0) {
             imag = x.length - 1;
         }
@@ -52,12 +89,8 @@ function back() {
         x[imag].style.transitionDuration = '1s';
         if (imag == x.length - 1) {
             x[0].style.transitionDuration = '1s';
-
-
-
         } else {
             x[imag + 1].style.transitionDuration = '1s';
-
         }
 
         if (imag == 0) {
@@ -68,8 +101,19 @@ function back() {
             x[imag - 1].style.transitionDuration = '0s';
 
         }
+
+        if (milliseconds < 1000) {
+
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.transitionDuration = '0s';
+                console.log("Trans");
+            }
+        }
+
     }
     resetInterval();
+    resetTimer();
+    startTimer();
 }
 
 function next() {
@@ -77,7 +121,8 @@ function next() {
     imag = imag + 1;
     switchSlides();
     resetInterval();
-
+    resetTimer();
+    startTimer();
 }
 
 
@@ -100,6 +145,16 @@ function beginSlides() {
 
 function switchSlides() {
     if (cont) {
+        if (milliseconds < 800) {
+            if (isd == false) {
+                imag -= 1;
+                isd = true;
+            }
+        }
+        else {
+            isd = false;
+        }
+
         if (imag > x.length - 1) {
             imag = 0;
         }
@@ -125,14 +180,15 @@ function switchSlides() {
 
         }
 
-        // if (imag == x.length - 1) {
-        //     x[0].style.transitionDuration = '0s';
-        // } else {
+        if (milliseconds < 1000) {
 
-        //     x[imag + 1].style.transitionDuration = '0s';
-
-        // }
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.transitionDuration = '0s';
+                console.log("Trans");
+            }
+        }
     }
+
 }
 
 
