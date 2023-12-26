@@ -23,7 +23,7 @@ window.onload = function () {
         SliderA[i] = 0;
         x[i].style.display = "none";
     }
-    
+
     switchSlides();
     intervalID = setInterval(next, interval);
 
@@ -43,26 +43,30 @@ function back() {
         for (var i = 0; i < x.length; i++) {
             x[i].classList.remove("slidein");
             x[i].classList.remove("slideout");
-            x[i].style.display = "flex";
-            SliderA[i] = 0;
+           
         }
 
+        x[imag].style.display = "flex";
         x[imag].classList.add("slidein");
-        x[0].style.transitionDuration = '2s';
-        if (imag == x.length-1) {
-           x[0].style.transitionDuration = '0s';
-          
+
+        x[imag].style.transitionDuration = '2s';
+        if (imag == x.length - 1) {
+            x[0].style.transitionDuration = '2s';
+
+
 
         } else {
-            x[imag + 1].style.transitionDuration = '0s';
+            x[imag + 1].style.transitionDuration = '2s';
+
         }
 
         if (imag == 0) {
+            x[x.length - 1].style.transitionDuration = '0s';
             x[x.length - 1].classList.add("slideout");
-            x[x.length - 1].style.transitionDuration = '2s';
         } else {
             x[imag - 1].classList.add("slideout");
-            x[imag - 1].style.transitionDuration = '2s';
+            x[imag - 1].style.transitionDuration = '0s';
+
         }
 
 
