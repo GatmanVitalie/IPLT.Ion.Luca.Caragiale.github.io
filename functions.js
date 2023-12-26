@@ -39,10 +39,8 @@ function startTimer() {
         const startTime = Date.now() - milliseconds;
         timerID = setInterval(function () {
             milliseconds = Date.now() - startTime;
-            //        console.log(`Timer: ${milliseconds} milliseconds`);
+           
         }, 1);
-    } else {
-        //      console.log('Timer is already running!');
     }
 }
 
