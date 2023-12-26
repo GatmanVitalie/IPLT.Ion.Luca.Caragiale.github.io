@@ -62,7 +62,7 @@ function back() {
     imag = imag - 1;
 
     if (cont) {
-        if (milliseconds < 800) {
+        if (milliseconds < 900) {
             if (isd == false) {
                 imag += 1;
                 isd = true;
@@ -102,7 +102,7 @@ function back() {
 
         }
 
-        if (milliseconds < 1000) {
+        if (milliseconds < 900) {
 
             for (var i = 0; i < x.length; i++) {
                 x[i].style.transitionDuration = '0s';
@@ -145,7 +145,7 @@ function beginSlides() {
 
 function switchSlides() {
     if (cont) {
-        if (milliseconds < 800) {
+        if (milliseconds < 900) {
             if (isd == false) {
                 imag -= 1;
                 isd = true;
@@ -180,7 +180,7 @@ function switchSlides() {
 
         }
 
-        if (milliseconds < 1000) {
+        if (milliseconds < 900) {
 
             for (var i = 0; i < x.length; i++) {
                 x[i].style.transitionDuration = '0s';
