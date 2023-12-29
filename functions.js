@@ -40,7 +40,7 @@ window.onload = function () {
     switchSlides();
     milliseconds = 3000;
     intervalID = setInterval(next, interval);
-
+    screenWidthInCm = screen.width / window.devicePixelRatio * 2.54 / 96;
     if (screenWidthInCm < 16) {
         hamburgerButon.style.display = "flex";
         document.getElementById('stanga').style.display = "none";
