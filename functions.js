@@ -19,17 +19,25 @@ var x = document.getElementsByClassName("slide");
 let SliderA = new Array(x.length);
 
 window.onload = function () {
+
     for (var i = 0; i < x.length; i++) {
         SliderA[i] = 0;
         x[i].style.display = "none";
     }
-
     milliseconds = 3000;
     switchSlides();
     milliseconds = 3000;
     intervalID = setInterval(next, interval);
 
 };
+
+window.addEventListener('focus', function () {
+    for (var i = 0; i < x.length; i++) {
+        x[i].style.transitionDuration = "0s";
+        console.log("borea");
+    }
+});
+
 
 let timerID;
 let milliseconds = 0;

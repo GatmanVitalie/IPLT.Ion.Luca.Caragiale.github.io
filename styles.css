@@ -180,12 +180,19 @@ header {
 
 .backButon:hover {
   cursor: pointer;
+  height: 2.4cm;
+  width: 2.5cm;
 }
 
 .backButon img {
   height: 60%;
   width: 60%;
   object-fit: contain;
+}
+
+.backButons:hover img {
+  height: 10%;
+  width: 10%;
 }
 
 .nextButon {
@@ -201,6 +208,8 @@ header {
 
 .nextButon:hover {
   cursor: pointer;
+  height: 2.4cm;
+  width: 2.5cm;
 }
 
 .nextButon img {
