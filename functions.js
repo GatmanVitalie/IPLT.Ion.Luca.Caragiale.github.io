@@ -14,7 +14,7 @@ window.addEventListener('scroll', function () {
 
 
 let intervalID;
-var interval = 2000;
+var interval = 5000;
 let x = document.getElementsByClassName("slide");
 
 var screenWidthInCm = screen.width / window.devicePixelRatio * 2.54 / 96;
