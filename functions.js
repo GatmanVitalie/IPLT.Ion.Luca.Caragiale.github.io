@@ -22,7 +22,7 @@ let hamburgerButon = document.getElementById('HamburgerButton'); // Changed to g
 window.addEventListener('resize', function () {
     screenWidthInCm = screen.width / window.devicePixelRatio * 2.54 / 96;
     console.log("screenWidthInCm: " + screenWidthInCm);
-    if (screenWidthInCm < 18) {
+    if (screenWidthInCm < 16) {
         hamburgerButon.style.display = "flex";
         document.getElementById('stanga').style.display = "none";
     } else {
@@ -40,6 +40,14 @@ window.onload = function () {
     switchSlides();
     milliseconds = 3000;
     intervalID = setInterval(next, interval);
+
+    if (screenWidthInCm < 16) {
+        hamburgerButon.style.display = "flex";
+        document.getElementById('stanga').style.display = "none";
+    } else {
+        hamburgerButon.style.display = "none"; // Corrected variable name
+        document.getElementById('stanga').style.display = "flex";
+    }
 
 };
 
