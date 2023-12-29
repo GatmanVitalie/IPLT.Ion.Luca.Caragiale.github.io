@@ -15,13 +15,25 @@ window.addEventListener('scroll', function () {
 
 let intervalID;
 var interval = 2000;
-var x = document.getElementsByClassName("slide");
-let SliderA = new Array(x.length);
+let x = document.getElementsByClassName("slide");
+
+var screenWidthInCm = screen.width / window.devicePixelRatio * 2.54 / 96;
+let hamburgerButon = document.getElementById('HamburgerButton'); // Changed to getElementById
+window.addEventListener('resize', function () {
+    screenWidthInCm = screen.width / window.devicePixelRatio * 2.54 / 96;
+    console.log("screenWidthInCm: " + screenWidthInCm);
+    if (screenWidthInCm < 18) {
+        hamburgerButon.style.display = "flex";
+        document.getElementById('stanga').style.display = "none";
+    } else {
+        hamburgerButon.style.display = "none"; // Corrected variable name
+        document.getElementById('stanga').style.display = "flex";
+    }
+});
 
 window.onload = function () {
 
     for (var i = 0; i < x.length; i++) {
-        SliderA[i] = 0;
         x[i].style.display = "none";
     }
     milliseconds = 3000;

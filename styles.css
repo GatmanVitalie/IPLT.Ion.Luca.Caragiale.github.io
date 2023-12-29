@@ -55,6 +55,12 @@ header {
   background-color: #ffffff;
 }
 
+#HamburgerButton
+{
+  display: flex;
+  position: relative;
+}
+
 .Contacte {
   position: relative;
   width: 100%;
