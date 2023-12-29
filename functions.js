@@ -14,7 +14,7 @@ window.addEventListener('scroll', function () {
 
 
 let intervalID;
-var interval = 6000;
+var interval = 2000;
 var x = document.getElementsByClassName("slide");
 let SliderA = new Array(x.length);
 
@@ -39,8 +39,10 @@ function startTimer() {
         const startTime = Date.now() - milliseconds;
         timerID = setInterval(function () {
             milliseconds = Date.now() - startTime;
-           
+            //        console.log(`Timer: ${milliseconds} milliseconds`);
         }, 1);
+    } else {
+        //      console.log('Timer is already running!');
     }
 }
 
@@ -59,56 +61,56 @@ var imag = 0;
 function back() {
     imag = imag - 1;
 
-    if (cont) {
-        if (milliseconds < 900) {
-            if (isd == false) {
-                imag += 1;
-                isd = true;
-            }
+
+    if (milliseconds < 900) {
+        if (isd == false) {
+            imag += 1;
+            isd = true;
         }
-        else {
-            isd = false;
-        }
-        console.log(isd);
+    }
+    else {
+        isd = false;
+    }
+    console.log(isd);
 
-        if (imag < 0) {
-            imag = x.length - 1;
-        }
+    if (imag < 0) {
+        imag = x.length - 1;
+    }
 
-        for (var i = 0; i < x.length; i++) {
-            x[i].classList.remove("slidein");
-            x[i].classList.remove("slideout");
-
-        }
-
-        x[imag].style.display = "flex";
-        x[imag].classList.add("slidein");
-
-        x[imag].style.transitionDuration = '1s';
-        if (imag == x.length - 1) {
-            x[0].style.transitionDuration = '1s';
-        } else {
-            x[imag + 1].style.transitionDuration = '1s';
-        }
-
-        if (imag == 0) {
-            x[x.length - 1].style.transitionDuration = '0s';
-            x[x.length - 1].classList.add("slideout");
-        } else {
-            x[imag - 1].classList.add("slideout");
-            x[imag - 1].style.transitionDuration = '0s';
-
-        }
-
-        if (milliseconds < 900) {
-
-            for (var i = 0; i < x.length; i++) {
-                x[i].style.transitionDuration = '0s';
-                console.log("Trans");
-            }
-        }
+    for (var i = 0; i < x.length; i++) {
+        x[i].classList.remove("slidein");
+        x[i].classList.remove("slideout");
 
     }
+
+    x[imag].style.display = "flex";
+    x[imag].classList.add("slidein");
+
+    x[imag].style.transitionDuration = '1s';
+    if (imag == x.length - 1) {
+        x[0].style.transitionDuration = '1s';
+    } else {
+        x[imag + 1].style.transitionDuration = '1s';
+    }
+
+    if (imag == 0) {
+        x[x.length - 1].style.transitionDuration = '0s';
+        x[x.length - 1].classList.add("slideout");
+    } else {
+        x[imag - 1].classList.add("slideout");
+        x[imag - 1].style.transitionDuration = '0s';
+
+    }
+
+    if (milliseconds < 900) {
+
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.transitionDuration = '0s';
+            console.log("Trans");
+        }
+    }
+
+
     resetInterval();
     resetTimer();
     startTimer();
@@ -116,6 +118,17 @@ function back() {
 
 function next() {
 
+    if (cont) {
+        imag = imag + 1;
+        switchSlides();
+        resetInterval();
+        resetTimer();
+        startTimer();
+    }
+
+}
+
+function forword() {
     imag = imag + 1;
     switchSlides();
     resetInterval();
@@ -142,50 +155,50 @@ function beginSlides() {
 
 
 function switchSlides() {
-    if (cont) {
-        if (milliseconds < 900) {
-            if (isd == false) {
-                imag -= 1;
-                isd = true;
-            }
-        }
-        else {
-            isd = false;
-        }
 
-        if (imag > x.length - 1) {
-            imag = 0;
-        }
-
-        for (var i = 0; i < x.length; i++) {
-            x[i].classList.remove("slidein");
-            x[i].classList.remove("slideout");
-            x[i].style.display = "flex";
-            x[i].style.transitionDuration = "0s"
-        }
-
-        x[imag].classList.add("slidein");
-        x[imag].style.transitionDuration = '1s';
-        if (imag == 0) {
-
-            x[x.length - 1].style.transitionDuration = '1s';
-            x[x.length - 1].classList.add("slideout");
-
-
-        } else {
-            x[imag - 1].classList.add("slideout");
-            x[imag - 1].style.transitionDuration = '1s';
-
-        }
-
-        if (milliseconds < 900) {
-
-            for (var i = 0; i < x.length; i++) {
-                x[i].style.transitionDuration = '0s';
-                console.log("Trans");
-            }
+    if (milliseconds < 900) {
+        if (isd == false) {
+            imag -= 1;
+            isd = true;
         }
     }
+    else {
+        isd = false;
+    }
+
+    if (imag > x.length - 1) {
+        imag = 0;
+    }
+
+    for (var i = 0; i < x.length; i++) {
+        x[i].classList.remove("slidein");
+        x[i].classList.remove("slideout");
+        x[i].style.display = "flex";
+        x[i].style.transitionDuration = "0s"
+    }
+
+    x[imag].classList.add("slidein");
+    x[imag].style.transitionDuration = '1s';
+    if (imag == 0) {
+
+        x[x.length - 1].style.transitionDuration = '1s';
+        x[x.length - 1].classList.add("slideout");
+
+
+    } else {
+        x[imag - 1].classList.add("slideout");
+        x[imag - 1].style.transitionDuration = '1s';
+
+    }
+
+    if (milliseconds < 900) {
+
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.transitionDuration = '0s';
+            console.log("Trans");
+        }
+    }
+
 
 }
 
