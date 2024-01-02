@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-   
+<body onresize="resize()">
+    
 
-    <div class="Antet_Imob">
+    <div class="Antet_Imob" onresize="resize()">
 
-        <div class="Dreapta">
+        <div class="stanga">
             <div class="Logo">
                 <img src="images/Logo-Caragiale.png"></img>
             </div>
@@ -21,7 +21,7 @@
                 <img src="images/Denumire.png"></img>
             </div>
         </div>
-        <div class="stanga" id="stanga">
+        <div class="dreapta" id="dreapta">
             <div class="Contacte">
                 <div class="nrTelefon">
                     <img src="images/Phone.png"></img>
@@ -47,8 +47,13 @@
             </div>
         </div>
 
-        <div class="HamburgerButton" id="HamburgerButton">
+        <!-- <div class="HamburgerButton" id="HamburgerButton">
             <button> Butonefregb</button>
+        </div> -->
+
+        <div id="HamburgerButton">
+            <input id="MenuButon" type="checkbox" />
+            <label class='MenuButon-container' for="MenuButon">HAfef</label>
         </div>
 
     </div>
@@ -98,13 +103,13 @@
             </div>
 
             <button class="backButon" id="backButon" onclick="back()"><img src="images/back.png"
-                    onmouseover="stopSlides()" onmouseleave="beginSlides()" ></img></button>
+                    onmouseover="stopSlides()" onmouseleave="beginSlides()"></img></button>
             <button class="nextButon" id="nextButon" onclick="forword()"><img src="images/next.png"
-                    onmouseover="stopSlides()" onmouseleave="beginSlides()" ></img></button>
+                    onmouseover="stopSlides()" onmouseleave="beginSlides()"></img></button>
         </div>
     </div>
 
-     <script src="functions.js"></script>
+    <script src="functions.js"></script>
 </body>
 
 </html>

@@ -17,18 +17,11 @@ let intervalID;
 var interval = 5000;
 let x = document.getElementsByClassName("slide");
 
-var screenWidthInCm = screen.width / window.devicePixelRatio * 2.54 / 96;
+var screenWidthInCm = window.innerWidth / window.devicePixelRatio * 2.54 / 96;
 let hamburgerButon = document.getElementById('HamburgerButton'); // Changed to getElementById
-window.addEventListener('resize', function () {
-    screenWidthInCm = screen.width / window.devicePixelRatio * 2.54 / 96;
-    console.log("screenWidthInCm: " + screenWidthInCm);
-    if (screenWidthInCm < 16) {
-        hamburgerButon.style.display = "flex";
-        document.getElementById('stanga').style.display = "none";
-    } else {
-        hamburgerButon.style.display = "none"; // Corrected variable name
-        document.getElementById('stanga').style.display = "flex";
-    }
+
+window.addEventListener("resize", function() {
+    resize();
 });
 
 window.onload = function () {
@@ -40,22 +33,29 @@ window.onload = function () {
     switchSlides();
     milliseconds = 3000;
     intervalID = setInterval(next, interval);
-    screenWidthInCm = screen.width / window.devicePixelRatio * 2.54 / 96;
-    if (screenWidthInCm < 16) {
-        hamburgerButon.style.display = "flex";
-        document.getElementById('stanga').style.display = "none";
-    } else {
-        hamburgerButon.style.display = "none"; // Corrected variable name
-        document.getElementById('stanga').style.display = "flex";
-    }
+    resize()
 
 };
 
-window.addEventListener('focus', function () {
-    for (var i = 0; i < x.length; i++) {
-        x[i].style.transitionDuration = "0s";
-        console.log("borea");
+function resize() {
+   
+    screenWidthInCm = window.innerWidth / window.devicePixelRatio * 2.54 / 96;
+    if (screenWidthInCm < 27) {
+        hamburgerButon.style.display = "flex";
+        document.getElementById('dreapta').style.display = "none";
+    } else {
+        hamburgerButon.style.display = "none"; // Corrected variable name
+        document.getElementById('dreapta').style.display = "flex";
     }
+    console.log(window.innerWidth / window.devicePixelRatio * 2.54 / 96);
+}
+
+window.addEventListener('blur', function () {
+    cont = false;
+});
+
+window.addEventListener('focus', function () {
+    cont = true;
 });
 
 
