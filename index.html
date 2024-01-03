@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/slide_show.css">
     <link rel="stylesheet" href="css/antet.css">
+    <link rel="stylesheet" href="css/hamburger_but.css">
+    <link rel="stylesheet" href="css/fly_butons.css">
 </head>
 
-<body onresize="resize()">
-    
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <div class="Antet_Imob" onresize="resize()">
+    <div class="Antet_Imob">
 
         <div class="stanga">
             <div class="Logo">
@@ -49,15 +51,26 @@
             </div>
         </div>
 
-        <!-- <div class="HamburgerButton" id="HamburgerButton">
-            <button> Butonefregb</button>
-        </div> -->
-
-        <div id="HamburgerButton">
-            <input id="MenuButon" type="checkbox" />
-            <label class='MenuButon-container' for="MenuButon">HAfef</label>
+        <div id="HamburgerButton" class="HamburgerButton" onclick="togle(this)">
+            <div class="hamburger-lines">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </div>
 
+
+
+    </div>
+
+    <div id="burger_butons" >
+        <button onclick="home()">Acasă</button>
+        <button onclick="news()">Noutăți</button>
+        <button onclick="admmision()">Admitere</button>
+        <button onclick="students()">Elevi</button>
+        <button onclick="about()">Despre</button>
+        <button onclick="students()">Contacte</button>
+        <button onclick="tur()">Tur Virtual</button>
     </div>
 
     <div class="Continut">
@@ -111,7 +124,8 @@
         </div>
     </div>
 
-    <script src="functions.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/antet.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,26 @@
+#burger_butons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(248, 248, 248);
+  height: 0px;
+  transition: 2s ease-in-out;
+  -webkit-transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -ms-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
+}
+
+#burger_butons button {
+  background-color: #fff;
+  width: 90%;
+  height: 3.6cm;
+  font-size: 1cm;
+  border: none;
+  border-bottom: 0.1cm solid #333;
+}
+
+.burger_butons  {
+  height: 1000px !important;
+  
+}

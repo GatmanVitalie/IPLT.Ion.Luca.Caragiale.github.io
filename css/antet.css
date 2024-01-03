@@ -21,6 +21,7 @@ header {
 .Antet_Imob {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 1;
   position: relative;
   top: 0px;
@@ -50,11 +51,12 @@ header {
 #HamburgerButton {
   display: none;
   position: relative;
-}
-
-.HamburgerButton-container {
-  display: none;
-  position: relative;
+  margin-right: 1.4cm;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
 }
 
 
