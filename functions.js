@@ -40,14 +40,14 @@ window.onload = function () {
 function resize() {
    
     screenWidthInCm = window.innerWidth / window.devicePixelRatio * 2.54 / 96;
-    if (screenWidthInCm < 27) {
+    if (screenWidthInCm < 1300 / window.devicePixelRatio * 2.54 / 96) {
         hamburgerButon.style.display = "flex";
         document.getElementById('dreapta').style.display = "none";
     } else {
         hamburgerButon.style.display = "none"; // Corrected variable name
         document.getElementById('dreapta').style.display = "flex";
     }
-    console.log(window.innerWidth / window.devicePixelRatio * 2.54 / 96);
+    //alert(27 / window.devicePixelRatio * 2.54 / 96);
 }
 
 window.addEventListener('blur', function () {
