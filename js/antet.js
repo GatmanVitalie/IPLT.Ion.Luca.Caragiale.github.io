@@ -28,9 +28,11 @@ function resize() {
     screenWidthInCm = window.innerWidth / window.devicePixelRatio * 2.54 / 96;
     if (screenWidthInCm < 1300 / window.devicePixelRatio * 2.54 / 96) {
         hamburgerButon.style.display = "block";
+        document.getElementById('contcatns_container').style.display = "flex";
         document.getElementById('dreapta').style.display = "none";
     } else {
-        hamburgerButon.style.display = "none"; // Corrected variable name
+        hamburgerButon.style.display = "none";
+        document.getElementById('contcatns_container').style.display = "none";
         document.getElementById('dreapta').style.display = "flex";
     }
     //alert(27 / window.devicePixelRatio * 2.54 / 96);

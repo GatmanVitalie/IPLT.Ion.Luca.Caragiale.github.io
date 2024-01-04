@@ -19,5 +19,5 @@
 
 .burger_butons  {
   height: 1000px !important;
-  
+  display: flex;
 }

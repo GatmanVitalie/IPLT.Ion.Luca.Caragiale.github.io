@@ -166,28 +166,35 @@ header {
 .contcatns {
   position: relative;
   width: 100%;
-  margin-top: 0.36cm;
-  margin-bottom: 0.56cm;
+  max-height: 1erm;
+
+  
+
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
   gap: 1cm;
 }
 .contcatns * {
   font-size: 6mm;
   width: auto;
   color: #ccc;
+  text-align: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 .contcatns img {
   position: relative;
   filter: invert(70%);
   margin-right: 0.2cm;
-  top: 8%;
-  height: 0.6cm;
-  width: 0.6cm;
+  top: 0%;
+  height: 0.8cm;
+  width: 1cm;
   object-fit: contain;
   -webkit-filter: invert(70%);
 }
