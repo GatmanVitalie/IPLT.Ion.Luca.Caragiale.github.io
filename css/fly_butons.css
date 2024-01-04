@@ -12,6 +12,7 @@
   background-color: #ffffff;
   width: 90%;
   height: 3.6cm;
+  min-height: 3.6cm;
   font-size: 1cm;
   border: none;
   border-bottom: 0.1cm solid #333;
