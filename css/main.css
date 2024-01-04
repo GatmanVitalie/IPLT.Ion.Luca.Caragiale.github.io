@@ -18,3 +18,10 @@ body {
 .Continut * {
   border: 0;
 }
+
+.fimag{
+  height: 0px;
+  width: 0px;
+  display: none !important;
+  position: absolute !important;
+}
