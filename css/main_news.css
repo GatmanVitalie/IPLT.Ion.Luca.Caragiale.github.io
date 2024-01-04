@@ -1,0 +1,18 @@
+.noi_in_actiune
+{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   margin-top: 1cm;
+}
+
+.noi_in_actiune h1 {
+  font-size: 1.6cm;
+  color: rgb(41, 41, 41);  
+  text-decoration: underline rgb(253, 200, 0);
+  top: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
