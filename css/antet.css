@@ -167,7 +167,9 @@ header {
 .contcatns {
   position: relative;
   width: 100%;
-  max-height: 1erm;
+  height: 0.7cm;
+  min-height: 2vh;
+  max-height: 5vh;
 
   
 
@@ -178,7 +180,7 @@ header {
   gap: 1cm;
 }
 .contcatns * {
-  font-size: 6mm;
+  font-size: 90%;
   width: auto;
   color: #ccc;
   text-align: center;
@@ -194,8 +196,8 @@ header {
   filter: invert(70%);
   margin-right: 0.2cm;
   top: 0%;
-  height: 0.8cm;
-  width: 1cm;
+  height: 100%;
+  width: auto;
   object-fit: contain;
   -webkit-filter: invert(70%);
 }
