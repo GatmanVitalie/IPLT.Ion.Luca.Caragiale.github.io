@@ -180,7 +180,7 @@ header {
   gap: 1cm;
 }
 .contcatns * {
-  font-size: 90%;
+  font-size: 80%;
   width: auto;
   color: #ccc;
   text-align: center;
@@ -196,7 +196,7 @@ header {
   filter: invert(70%);
   margin-right: 0.2cm;
   top: 0%;
-  height: 100%;
+  height: 90%;
   width: auto;
   object-fit: contain;
   -webkit-filter: invert(70%);
