@@ -29,10 +29,12 @@ function resize() {
     if (screenWidthInCm < 1300 / window.devicePixelRatio * 2.54 / 96) {
         hamburgerButon.style.display = "block";
         document.getElementById('contcatns_container').style.display = "flex";
+        document.getElementById('burger_butons').style.display = "flex";
         document.getElementById('dreapta').style.display = "none";
     } else {
         hamburgerButon.style.display = "none";
         document.getElementById('contcatns_container').style.display = "none";
+        document.getElementById('burger_butons').style.display = "none";
         document.getElementById('dreapta').style.display = "flex";
     }
     //alert(27 / window.devicePixelRatio * 2.54 / 96);

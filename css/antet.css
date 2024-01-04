@@ -160,7 +160,7 @@ header {
 .contcatns_container {
   top: 0px;
   background-color: #333;
-  display: flex;
+  display: none;
   
 }
 
