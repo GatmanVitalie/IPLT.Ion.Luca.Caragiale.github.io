@@ -2,17 +2,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(248, 248, 248);
+  background-color: #ffffff;
   height: 0px;
   transition: 2s ease-in-out;
-  -webkit-transition: 2s ease-in-out;
-  -moz-transition: 2s ease-in-out;
-  -ms-transition: 2s ease-in-out;
-  -o-transition: 2s ease-in-out;
+  -webkit-transition: 0.8s ease;
 }
 
 #burger_butons button {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 90%;
   height: 3.6cm;
   font-size: 1cm;

@@ -9,8 +9,6 @@
   }
 }
 
-
-
 header {
   background-color: #333;
   color: #ffffff;
@@ -58,8 +56,6 @@ header {
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
 }
-
-
 
 .Contacte {
   position: relative;
@@ -161,4 +157,37 @@ header {
     border-right: 2px solid #000000;
 } */
 
+.contcatns_container {
+  background-color: #333;
+  display: flex;
+  
+}
 
+.contcatns {
+  position: relative;
+  width: 100%;
+  margin-top: 0.36cm;
+  margin-bottom: 0.56cm;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1cm;
+}
+.contcatns * {
+  font-size: 6mm;
+  width: auto;
+  color: #ccc;
+  display: flex;
+  flex-direction: row;
+}
+
+.contcatns img {
+  position: relative;
+  filter: invert(70%);
+  margin-right: 0.2cm;
+  top: 8%;
+  height: 0.6cm;
+  width: 0.6cm;
+  object-fit: contain;
+  -webkit-filter: invert(70%);
+}
