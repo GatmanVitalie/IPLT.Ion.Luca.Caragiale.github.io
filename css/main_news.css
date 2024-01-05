@@ -1,18 +1,154 @@
-.noi_in_actiune
-{
-   display: flex;
-   justify-content: center;
-   width: 100%;
-   margin-top: 1cm;
+.noi_in_actiune {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1cm;
 }
 
 .noi_in_actiune h1 {
   font-size: 1.6cm;
-  color: rgb(41, 41, 41);  
+  color: rgb(41, 41, 41);
   text-decoration: underline rgb(253, 200, 0);
   top: 0px;
   text-align: center;
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.articole {
+  display: flex;
+  width: 14cm;
+  height: 18cm;
+  flex-direction: row;
+  gap: 3cm;
+  justify-content: center;;
+}
+
+.articole >div {
+  width: 13cm !important;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.text_holder 
+{
+  margin-top: 5mm !important;
+  margin-bottom: -1mm;
+}
+
+.articole h2 {
+  font-size: 0.76cm;
+  color: rgb(41, 41, 41);
+  text-decoration: underline 0.8mm rgb(253, 200, 0);
+  top: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-bottom: 1mm;
+}
+
+.image_holder {
+  width: 12cm;
+  height: 7cm;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  display: flex;
+  align-items: center;
+  border-radius: 0.2cm;
+  -webkit-border-radius: 0.2cm;
+  -moz-border-radius: 0.2cm;
+  -ms-border-radius: 0.2cm;
+  -o-border-radius: 0.2cm;
+}
+
+.image_holder img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.articole a {
+  font-size: 0.6cm;
+  color: rgb(41, 41, 41);
+  top: 0px;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1mm;
+}
+
+
+.articole h3 {
+  font-size: 0.5cm;
+  color: rgb(41, 41, 41);
+  text-decoration: underline 1mm rgb(253, 200, 0);
+  top: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.button_holder
+{
+  width: 100%;
+  height: 2cm;
+  display: flex;
+  gap: 2mm;
+}
+
+.button_holder button {
+  width: 1.35cm;
+  height: 1.35cm;
+  border-radius: 1.6mm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.button_holder img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.facebook
+{
+  background-color: #0866ff !important;
+}
+
+.instagram
+{
+  border-radius: 0% !important;
+  -webkit-border-radius: 0% !important;
+  -moz-border-radius: 0% !important;
+  -ms-border-radius: 0% !important;
+  -o-border-radius: 0% !important;
+}
+
+.instagram img
+{
+  width: 1.35cm;
+  height: 1.35cm;
+  background-color: #ffff;
+}
+
+.twiter 
+{
+  background-color: #000000;
+}
+
+.twiter img
+{
+  width: 90%;
+  height: 90%;
+}
+
+.github
+{
+  background-color: #24292f;
 }
