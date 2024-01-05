@@ -20,11 +20,13 @@
 
 .articole {
   display: flex;
-  width: 14cm;
+  width: 100%;
+  /* padding: 5cm; */
   height: 18cm;
   flex-direction: row;
   gap: 3cm;
-  justify-content: center;;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .articole >div {
@@ -66,9 +68,11 @@
 }
 
 .image_holder img {
-  object-fit: contain;
-  width: 100%;
+  object-fit: cover;
+  width: auto;
   height: auto;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .articole a {

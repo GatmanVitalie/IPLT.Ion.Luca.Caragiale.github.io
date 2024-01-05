@@ -1,17 +1,17 @@
 
-window.addEventListener('scroll', function () {
-    const header = document.getElementById('Antet');
-    if (window.scrollY > 40) {
-        header.style.height = 3 + 'cm';
-        header.style.backgroundColor = '#000'; // Change background color
-        header.style.color = '#fff'; // Change text color
-        // Add any other style changes you want for the scrolled state
-    } else {
-        header.style.backgroundColor = '#FFFAFA'; // Default background color
-        header.style.color = '#333'; // Default text color
-        // Reset any other styles you changed
-    }
-});
+// window.addEventListener('scroll', function () {
+//     const header = document.getElementById('Antet');
+//     if (window.scrollY > 40) {
+//         header.style.height = 3 + 'cm';
+//         header.style.backgroundColor = '#000'; // Change background color
+//         header.style.color = '#fff'; // Change text color
+//         // Add any other style changes you want for the scrolled state
+//     } else {
+//         header.style.backgroundColor = '#FFFAFA'; // Default background color
+//         header.style.color = '#333'; // Default text color
+//         // Reset any other styles you changed
+//     }
+// });
 
 
 
