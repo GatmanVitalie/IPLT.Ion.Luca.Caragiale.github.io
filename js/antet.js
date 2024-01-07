@@ -59,7 +59,7 @@ function togle(lines) {
 
 let articles = document.getElementsByClassName("article");
 function fitt() {
-    if (screenWidthInCm < 13.7) {
+    if (screenWidthInCm < 13) {
         for (var i = 0; i < articles.length; i++)
         {
             articles[i].style.width = "82vw";
