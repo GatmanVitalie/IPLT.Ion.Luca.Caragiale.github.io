@@ -24,7 +24,7 @@
   /* padding: 5cm; */
   height: auto !important;
   flex-direction: row;
-  gap: 2cm;
+  gap: 1.6cm;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -44,7 +44,7 @@
 }
 
 .articole h2 {
-  font-size: 0.76cm;
+  font-size: 0.70cm;
   color: rgb(41, 41, 41);
   text-decoration: underline 0.8mm rgb(253, 200, 0);
   top: 0px;

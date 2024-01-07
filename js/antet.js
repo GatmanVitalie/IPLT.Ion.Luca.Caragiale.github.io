@@ -70,7 +70,7 @@ function fitt() {
     {
         for (var i = 0; i < articles.length; i++)
         {
-            articles[i].style.width = "12cm";
+            articles[i].style.width = "11cm";
         }
     }
     // // document.getElementById("article").style.transform = "
