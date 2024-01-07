@@ -20,20 +20,22 @@
 
 .articole {
   display: flex;
-  width: 100%;
+  width: 95%;
   /* padding: 5cm; */
-  height: 18cm;
+  height: auto !important;
   flex-direction: row;
-  gap: 3cm;
+  gap: 2cm;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.articole >div {
-  width: 13cm !important;
-  display: flex !important;
+.article {
+  width: 12cm;
+  display: flex;
   flex-direction: column;
 }
+
+
 
 .text_holder 
 {
@@ -54,8 +56,9 @@
 }
 
 .image_holder {
-  width: 12cm;
-  height: 7cm;
+  width: 100%;
+  position: relative;
+  aspect-ratio: 10 / 6;
   overflow-clip-margin: content-box;
   overflow: clip;
   display: flex;

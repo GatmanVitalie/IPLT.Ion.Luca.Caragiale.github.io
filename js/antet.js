@@ -26,7 +26,8 @@ window.addEventListener('load', function () {
 function resize() {
 
     screenWidthInCm = window.innerWidth / window.devicePixelRatio * 2.54 / 96;
-    if (screenWidthInCm < 1300 / window.devicePixelRatio * 2.54 / 96) {
+    console.log('resize', screenWidthInCm);
+    if (screenWidthInCm < 17) {
         hamburgerButon.style.display = "block";
         document.getElementById('contcatns_container').style.display = "flex";
         document.getElementById('burger_butons').style.display = "flex";
@@ -38,6 +39,7 @@ function resize() {
         document.getElementById('dreapta').style.display = "flex";
     }
     //alert(27 / window.devicePixelRatio * 2.54 / 96);
+    fitt();
 }
 
 window.onload = function () {
@@ -55,4 +57,21 @@ function togle(lines) {
     burger_butons.classList.toggle("burger_butons");
 }
 
-
+let articles = document.getElementsByClassName("article");
+function fitt() {
+    if (screenWidthInCm < 13.7) {
+        for (var i = 0; i < articles.length; i++)
+        {
+            articles[i].style.width = "82vw";
+            
+        }
+    }
+    else
+    {
+        for (var i = 0; i < articles.length; i++)
+        {
+            articles[i].style.width = "12cm";
+        }
+    }
+    // // document.getElementById("article").style.transform = "
+}
