@@ -26,7 +26,7 @@ window.addEventListener('load', function () {
 function resize() {
 
     screenWidthInCm = window.innerWidth / window.devicePixelRatio * 2.54 / 96;
-    console.log('resize', screenWidthInCm);
+    //console.log('resize', screenWidthInCm);
     if (screenWidthInCm < 17) {
         hamburgerButon.style.display = "block";
         document.getElementById('contcatns_container').style.display = "flex";
@@ -57,21 +57,48 @@ function togle(lines) {
     burger_butons.classList.toggle("burger_butons");
 }
 
-let articles = document.getElementsByClassName("article");
+
+const articles = document.querySelectorAll('.article');
 function fitt() {
-    if (screenWidthInCm < 13) {
-        for (var i = 0; i < articles.length; i++)
-        {
-            articles[i].style.width = "82vw";
-            
+    articles.forEach(article => {
+        const h2Element = article.querySelector('h2');
+        const aElement = article.querySelector('.text_holder a');
+        const textElement = article.querySelector('.text_holder');
+        const h3Element = article.querySelector('h3');
+
+        if (screenWidthInCm < 13) {
+            // Apply styles for smaller screens
+            article.style.width = "82vw";
+
+            if (h2Element) {
+                h2Element.style.fontSize = "5vw";
+            }
+             if (textElement) {
+                textElement.style.height = "auto";
+            }
+             if (aElement) {
+                aElement.style.fontSize = "3vw";
+            }
+            if (h3Element) {
+                h3Element.style.fontSize = "2.5vw";
+            }
+        } else {
+            // Apply styles for larger screens
+            article.style.width = "11cm";
+
+            if (h2Element) {
+                h2Element.style.fontSize = "0.7cm";
+            }
+            if (textElement) {
+                textElement.style.height = "auto";
+            }
+            if (aElement) {
+                aElement.style.fontSize = "6mm";
+            }
+            if (h3Element) {
+                h3Element.style.fontSize = "5mm";
+            }
         }
-    }
-    else
-    {
-        for (var i = 0; i < articles.length; i++)
-        {
-            articles[i].style.width = "11cm";
-        }
-    }
+    });
     // // document.getElementById("article").style.transform = "
 }
