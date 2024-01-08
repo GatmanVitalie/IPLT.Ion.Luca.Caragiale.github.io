@@ -92,10 +92,10 @@ function fitt() {
                 textElement.style.height = "auto";
             }
             if (aElement) {
-                aElement.style.fontSize = "3vw";
+                aElement.style.fontSize = "4vw";
             }
             if (h3Element) {
-                h3Element.style.fontSize = "2.5vw";
+                h3Element.style.fontSize = "3.5vw";
                 h3Element.style.textDecorationThickness = "0.64vw";
             }
             if (gapElement) {

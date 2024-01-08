@@ -24,6 +24,7 @@
 .articole {
   display: flex;
   width: 95%;
+  max-width: 39cm;
   /* padding: 5cm; */
   height: auto !important;
   flex-direction: row;
