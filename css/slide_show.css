@@ -5,7 +5,7 @@
   height: 2.4cm;
   width: 2cm;
   left: 0px;
-  top: 8cm;
+  top: calc(50% - 1.2cm);
   transition: 0.2s ease-in-out;
 }
 
@@ -33,7 +33,7 @@
   height: 2.4cm;
   width: 2cm;
   right: 0px;
-  top: 8cm;
+  top: calc(50% - 1.2cm);
   transition: 0.2s ease-in-out;
 }
 
