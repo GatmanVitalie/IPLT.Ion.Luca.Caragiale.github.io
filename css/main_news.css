@@ -10,7 +10,7 @@
 .noi_in_actiune h1 {
   font-size: 1.6cm;
   color: rgb(41, 41, 41);
-  text-decoration: underline rgb(253, 200, 0);
+  text-decoration: underline #fdc800;
   top: 0px;
   text-align: center;
   text-transform: uppercase;
