@@ -16,6 +16,9 @@
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    
+    margin-top: 1cm;
+    margin-bottom: 1cm;
 }
 
 .articole {

@@ -61,9 +61,13 @@ function togle(lines) {
 const articles = document.querySelectorAll('.article');
 function fitt() {
     if (screenWidthInCm < 13) {
-        document.getElementById('title_show').style.fontSize = "10vw";
+        document.getElementById('title_show').style.fontSize = "9vw";
+        document.getElementById('title_show').style.marginTop = "1vw";
+        document.getElementById('title_show').style.marginBottom = "1vw";
     } else {
         document.getElementById('title_show').style.fontSize = "1.6cm";
+        document.getElementById('title_show').style.marginTop = "1cm";
+        document.getElementById('title_show').style.marginBottom = "1cm";
     }
 
 
