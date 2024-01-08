@@ -112,8 +112,8 @@ function fitt() {
                 // Iterate through each button within the holder
                 buttons.forEach(button => {
                     // alert("button");
-                    button.style.height = '11vw';
-                    button.style.width = '11vw';
+                    button.style.height = '10vw';
+                    button.style.width = '10vw';
 
 
                 });
