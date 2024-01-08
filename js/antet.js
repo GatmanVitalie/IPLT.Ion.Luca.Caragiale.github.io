@@ -68,7 +68,7 @@ function fitt() {
 
         if (screenWidthInCm < 13) {
             // Apply styles for smaller screens
-            article.style.width = "82vw";
+            article.style.width = "85vw";
 
             if (h2Element) {
                 h2Element.style.fontSize = "5vw";
