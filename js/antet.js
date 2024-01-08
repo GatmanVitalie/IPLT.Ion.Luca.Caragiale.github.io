@@ -79,6 +79,7 @@ function fitt() {
         const h3Element = article.querySelector('h3');
         const buttonElement = article.querySelectorAll('.button_holder');
         const gapElement = article.querySelector('.button_holder');
+        const imagElement = article.querySelector('.image_holder');
 
         if (screenWidthInCm < 13) {
             // Apply styles for smaller screens
@@ -100,6 +101,9 @@ function fitt() {
             }
             if (gapElement) {
                 gapElement.style.gap = "1.3vw";
+            }
+            if (imagElement) {
+                imagElement.style.borderRadius  = "3vw";
             }
             buttonElement.forEach(holder => {
                 // Find all buttons within the current holder
@@ -134,6 +138,9 @@ function fitt() {
             }
             if (gapElement) {
                 gapElement.style.gap = "2mm";
+            }
+            if (imagElement) {
+                imagElement.style.borderRadius  = "5mm";
             }
             buttonElement.forEach(holder => {
                 // Find all buttons within the current holder
