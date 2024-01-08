@@ -60,11 +60,21 @@ function togle(lines) {
 
 const articles = document.querySelectorAll('.article');
 function fitt() {
+    if (screenWidthInCm < 13) {
+        document.getElementById('title_show').style.fontSize = "10vw";
+    } else {
+        document.getElementById('title_show').style.fontSize = "1.6cm";
+    }
+
+
+
     articles.forEach(article => {
         const h2Element = article.querySelector('h2');
         const aElement = article.querySelector('.text_holder a');
         const textElement = article.querySelector('.text_holder');
         const h3Element = article.querySelector('h3');
+        const buttonElement = article.querySelectorAll('.button_holder');
+        const gapElement = article.querySelector('.button_holder');
 
         if (screenWidthInCm < 13) {
             // Apply styles for smaller screens
@@ -72,22 +82,41 @@ function fitt() {
 
             if (h2Element) {
                 h2Element.style.fontSize = "5vw";
+                h2Element.style.textDecorationThickness = "0.64vw";
             }
-             if (textElement) {
+            if (textElement) {
                 textElement.style.height = "auto";
             }
-             if (aElement) {
+            if (aElement) {
                 aElement.style.fontSize = "3vw";
             }
             if (h3Element) {
                 h3Element.style.fontSize = "2.5vw";
+                h3Element.style.textDecorationThickness = "0.64vw";
             }
+            if (gapElement) {
+                gapElement.style.gap = "1.3vw";
+            }
+            buttonElement.forEach(holder => {
+                // Find all buttons within the current holder
+                const buttons = holder.querySelectorAll('button');
+
+                // Iterate through each button within the holder
+                buttons.forEach(button => {
+                    // alert("button");
+                    button.style.height = '8vw';
+                    button.style.width = '8vw';
+
+
+                });
+            });
         } else {
             // Apply styles for larger screens
             article.style.width = "11cm";
 
             if (h2Element) {
                 h2Element.style.fontSize = "0.7cm";
+                h2Element.style.textDecorationThickness = "0.8mm";
             }
             if (textElement) {
                 textElement.style.height = "auto";
@@ -97,7 +126,24 @@ function fitt() {
             }
             if (h3Element) {
                 h3Element.style.fontSize = "5mm";
+                h3Element.style.textDecorationThickness = "0.8mm";
             }
+            if (gapElement) {
+                gapElement.style.gap = "2mm";
+            }
+            buttonElement.forEach(holder => {
+                // Find all buttons within the current holder
+                const buttons = holder.querySelectorAll('button');
+
+                // Iterate through each button within the holder
+                buttons.forEach(button => {
+                    // alert("button");
+                    button.style.height = '1.35cm';
+                    button.style.width = '1.35cm';
+
+
+                });
+            });
         }
     });
     // // document.getElementById("article").style.transform = "
