@@ -85,7 +85,7 @@ function fitt() {
             article.style.width = "85vw";
 
             if (h2Element) {
-                h2Element.style.fontSize = "5vw";
+                h2Element.style.fontSize = "5.5vw";
                 h2Element.style.textDecorationThickness = "0.64vw";
             }
             if (textElement) {
