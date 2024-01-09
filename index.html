@@ -12,18 +12,20 @@
     <link rel="stylesheet" href="css/fly_butons.css">
     <link rel="stylesheet" href="css/main_news.css">
     <link rel="stylesheet" href="css/load.css">
+    <link rel="stylesheet" href="css/statistici.css">
 </head>
 
 <body>
     <div id="LoadScrean"><svg class="spinner" viewBox="0 0 50 50">
             <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
         </svg></div>
-
+    <script src="js/load.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <div class="fimag">
         <img src="images/Logo-Caragiale.png"></img>
     </div>
+    <div id="dpi" style="height: 1in; width: 1in; left: 100%; position: fixed; top: 100%;"></div>
 
     <div class="contcatns_container" id="contcatns_container">
         <div class="contcatns">
@@ -151,7 +153,7 @@
         </div>
 
         <div class="noi_in_actiune">
-            <h1 id="title_show">Noi în acțiune</h1>
+            <h1 class="title_show">Noi în acțiune</h1>
             <div class="articole">
                 <div class="article">
                     <h2>Olimpisii se duc la olimpiadă</h2>
@@ -310,20 +312,49 @@
             </div>
         </div>
 
-        <!-- <div class="statistici" id="statistici">
-            <img src="images/Boocks.webp">
-            <h1>Statistici</h1>
-            <div class="elevi">
-                <img src="images/graduated.png">
-                <h2>20.000</h2>
-                <h3>Elevi</h3>
-            </div>
+        <!-- <div class="backround_image_desktop" id="backround_image_desktop">
+            <img src="images/Caragiale.jpg">
+        </div>
+
+        <div class="backround_image_phone" id = "backround_image_phone">
+            <img src="images/Caragieale_Phone.jpg" >
         </div> -->
+
+
+        <div class="statistici" id="statistici">
+            <!-- <div class="bacraound_image">
+                <img src="images/Boocks.webp"  alt="Background Image">
+            </div> -->
+
+            <h1 class="title_show">Statistici</h1>
+            <div class="stat_holder" id="stat_holder">
+                <div class="stat">
+                    <img src="images/graduated.png">
+                    <h2>20.000</h2>
+                    <h3>Elevi</h3>
+                </div>
+                <div class="stat">
+                    <img src="images/graduation.png">
+                    <h2>9.23</h2>
+                    <h3>Media BAC</h3>
+                </div>
+                <div class="stat">
+                    <img src="images/portfolio.png">
+                    <h2>43</h2>
+                    <h3>Profesori</h3>
+                </div>
+                <div class="stat">
+                    <img src="images/championship-award.png">
+                    <h2>67%</h2>
+                    <h3>Olimpicii Republicani<br>din Orhei</h3>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src=" js/slider.js"></script>
     <script src="js/antet.js"></script>
-    <script src="js/load.js"></script>
+
 </body>
 
 </html>

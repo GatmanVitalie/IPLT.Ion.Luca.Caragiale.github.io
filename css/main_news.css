@@ -1,13 +1,16 @@
 .noi_in_actiune {
   display: flex;
-
+  z-index: 1  ;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 1cm;
+  padding-top: 1cm;
+  padding-bottom: 3cm;
+  background-color: #ffff;
+  height: auto !important;
 }
 
-.noi_in_actiune h1 {
+.title_show {
   font-size: 1.6cm;
   color: #000;
   text-decoration: underline #fdc800;
@@ -17,7 +20,7 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     
-    margin-top: 1cm;
+    margin-top: 2cm;
     margin-bottom: 1cm;
 }
 
@@ -28,7 +31,8 @@
   /* padding: 5cm; */
   height: auto !important;
   flex-direction: row;
-  gap: 1.6cm;
+  row-gap: 1cm;
+  column-gap: 1.6cm;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -47,13 +51,12 @@
 .articole h2 {
   font-size: 0.7cm;
   color: rgb(41, 41, 41);
+  margin-bottom: 0%;
   text-decoration: underline 0.8mm rgb(253, 200, 0);
-  top: 0px;
   text-align: left;
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-bottom: 1mm;
 }
 
 .image_holder {
