@@ -25,9 +25,9 @@ window.addEventListener('load', function () {
 
 function resize() {
 
-    screenWidthInCm = window.devicePixelRatio / window.innerWidth * 1000000 ;
+    screenWidthInCm = window.innerWidth / document.getElementById('dpi').offsetWidth ;
     //console.log('resize', screenWidthInCm);
-    if (window.innerWidth / document.getElementById('dpi').offsetWidth < 13) {
+    if (screenWidthInCm < 13) {
         hamburgerButon.style.display = "block";
         document.getElementById('contcatns_container').style.display = "flex";
         document.getElementById('burger_butons').style.display = "flex";
