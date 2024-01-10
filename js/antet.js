@@ -1,17 +1,10 @@
 
-// window.addEventListener('scroll', function () {
-//     const header = document.getElementById('Antet');
-//     if (window.scrollY > 40) {
-//         header.style.height = 3 + 'cm';
-//         header.style.backgroundColor = '#000'; // Change background color
-//         header.style.color = '#fff'; // Change text color
-//         // Add any other style changes you want for the scrolled state
-//     } else {
-//         header.style.backgroundColor = '#FFFAFA'; // Default background color
-//         header.style.color = '#333'; // Default text color
-//         // Reset any other styles you changed
-//     }
-// });
+window.addEventListener('scroll', function () {
+    const header = document.getElementById('Antet');
+    if (window.scrollY < 1) {
+        document.getElementById("backround_image_phone").style.display = "none";
+    }
+});
 
 
 
@@ -25,7 +18,7 @@ window.addEventListener('load', function () {
 
 function resize() {
 
-    screenWidthInCm = window.innerWidth / document.getElementById('dpi').offsetWidth ;
+    screenWidthInCm = window.innerWidth / document.getElementById('dpi').offsetWidth;
     //console.log('resize', screenWidthInCm);
     if (screenWidthInCm < 13) {
         hamburgerButon.style.display = "block";
@@ -77,8 +70,8 @@ function fitt() {
     }
 
     if (screenWidthInCm < 13) {
-        //    document.getElementById("backround_image_phone").style.display = "flex";
-        //  document.getElementById("backround_image_desktop").style.display = "none";
+        document.getElementById("backround_image_phone").style.display = "flex";
+        document.getElementById("backround_image_desktop").style.display = "none";
         document.getElementById("stat_holder").style.flexDirection = "column";
         document.getElementById("stat_holder").style.height = "auto";
         document.getElementById("stat_holder").style.alignItems = "center";
@@ -90,8 +83,8 @@ function fitt() {
         }
 
     } else {
-        //document.getElementById("backround_image_phone").style.display = "none";
-        //document.getElementById("backround_image_desktop").style.display = "flex";
+        document.getElementById("backround_image_phone").style.display = "none";
+        document.getElementById("backround_image_desktop").style.display = "flex";
         document.getElementById("stat_holder").style.flexDirection = "row";
         document.getElementById("stat_holder").style.height = "10cm";
         document.getElementById("statistici").style.height = "17cm";
