@@ -10,10 +10,13 @@ window.addEventListener('scroll', function () {
 
 
 var screenWidthInCm = window.innerWidth / window.devicePixelRatio * 2.54 / 96;
-let hamburgerButon = document.getElementById('HamburgerButton'); // Changed to getElementById
+let hamburgerButon = document.getElementById('HamburgerButton');
 
 window.addEventListener('load', function () {
+
     resize();
+    document.getElementById("backround_image_phone").style.display = "none";
+    
 });
 
 function resize() {
@@ -36,7 +39,9 @@ function resize() {
 }
 
 window.onload = function () {
+    
     resize();
+    document.getElementById("backround_image_phone").style.display = "none";
 };
 
 
