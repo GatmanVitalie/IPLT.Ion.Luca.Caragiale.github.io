@@ -16,18 +16,35 @@ body {
   padding: 0;
   border: 0;
   z-index: 0;
-
 }
 
 .Continut * {
   border: 0;
 }
 
-.fimag{
+.fimag {
   height: 0px;
   width: 0px;
   display: none !important;
   position: absolute !important;
 }
 
+.title_show {
+  font-size: 1.6cm;
+  color: #2a2a2a;
+  text-decoration: underline #fdc800;
+  top: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
+  margin-top: 2cm;
+  margin-bottom: 1cm;
+}
+
+#stat_title {
+  color: #fff;
+  margin-top: 1.5cm;
+  margin-bottom: 0.9cm;
+}

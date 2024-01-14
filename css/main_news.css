@@ -1,6 +1,6 @@
 .noi_in_actiune {
   display: flex;
-  z-index: 1  ;
+  z-index: 1;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -10,31 +10,20 @@
   height: auto !important;
 }
 
-.title_show {
-  font-size: 1.6cm;
-  color: #000;
-  text-decoration: underline #fdc800;
-  top: 0px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    
-    margin-top: 2cm;
-    margin-bottom: 1cm;
-}
+
 
 .articole {
   display: flex;
-  width: 95%;
-  max-width: 39cm;
+  width: calc(100% - 1cm);
+  max-width: 40cm;
   /* padding: 5cm; */
   height: auto !important;
   flex-direction: row;
   row-gap: 1cm;
-  column-gap: 1.6cm;
+  column-gap: 9mm;
   justify-content: center;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .article {
@@ -49,7 +38,7 @@
 }
 
 .articole h2 {
-  font-size: 0.7cm;
+  font-size: 1.7rem;
   color: rgb(41, 41, 41);
   margin-bottom: 0%;
   text-decoration: underline 0.8mm rgb(253, 200, 0);
@@ -57,6 +46,7 @@
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-wrap: pretty;
 }
 
 .image_holder {
