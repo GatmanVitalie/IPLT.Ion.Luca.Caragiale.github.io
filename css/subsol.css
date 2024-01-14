@@ -6,4 +6,5 @@
     position: sticky;
     z-index: 0;
     background-color: #767676;
+    display: flex;
 }

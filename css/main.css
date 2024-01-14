@@ -40,9 +40,9 @@ body {
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-
   margin-top: 2cm;
   margin-bottom: 1cm;
+  z-index: 2;
 }
 
 #stat_title {
