@@ -20,12 +20,12 @@ let hamburgerButon = document.getElementById('HamburgerButton');
 window.addEventListener('load', function () {
 
     resize();
-   
-    
+
+
 });
 
 function resize() {
-    document.getElementById("backround_image_phone").style.display = "none";
+
     screenWidthInCm = window.innerWidth / document.getElementById('dpi').offsetWidth;
     //console.log('resize', screenWidthInCm);
     if (screenWidthInCm < 13) {
@@ -43,20 +43,20 @@ function resize() {
 }
 
 window.onload = function () {
-    
+
     resize();
-  
+
 };
 
 
 window.addEventListener("resize", function () {
     resize();
-    
+
 });
 
 var burger_butons = document.getElementById("burger_butons");
 function togle(lines) {
     lines.classList.toggle("change");
     burger_butons.classList.toggle("burger_butons");
-    
+
 }
