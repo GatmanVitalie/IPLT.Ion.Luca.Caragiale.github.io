@@ -1,15 +1,15 @@
 
-window.addEventListener('scroll', function () {
-    const header = document.getElementById('Antet');
-    if (window.scrollY < 10) {
-        document.getElementById("backround_image_phone").style.display = "none";
-        document.getElementById("backround_image_desktop").style.display = "none";
-    }
-    else
-    {
-        document.getElementById("backround_image_desktop").style.display = "block";
-    }
-});
+// window.addEventListener('scroll', function () {
+//     const header = document.getElementById('Antet');
+//     if (window.scrollY < 10) {
+//         document.getElementById("backround_image_phone").style.display = "none";
+//         document.getElementById("backround_image_desktop").style.display = "none";
+//     }
+//     else
+//     {
+//         document.getElementById("backround_image_desktop").style.display = "block";
+//     }
+// });
 
 
 
@@ -20,13 +20,12 @@ let hamburgerButon = document.getElementById('HamburgerButton');
 window.addEventListener('load', function () {
 
     resize();
-    document.getElementById("backround_image_phone").style.display = "none";
-    document.getElementById("backround_image_desktop").style.display = "none";
+   
     
 });
 
 function resize() {
-
+    document.getElementById("backround_image_phone").style.display = "none";
     screenWidthInCm = window.innerWidth / document.getElementById('dpi').offsetWidth;
     //console.log('resize', screenWidthInCm);
     if (screenWidthInCm < 13) {
@@ -46,8 +45,7 @@ function resize() {
 window.onload = function () {
     
     resize();
-    document.getElementById("backround_image_phone").style.display = "none";
-    document.getElementById("backround_image_desktop").style.display = "none";
+  
 };
 
 

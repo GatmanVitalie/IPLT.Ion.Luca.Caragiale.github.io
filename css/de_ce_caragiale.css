@@ -1,82 +1,111 @@
-.de_ce_caragiale
-{
-    z-index: 600;
-    background-color: #fff;
-    height: 70cm;
-    width: 100%;
-    padding-top: 1px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    align-content: center;
+.de_ce_caragiale {
+  z-index: 600;
+  background-color: #fff;
+  height: 70cm;
+  width: 100%;
+  padding-top: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.argumente
+.argumente {
+  width: calc(100% - 3cm);
+  display: grid;
+  flex-direction: column;
+  align-content: space-around;
+  justify-items: stretch;
+}
+
+.argument_stanga
 {
-    width: calc(100% - 3cm);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  max-width: 26cm;
+}
+
+.argument_dreapta
+{
+  /* position: relative; */
+  justify-self: right;
+  max-width: 26cm;
 }
 
 #circle {
-    float: left;
-    width: 5cm;
-    height: 5cm;
-    margin: 20px;
-    border-radius: 50%;
-    shape-outside: circle(50%);
-    clip-path: circle();
-    background: #ccc;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border: 1.4mm dashed #121619;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+  float: left;
+  width: 5cm;
+  height: 5cm;
+  margin: 5mm;
+  border-radius: 50%;
+  shape-outside: circle();
+
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 1.4mm dashed #121619;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 #circle h1 {
-    color: #121619;
-    font-size: 2cm;
+  color: #121619;
+  font-size: 2cm;
 }
 
-.argumente h3
-{
-    width: 27cm;
-    text-wrap: stable;
+.argumente h2 {
+  font-size: 0.7cm;
+  color: rgb(41, 41, 41);
+  text-decoration: underline 1mm rgb(253, 200, 0);
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-bottom: 2mm;
+   
+}
+
+.argumente h3 {
+  font-size: 0.6cm;
+  color: rgb(41, 41, 41);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 1mm;
+
+  margin-top: 0mm;
 }
 
 .argument_dreapta #circle {
-    float: right;
-    width: 5cm;
-    height: 5cm;
-    margin: 20px;
-    border-radius: 50%;
-    shape-outside: circle(50%);
-    clip-path: circle();
-    background: #ccc;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border: 1.4mm dashed #121619;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+  float: right;
+  width: 5cm;
+  height: 5cm;
+  margin: 20px;
+  border-radius: 50%;
+  shape-outside: circle();
+
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border: 1.4mm dashed #121619;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .argument_dreapta h2 {
-    float: right;
-    text-align: right;
+  text-align: right;
 }
 
 .argument_dreapta h3 {
-    float: right;
-    text-align: right;  
+  text-align: right;
+}
+
+/* Additional style to clear float and prevent overlapping with the next element */
+.argument_dreapta::after {
+  content: "";
+  display: table;
+  clear: both;
 }
