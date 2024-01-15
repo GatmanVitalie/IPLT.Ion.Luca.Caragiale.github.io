@@ -1,13 +1,14 @@
 .de_ce_caragiale {
   z-index: 600;
   background-color: #fff;
-  height: 70cm;
+  height: auto;
   width: 100%;
   padding-top: 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding-bottom: 2cm;
   box-shadow: black 0 1mm 5mm 0mm;
 }
 
