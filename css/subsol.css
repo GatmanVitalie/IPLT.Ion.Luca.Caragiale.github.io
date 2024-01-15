@@ -127,7 +127,7 @@
 
 .map_container 
 {
-    height: 90%;
+    height: 85%;
     aspect-ratio: 1/1;
     width: auto !important;
 }
@@ -135,4 +135,10 @@
 .map_container iframe {
     height: 100%;
     width: 100%;
+    border: none !important;
+    border-radius: 2mm;
+    -webkit-border-radius: 2mm;
+    -moz-border-radius: 2mm;
+    -ms-border-radius: 2mm;
+    -o-border-radius: 2mm;
 }
