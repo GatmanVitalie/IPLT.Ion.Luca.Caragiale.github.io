@@ -24,7 +24,7 @@
   height: inherit;
   filter: blur(6px);
   -webkit-filter: blur(6px);
-  background-image: url('../images/caragiale.jpg');
+  background-image: url(images/caragiale.jpg);
   background-position-y: bottom;
   background-repeat: no-repeat;
   background-size: cover;
