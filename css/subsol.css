@@ -99,16 +99,18 @@
 .retele_sociale h2 {
   width: 100%;
   height: 100%;
-  font-size: 6.9mm;
+  font-size: 7mm;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff !important;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .facebook_subsol {
   background-color: #3b5998;
+ 
 }
 
 .instagram_subsol {
