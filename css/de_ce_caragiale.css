@@ -1,7 +1,7 @@
 .de_ce_caragiale {
   z-index: 600;
   background-color: #fff;
-  height: 52cm;
+  height: 70cm;
   width: 100%;
   padding-top: 1px;
   display: flex;
@@ -27,7 +27,7 @@
 {
   /* position: relative; */
   justify-self: right;
-  max-width: 28cm;
+  max-width: 26cm;
 }
 
 #circle {

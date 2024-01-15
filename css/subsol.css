@@ -1,54 +1,138 @@
-.subsol
-{
-    width: 100%;
-    height: 10cm;
-    bottom: 0px;
-    position: sticky;
-    z-index: 0;
-    background-color: #767676;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
+.subsol {
+  width: 100%;
+  height: 10cm;
+  bottom: 0px;
+  position: sticky;
+  z-index: 0;
+  background-color: #767676;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
 }
 
-
-
-.retele_sociale button 
-{
-    height: 1.5cm;
-    width: 5cm;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border: none;
-    border-radius: 3mm;
-    -webkit-border-radius: 3mm;
-    -moz-border-radius: 3mm;
-    -ms-border-radius: 3mm;
-    -o-border-radius: 3mm;
+.subsol h1 {
+  color: #fff;
 }
 
-.retele_sociale button img
-{
-    margin-left: 1mm;
-    height: 78%;
-    width: auto;
-    object-fit: cover;
+.butnons_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 4.5mm;
 }
 
-.retele_sociale h3
+.contcate_subsol {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3mm;
+}
+
+.contcate_subsol * img {
+  object-fit: contain;
+  height: 1cm;
+  filter: invert(1);
+  -webkit-filter: invert(1);
+}
+
+.contcate_subsol * {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+}
+
+.contcate_subsol_container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  gap: 6mm;
+}
+
+.contcate_subsol a {
+  margin-left: 4mm;
+  font-size: 5.6mm;
+}
+
+.retele_sociale button {
+  height: 1.5cm;
+  width: 5.5cm;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 3mm;
+  -webkit-border-radius: 3mm;
+  -moz-border-radius: 3mm;
+  -ms-border-radius: 3mm;
+  -o-border-radius: 3mm;
+}
+
+.retele_sociale button img {
+  margin-left: 0.6mm;
+  height: 78%;
+  width: auto;
+  object-fit: cover;
+}
+
+.retele_sociale h2 {
+  width: 100%;
+  height: 100%;
+  font-size: 6.9mm;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+}
+
+.facebook_subsol {
+  background-color: #3b5998;
+}
+
+.instagram_subsol {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.map_container 
 {
-    width: 100%;
+    height: 90%;
+    aspect-ratio: 1/1;
+    width: auto !important;
+}
+
+.map_container iframe {
     height: 100%;
-    font-size: 6.5mm;
-    text-align: center;
+    width: 100%;
 }
-
-.facebook_subsol
-{
-    background-color: #3b5998;
-}
-
-
-
