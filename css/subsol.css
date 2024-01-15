@@ -7,5 +7,48 @@
     z-index: 0;
     background-color: #767676;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
 }
+
+
+
+.retele_sociale button 
+{
+    height: 1.5cm;
+    width: 5cm;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    border-radius: 3mm;
+    -webkit-border-radius: 3mm;
+    -moz-border-radius: 3mm;
+    -ms-border-radius: 3mm;
+    -o-border-radius: 3mm;
+}
+
+.retele_sociale button img
+{
+    margin-left: 1mm;
+    height: 78%;
+    width: auto;
+    object-fit: cover;
+}
+
+.retele_sociale h3
+{
+    width: 100%;
+    height: 100%;
+    font-size: 6.5mm;
+    text-align: center;
+}
+
+.facebook_subsol
+{
+    background-color: #3b5998;
+}
+
+
 
