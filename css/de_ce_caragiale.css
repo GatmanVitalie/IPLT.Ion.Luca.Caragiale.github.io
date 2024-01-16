@@ -14,6 +14,7 @@
 
 .argumente {
   width: calc(100% - 3cm);
+  max-width: 49cm;
   display: grid;
   flex-direction: column;
   align-content: space-around;

@@ -176,7 +176,7 @@
 
 .text button:hover {
   color: #ffffff;
-  /* background: #fdc800; Culori folosite la hover */
+  background: #fdc800; /*Culori folosite la hover */
   background-position: center;
   background-size: 200%;
   box-shadow: inset 0cm 0cm 0cm 1cm #fdc800;
