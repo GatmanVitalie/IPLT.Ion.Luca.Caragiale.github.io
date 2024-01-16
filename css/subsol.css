@@ -8,11 +8,40 @@
   bottom: 0px;
   position: sticky;
   z-index: 0;
-  background-color: #767676;
+  background-color: #57585c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_subsol
+{
+  height: 100%;
+  width: 100%;
+  max-width: 63cm;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   align-content: center;
+  justify-self: center;
+}
+
+.linkuri_externe_list
+{
+  color: #fff;
+  font-size: 5.6mm;
+
+}
+
+.linkuri_externe_list li
+{
+  margin-bottom: 4mm;
+}
+
+.linkuri_externe_list li:hover
+{
+  color: #fdc800;
+  text-decoration: underline;
 }
 
 .subsol h1 {
@@ -140,6 +169,12 @@
     #bc1888 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.butnons_container button:hover
+{
+  box-shadow: #3b5998 1mm 2mm;
+  cursor: pointer;
 }
 
 .map_container {
