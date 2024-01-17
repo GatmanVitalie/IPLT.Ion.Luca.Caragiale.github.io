@@ -202,3 +202,106 @@ header {
   object-fit: contain;
   -webkit-filter: invert(70%);
 }
+
+
+
+.admitere_butons
+{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  height: 0cm;
+  overflow: clip;
+  border-bottom: 0mm solid #ccc;
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
+}
+
+.admitere_butons button
+{
+  height: 1cm;
+  min-height: 1cm;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+}
+
+.admitere_butons a
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-top:  2px solid #ccc !important;
+  width: 100%;
+  height: 100%;
+}
+
+.admitere_butons button:hover
+{
+  cursor: pointer;
+}
+
+.admitere_butons.active
+{
+  height: 2cm !important;
+  border-bottom: 1mm solid #fdc800;
+}
+
+/* Elevi */
+.elevi_butons
+{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  height: 0cm;
+  overflow: clip;
+  border-bottom: 0mm solid #ccc;
+  transition: 300ms ease;
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -ms-transition: 300ms ease;
+  -o-transition: 300ms ease;
+}
+
+.elevi_butons button
+{
+  height: 1cm;
+  min-height: 1cm;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+}
+
+.elevi_butons a
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-top:  2px solid #ccc !important;
+  width: 100%;
+  height: 100%;
+}
+
+.elevi_butons button:hover
+{
+  cursor: pointer;
+}
+
+.elevi_butons.active
+{
+  height: 4cm !important;
+  border-bottom: 1mm solid #fdc800;
+}

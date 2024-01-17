@@ -37,6 +37,7 @@
 .linkuri_externe_list li:hover {
   color: #fdc800;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .subsol h1 {
