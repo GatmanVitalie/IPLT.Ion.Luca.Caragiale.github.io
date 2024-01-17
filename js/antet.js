@@ -51,50 +51,28 @@ function arange() {
 
 
 // Admitere //
-var admitere_active = false;
 function activate_admitere() {
     document.getElementById('admitere_butons').classList.add('active');
-    admitere_active = true;
 }
-
 function deactivate_admitere() {
     document.getElementById('admitere_butons').classList.remove('active');
-    admitere_active = false;
 }
-
 function toggle_active_admitere() {
-    if (admitere_active) {
-        document.getElementById('admitere_butons').classList.remove('active');
-        admitere_active = false;
-    }
-    else {
-        document.getElementById('admitere_butons').classList.add('active');
-        admitere_active = true;
-    }
+    document.getElementById('admitere_butons').classList.toggle('active');
 }
 
 // Elevi //
-var elevi_active = false;
 function activate_elevi() {
-   
+
     document.getElementById('elevi_butons').classList.add('active');
-    elevi_active = true;
 }
 
 function deactivate_elevi() {
     document.getElementById('elevi_butons').classList.remove('active');
-    elevi_active = false;
 }
 
 function toggle_active_elevi() {
-    if (elevi_active) {
-        document.getElementById('elevi_butons').classList.remove('active');
-        elevi_active = false;
-    }
-    else {
-        document.getElementById('elevi_butons').classList.add('active');
-        elevi_active = true;
-    }
+    document.getElementById('elevi_butons').classList.toggle('active');
 }
 
 window.addEventListener('click', function (e) {

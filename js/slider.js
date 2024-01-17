@@ -15,6 +15,9 @@ window.addEventListener('load', function () {
     intervalID = setInterval(next, interval);
 });
 
+var cont = true;
+var isd = false;
+var imag = 0;
 
 window.addEventListener('blur', function () {
     cont = false;
@@ -45,9 +48,7 @@ function resetTimer() {
 
 
 
-var cont = true;
-var isd = false;
-var imag = 0;
+
 function back() {
     imag = imag - 1;
 
