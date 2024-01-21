@@ -1,11 +1,13 @@
 #burger_butons {
   display: flex;
+  position: relative;
   align-items: center;
   flex-direction: column;
   background-color: #ffffff;
   height: 0px;
   transition: 2s ease-in-out;
   -webkit-transition: 0.8s ease;
+  z-index: 2;
 }
 
 #burger_butons button {

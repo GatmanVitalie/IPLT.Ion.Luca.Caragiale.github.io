@@ -49,11 +49,11 @@
     </div>
 
     <div id="sub_class_buttons">
-        <div id="admitere_butons" class="admitere_butons" onmouseover="activate_admitere()" onmouseleave="deactivate_admitere()">
+        <div id="admitere_butons" class="admitere_butons" onmouseover="activate_admitere()" onmouseout="deactivate_admitere()">
             <button><a>Rezultate 2023</a></button>
             <button><a>Format cerere</a></button>
         </div>
-        <div id="elevi_butons" class="elevi_butons" onmouseover="activate_elevi()" onmouseleave="deactivate_elevi()">
+        <div id="elevi_butons" class="elevi_butons" onmouseleave="deactivate_elevi()" onmouseout="activate_elevi()">
             <button><a>Elevi 1</a></button>
             <button><a>Elevi 2</a></button>
             <button><a>Elevi 3</a></button>
@@ -89,8 +89,8 @@
             <div class="Butons">
                 <button onclick="home()">Acasă</button>
                 <button onclick="news()">Noutăți</button>
-                <button onclick="toggle_active_admitere()" onmouseover="activate_admitere()" onmouseleave="deactivate_admitere()" id="admitere_button"><a>Admitere</a></button>
-                <button id="elevi_buton" onclick="toggle_active_elevi()" onmouseover="activate_elevi()" onmouseleave="deactivate_elevi()">Elevi</button>
+                <button onclick="toggle_active_admitere()" onmouseover="activate_admitere()" onmouseout="deactivate_admitere()" id="admitere_button"><a>Admitere</a></button>
+                <button id="elevi_buton" onclick="toggle_active_elevi()" onmouseover="activate_elevi()" onmouseout="deactivate_elevi()">Elevi</button>
                 <button onclick="about()">Despre</button>
                 <button onclick="students()">Contacte</button>
                 <button onclick="tur()">Tur Virtual</button>
