@@ -1,42 +1,43 @@
 @keyframes zoomout {
   0% {
-    height: 100%;
-    width: 100%;
+      height: 100%;
+      width: 100%;
   }
+
   100% {
-    height: 200%;
-    width: 200%;
+      height: 200%;
+      width: 200%;
   }
 }
 
 header {
-  background-color: #333;
-  color: #ffffff;
-  padding: 10px 0;
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+  padding: 10px 0px;
   text-align: center;
 }
 
 .Antet_Imob {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   z-index: 4;
   position: relative;
   top: 0px;
   left: 0px;
-  background-color: #ffffff;
-  margin: 0; /* Reset margin */
-  padding: 0; /* Reset padding */
-
-  border-bottom: 0.1cm solid #fdc800;
+  background-color: rgb(255, 255, 255);
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 0.1cm solid rgb(253, 200, 0);
   width: 100%;
   height: 3.4cm;
-  box-shadow: 0cm 2mm 2mm rgba(0, 0, 0, 0.37);
+  box-shadow: rgba(0, 0, 0, 0.37) 0cm 2mm 2mm;
 }
 
 .stanga {
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
 
 .dreapta {
@@ -44,24 +45,21 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
 }
 
 #HamburgerButton {
-  display: none;
+  /* display: none; */
   position: relative;
   margin-right: 1.4cm;
   transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
+  height: 100%;
+  /* display: flex; */
 }
 
 .Contacte {
   position: relative;
   width: 100%;
-  margin-top: 0.36cm;
   margin-bottom: 0.56cm;
   display: flex;
   flex-direction: row;
@@ -69,22 +67,17 @@ header {
   gap: 1cm;
 }
 
-/* .Contacte::after
-{
-  content: "";
-  border-bottom: 2px solid #920000;
-} */
-
 .Contacte * {
   display: flex;
   align-items: center;
+  font-size: 4.7mm;
 }
 
 .Contacte img {
   position: relative;
   margin-right: 0.2cm;
-  height: 0.5cm;
-  width: 0.5cm;
+  height: 0.56cm;
+  width: 0.56cm;
   object-fit: contain;
 }
 
@@ -123,46 +116,36 @@ header {
   display: flex;
   justify-content: left;
   align-items: center;
-  border: 2px solid #ccc;
   bottom: 0.01cm;
-  border-left: none;
   border-right: none;
-
+  border-bottom: none;
+  border-left: none;
+  border-image: initial;
   gap: 0px;
+  border-top: 2px solid rgb(204, 204, 204) !important;
 }
 
 .Butons button {
-  padding: 0.4cm 0.6cm;
-  background-color: #ffffff;
-  color: #000000;
+  height: 1.6cm;
+  width: 3.1cm;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border: none;
-  /* border-right: 0.05cm solid #ccc; */
-  font-size: 16px;
+  font-size: 5.5mm;
   cursor: pointer;
   text-decoration: none;
-  transition: text-decoration 0.9s ease;
+  transition: text-decoration 0.9s ease 0s;
   position: relative;
 }
-
-/* .Butons button:first-child {
-  border-left: 0.05cm solid #ccc;
-} */
 
 .Butons button:hover {
   text-decoration: underline;
 }
 
-/* .Butons button::after
-{
-    content: "";
-    border-right: 2px solid #000000;
-} */
-
 .contcatns_container {
   top: 0px;
-  background-color: #333;
+  background-color: rgb(51, 51, 51);
   display: none;
-
   z-index: 20;
 }
 
@@ -173,17 +156,16 @@ header {
   min-height: 2vh;
   max-height: 5vh;
   z-index: 10;
-
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
   gap: 1cm;
 }
+
 .contcatns * {
   font-size: 120%;
   width: auto;
-  color: #ccc;
+  color: rgb(204, 204, 204);
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -194,114 +176,98 @@ header {
 
 .contcatns img {
   position: relative;
-  filter: invert(70%);
   margin-right: 0.2cm;
   top: 0%;
   height: 90%;
   width: auto;
   object-fit: contain;
-  -webkit-filter: invert(70%);
+  filter: invert(70%);
 }
 
-
-
-.admitere_butons
-{
+.admitere_butons {
   position: absolute;
   z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   height: 0cm;
   overflow: clip;
-  border-bottom: 0mm solid #ccc;
-  transition: 200ms ease;
-  -webkit-transition: 200ms ease;
-  -moz-transition: 200ms ease;
-  -ms-transition: 200ms ease;
-  -o-transition: 200ms ease;
+  border-bottom: 0mm solid rgb(204, 204, 204);
+  transition: all 200ms ease 0s;
 }
 
-.admitere_butons button
-{
+.admitere_butons button {
   height: 1cm;
   min-height: 1cm;
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border: none;
 }
 
-.admitere_butons a
-{
+.admitere_butons a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
-  border-top:  2px solid #ccc !important;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-image: initial;
   width: 100%;
   height: 100%;
+  border-top: 2px solid rgb(204, 204, 204) !important;
 }
 
-.admitere_butons button:hover
-{
+.admitere_butons button:hover {
   cursor: pointer;
 }
 
-.admitere_butons.active
-{
+.admitere_butons.active {
+  border-bottom: 1mm solid rgb(253, 200, 0);
   height: 2cm !important;
-  border-bottom: 1mm solid #fdc800;
 }
 
-/* Elevi */
-.elevi_butons
-{
+.elevi_butons {
   position: absolute;
   z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   height: 0cm;
   overflow: clip;
-  border-bottom: 0mm solid #ccc;
-  transition: 300ms ease;
-  -webkit-transition: 300ms ease;
-  -moz-transition: 300ms ease;
-  -ms-transition: 300ms ease;
-  -o-transition: 300ms ease;
+  border-bottom: 0mm solid rgb(204, 204, 204);
+  transition: all 300ms ease 0s;
 }
 
-.elevi_butons button
-{
+.elevi_butons button {
   height: 1cm;
   min-height: 1cm;
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border: none;
 }
 
-.elevi_butons a
-{
+.elevi_butons a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
-  border-top:  2px solid #ccc !important;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-image: initial;
   width: 100%;
   height: 100%;
+  border-top: 2px solid rgb(204, 204, 204) !important;
 }
 
-.elevi_butons button:hover
-{
+.elevi_butons button:hover {
   cursor: pointer;
 }
 
-.elevi_butons.active
-{
+.elevi_butons.active {
+  border-bottom: 1mm solid rgb(253, 200, 0);
   height: 4cm !important;
-  border-bottom: 1mm solid #fdc800;
 }
