@@ -1,0 +1,33 @@
+#contact_float_window_container
+{
+    height: 100%;
+    width: 100%;
+    position: fixed !important;
+    z-index: 50;
+    backdrop-filter: blur(2px) brightness(60%);
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.contact_float_window
+{
+    position: fixed !important;
+    z-index: 51;
+    background-color: #fff;
+    height: 14cm;
+    width: 12cm;
+    display: flex !important;
+    justify-content: center !important;
+    border: rgb(253, 200, 0) 1.5mm solid !important;
+    border-radius: 6mm;
+    -webkit-border-radius: 6mm;
+    -moz-border-radius: 6mm;
+    -ms-border-radius: 6mm;
+    -o-border-radius: 6mm;
+}
+
+.close_button_holder
+{
+    width: 90%;
+}

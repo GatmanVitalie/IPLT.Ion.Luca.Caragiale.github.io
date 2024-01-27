@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/statistici.css">
     <link rel="stylesheet" href="css/de_ce_caragiale.css">
     <link rel="stylesheet" href="css/subsol.css">
+    <link rel="stylesheet" href="css/concatcs.css">
 </head>
 
 <body>
@@ -62,6 +63,14 @@
         </div>
     </div>
 
+    <div id="contact_float_window_container" class="contact_float_window_container">
+        <div class="contact_float_window">
+            <div class="close_button_holder">
+                <button class="close_button" id="close_button"><img src="images/close.png"></button>
+            </div>
+        </div>
+    </div>
+
     <div class="Antet_Imob" id="Antet_Imob">
 
         <div class="stanga">
@@ -95,7 +104,7 @@
                 <button id="elevi_buton" touchend="toggle_active_elevi()" onmouseover="activate_elevi()"
                     onmouseleave="deactivate_elevi()">Elevi</button>
                 <button onclick="about()">Despre</button>
-                <button onclick="students()">Contacte</button>
+                <button onclick="contacts()">Contacte</button>
             </div>
         </div>
 
@@ -114,11 +123,10 @@
     <div id="burger_butons">
         <button onclick="home()">Acasă</button>
         <button onclick="news()">Noutăți</button>
-        <button onclick="admmision()">Admitere</button>
-        <button onclick="students()">Elevi</button>
+        <button>Admitere</button>
+        <button>Elevi</button>
         <button onclick="about()">Despre</button>
-        <button onclick="students()">Contacte</button>
-        <button onclick="tur()">Tur Virtual</button>
+        <button onclick="contacts()">Contacte</button>
     </div>
 
     <div class="Continut">
@@ -544,6 +552,7 @@
 
     <script src=" js/slider.js"></script>
     <script src="js/antet.js"></script>
+    <script src="js/button_hub.js"></script>
 
 </body>
 

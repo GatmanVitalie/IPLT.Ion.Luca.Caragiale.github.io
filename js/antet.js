@@ -77,15 +77,6 @@ function toggle_active_elevi() {
     document.getElementById('elevi_butons').classList.toggle('active');
 }
 
-// window.addEventListener('click', function (e) {
-//     if (!((document.getElementById('admitere_butons').contains(e.target)) || (document.getElementById('admitere_button').contains(e.target)))) {
-//         document.getElementById('admitere_butons').classList.remove('active');
-//     }
-//     else if (!((document.getElementById('elevi_butons').contains(e.target)) || (document.getElementById('elevi_buton').contains(e.target)))) {
-//         document.getElementById('elevi_butons').classList.remove('active');
-//     }
-// });
-
 window.addEventListener('load', function () {
 
     resize();
