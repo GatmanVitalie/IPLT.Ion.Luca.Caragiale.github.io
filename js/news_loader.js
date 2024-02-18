@@ -1,37 +1,73 @@
-var data;
+fetch('/js/news.json')
+.then(response => response.json())
+.then(data => {
+    // Get the articles array from the JSON data
+    const articles = data.news;
 
-window.onload = function () {
-    $.get('news.json', function (d) {
-        data = JSON.parse(d);
-        // loop through all books
-        data.books.forEach(function (b) {
-            // now you can put every book in your <div>
-            $("#books").append(`<div class="article">
-            <h2>${b.title}</h2>
-            <div class="image_holder">
-                <img src="images/Elevi.webp">
-            </div>
-            <div class="text_holder">
-                <a>Instituția publică Liceul Teoretic Ion Loca caragieale are a fost onorată ca elevii săi să
-                    reprezinte raionul Orhei la olimpiadela de fizică, chimie, matematică, informatică, limba si
-                    literatura rumână si la istorie</a>
-            </div>
-            <h3>09.01.2024</h3>
-            <div class="button_holder">
-                <button type="button" class="facebook">
-                    <img src="images/Facebook_Logo_Secondary.png">
-                </button>
-                <button type="button" class="instagram">
-                    <img src="images/Instagram_logo_2022.svg">
-                </button>
-                <button type="button" class="twiter">
-                    <img src="images/logo.svg">
-                </button>
-                <button type="button" class="github">
-                    <img src="images/github-mark-white.svg">
-                </button>
-            </div>
-        </div>`);
+    // Get the container where you want to insert the articles
+    const articlesContainer = document.getElementById('articole');
+
+    // Loop through the articles array
+    articles.forEach(article => {
+        // Create elements for the article
+        const articleElement = document.createElement('div');
+        articleElement.classList.add('article');
+
+        const titleElement = document.createElement('h2');
+        titleElement.textContent = article.title;
+
+        const imageHolderElement = document.createElement('div');
+        imageHolderElement.classList.add('image_holder');
+
+        const imageElement = document.createElement('img');
+        imageElement.src = article.image_link;
+        imageElement.alt = article.title;
+
+        imageHolderElement.appendChild(imageElement);
+
+        const textHolderElement = document.createElement('div');
+        textHolderElement.classList.add('text_holder');
+
+        const descriptionElement = document.createElement('a');
+        descriptionElement.textContent = article.descriere;
+
+        textHolderElement.appendChild(descriptionElement);
+
+        const dateElement = document.createElement('h3');
+        dateElement.textContent = article.data;
+
+        const buttonHolderElement = document.createElement('div');
+        buttonHolderElement.classList.add('button_holder');
+
+        // Create buttons for social media
+        const socialMediaButtons = [
+            { class: 'facebook', image: 'images/Facebook_Logo_Secondary.png' },
+            { class: 'instagram', image: 'images/Instagram_logo_2022.svg' },
+            { class: 'twiter', image: 'images/logo.svg' },
+            { class: 'github', image: 'images/github-mark-white.svg' }
+        ];
+
+        socialMediaButtons.forEach(button => {
+            const socialButton = document.createElement('button');
+            socialButton.type = 'button';
+            socialButton.classList.add(button.class);
+
+            const socialImage = document.createElement('img');
+            socialImage.src = button.image;
+
+            socialButton.appendChild(socialImage);
+            buttonHolderElement.appendChild(socialButton);
         });
+
+        // Append elements to the article container
+        articleElement.appendChild(titleElement);
+        articleElement.appendChild(imageHolderElement);
+        articleElement.appendChild(textHolderElement);
+        articleElement.appendChild(dateElement);
+        articleElement.appendChild(buttonHolderElement);
+
+        // Append the article container to the articles container
+        articlesContainer.appendChild(articleElement);
     });
-}
+})
+.catch(error => console.error('Error fetching data:', error));
