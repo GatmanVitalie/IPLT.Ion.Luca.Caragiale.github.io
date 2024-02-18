@@ -1,1 +1,188 @@
-<h1>Pagina este încă în lucru</h1>
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IPLT Ion Luca Caragiale</title>
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="rgb(253, 200, 0)" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+    <link rel="icon" href="images/Logo-Caragiale.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/antet.css">
+    <link rel="stylesheet" href="css/hamburger_but.css">
+    <link rel="stylesheet" href="css/fly_butons.css">
+    <link rel="stylesheet" href="css/main_news.css">
+    <link rel="stylesheet" href="css/load.css">
+    <link rel="stylesheet" href="css/subsol.css">
+    <link rel="stylesheet" href="css/noutati_futter.css">
+</head>
+
+<body>
+    <div id="LoadScrean"><svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg></div>
+    <script src="js/load.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- <div class="fimag">
+    <img src="images/Logo-Caragiale.png"></img>
+</div> -->
+    <div id="dpi" style="height: 1in; width: 1in; left: 100%; position: fixed; top: 100%;"></div>
+
+    <div class="contcatns_container" id="contcatns_container">
+        <div class="contcatns">
+            <div class="nrTelefon">
+                <img src="images/Phone.png"></img>
+                <a> +373 (12) 34 56 78</a>
+            </div>
+            <div class="locatie">
+                <img src="images/pin.png"></img>
+                <a>str.Vasile Lupu 60/1, Orhei</a>
+            </div>
+            <div class="email">
+                <img src="images/email.png"></img>
+                <a>caragiale.liceu@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="sub_class_buttons" class="sub_class_buttons">
+        <div id="admitere_butons" class="admitere_butons" onmouseover="activate_admitere()"
+            onmouseleave="deactivate_admitere()">
+            <button><a>Rezultate 2023</a></button>
+            <button><a>Format cerere</a></button>
+        </div>
+        <div id="elevi_butons" class="elevi_butons" onmouseover="activate_elevi()" onmouseleave="deactivate_elevi()">
+            <button><a>Orarul Lecțiilor</a></button>
+            <button><a>Orarul Sunetelor</a></button>
+            <button><a>Agenda Electrocă</a></button>
+            <button><a>Orarul Olimpiadelor</a></button>
+        </div>
+    </div>
+
+    <div class="Antet_Imob" id="Antet_Imob">
+
+        <div class="stanga">
+            <div class="Logo">
+                <img src="images/Logo-Caragiale.png"></img>
+            </div>
+            <div class="Denumirea">
+                <img src="images/Denumire.png"></img>
+            </div>
+        </div>
+        <div class="dreapta" id="dreapta">
+            <div class="Contacte">
+                <div class="nrTelefon">
+                    <img src="images/Phone.png"></img>
+                    <a> +0(235) 24 907</a>
+                </div>
+                <div class="locatie">
+                    <img src="images/pin.png"></img>
+                    <a>str.Vasile Lupu 60/1, Orhei</a>
+                </div>
+                <div class="locatie">
+                    <img src="images/email.png"></img>
+                    <a>caragiale.liceu@gmail.com</a>
+                </div>
+            </div>
+            <div class="Butons">
+                <button onclick="home()">Acasă</button>
+                <button onclick="news()">Noutăți</button>
+                <button touchend="toggle_active_admitere()" onmouseover="activate_admitere()"
+                    onmouseleave="deactivate_admitere()" id="admitere_button"><a>Admitere</a></button>
+                <button id="elevi_buton" touchend="toggle_active_elevi()" onmouseover="activate_elevi()"
+                    onmouseleave="deactivate_elevi()">Elevi</button>
+                <button onclick="about()">Despre</button>
+                <button onclick="students()">Contacte</button>
+            </div>
+        </div>
+
+        <div id="HamburgerButton" class="HamburgerButton" onclick="togle(this)">
+            <div class="hamburger-lines">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div id="burger_butons">
+        <button onclick="home()">Acasă</button>
+        <button onclick="news()">Noutăți</button>
+        <button onclick="admmision()">Admitere</button>
+        <button onclick="students()">Elevi</button>
+        <button onclick="about()">Despre</button>
+        <button onclick="students()">Contacte</button>
+        <button onclick="tur()">Tur Virtual</button>
+    </div>
+
+    <div class="Continut">
+      <div class="noutati_futter">
+        <h1 class="title_show">Noutăți</h1>
+      </div>
+      <div id="articles"></div>
+    </div>
+
+    <div class="subsol" id="subsol">
+        <div class="container_subsol">
+
+
+            <div class="linkuri_externe">
+                <h1>Linkuri externe</h1>
+                <ul class="linkuri_externe_list">
+                    <li>Ministerul educației</li>
+                    <li>Direcția de învățământ, Orhei</li>
+                    <li>Agenția națională de evaluare</li>
+                    <li>SIME</li>
+                    <li>Agenda Electronică</li>
+                </ul>
+            </div>
+            <div class="retele_sociale">
+                <h1>Retele Sociale:</h1>
+                <div class="butnons_container">
+                    <button class="facebook_subsol" type="button"><img src="images/Facebook_Logo_Secondary.png">
+                        <h2>FaceBook</h2>
+                    </button>
+
+                    <button class="instagram_subsol" type="button"><img src="images/Instagram_Glyph_White.svg">
+                        <h2>Instagram</h2>
+                    </button>
+                </div>
+            </div>
+            <div class="contcate_subsol">
+
+                <h1>Contace:</h1>
+                <div class="contcate_subsol_container">
+                    <div class="nrTelefon">
+                        <img src="images/Phone.png">
+                        <a> +0(235) 24 907</a>
+                    </div>
+                    <div class="locatie">
+                        <img src="images/pin.png">
+                        <a>str.Vasile Lupu 60/1, Orhei</a>
+                    </div>
+                    <div class="locatie">
+                        <img src="images/email.png">
+                        <a>caragiale.liceu@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map_container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2701.5883971471244!2d28.8260516!3d47.3809514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cbef0642c373fd%3A0xe9ec7fcd9087aff5!2sLiceul%20Teoretic%20%2C%2CIon%20Luca-Caragiale%22!5e0!3m2!1sen!2s!4v1705342341455!5m2!1sen!2s"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/antet.js"></script>
+    <script src="js/button_hub.js"></script>
+    <script src="js/news_loader.js"></script>
+
+</body>
+
+</html>
