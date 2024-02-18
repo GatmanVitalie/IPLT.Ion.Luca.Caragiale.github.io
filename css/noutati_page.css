@@ -23,3 +23,8 @@
     color: #fff;
     font-size: 2cm;
 }
+
+.articole
+{
+    max-width: 70cm !important;
+}
