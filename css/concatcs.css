@@ -29,5 +29,21 @@
 
 .close_button_holder
 {
-    width: 90%;
+   width: 8cm;
+   height: 3cm;
+    overflow: clip !important;
+}
+
+.close_button
+{
+    justify-self: right !important;
+    height: 1.4cm;
+    width: 1.4cm;
+}
+
+.close_button img
+{
+    object-fit: contain !important;
+    height: 100%;
+    width: 100%;
 }
