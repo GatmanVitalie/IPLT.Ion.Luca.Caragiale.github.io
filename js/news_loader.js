@@ -1,4 +1,4 @@
-fetch('/js/news.json')
+fetch('.././js/news.json')
 .then(response => response.json())
 .then(data => {
     // Get the articles array from the JSON data
