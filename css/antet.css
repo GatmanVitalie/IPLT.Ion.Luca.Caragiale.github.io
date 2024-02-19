@@ -240,7 +240,7 @@ header {
   height: 0cm;
   overflow: clip;
   border-bottom: 0mm solid rgb(204, 204, 204);
-  transition: all 300ms ease 0s;
+  transition: all 400ms ease 0s;
 }
 
 .elevi_butons button {
@@ -271,7 +271,54 @@ header {
 
 .elevi_butons.active {
   border-bottom: 1mm solid rgb(253, 200, 0);
-  height: 4.6cm !important;
+  height: 6.9cm !important;
+}
+
+
+
+.desrpe_butons {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 0cm;
+  overflow: clip;
+  border-bottom: 0mm solid rgb(204, 204, 204);
+  transition: all 400ms ease 0s;
+}
+
+.desrpe_butons button {
+  height: 1.15cm;
+  min-height: 1.15cm;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.desrpe_butons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-image: initial;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid rgb(204, 204, 204) !important;
+}
+
+.desrpe_butons button:hover {
+  cursor: pointer;
+  text-decoration: underline 0.4mm;
+}
+
+.desrpe_butons.active {
+  border-bottom: 1mm solid rgb(253, 200, 0);
+  height: 6.9cm !important;
 }
 
 

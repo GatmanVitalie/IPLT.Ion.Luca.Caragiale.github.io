@@ -49,6 +49,10 @@ function arange() {
     document.getElementById('elevi_butons').style.top = document.getElementById('elevi_buton').getBoundingClientRect().bottom - 1 + 'px';
     document.getElementById('elevi_butons').style.width = document.getElementById('elevi_buton').getBoundingClientRect().width + 'px';
 
+    document.getElementById('desrpe_butons').style.left = document.getElementById('despre_buton').getBoundingClientRect().left + 'px';
+    document.getElementById('desrpe_butons').style.top = document.getElementById('despre_buton').getBoundingClientRect().bottom - 1 + 'px';
+    document.getElementById('desrpe_butons').style.width = document.getElementById('despre_buton').getBoundingClientRect().width + 'px';
+
 }
 
 
@@ -75,6 +79,17 @@ function deactivate_elevi() {
 
 function toggle_active_elevi() {
     document.getElementById('elevi_butons').classList.toggle('active');
+}
+
+// Despre //
+function activate_despre() {
+    document.getElementById('desrpe_butons').classList.add('active');
+}
+function deactivate_despre() {
+    document.getElementById('desrpe_butons').classList.remove('active');
+}
+function toggle_active_despre() {
+    document.getElementById('desrpe_butons').classList.toggle('active');
 }
 
 // window.addEventListener('click', function (e) {

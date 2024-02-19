@@ -1,4 +1,4 @@
-fetch('.././js/news.json')
+fetch('./js/news.json')
 .then(response => response.json())
 .then(data => {
     // Get the articles array from the JSON data
@@ -41,10 +41,10 @@ fetch('.././js/news.json')
 
         // Create buttons for social media
         const socialMediaButtons = [
-            { class: 'facebook', image: 'images/Facebook_Logo_Secondary.png' },
-            { class: 'instagram', image: 'images/Instagram_logo_2022.svg' },
-            { class: 'twiter', image: 'images/logo.svg' },
-            { class: 'github', image: 'images/github-mark-white.svg' }
+            { class: 'facebook', image: '.././images/Facebook_Logo_Secondary.png' },
+            { class: 'instagram', image: '.././images/Instagram_logo_2022.svg' },
+            { class: 'twiter', image: '.././images/logo.svg' },
+            { class: 'github', image: '.././images/github-mark-white.svg' }
         ];
 
         socialMediaButtons.forEach(button => {

@@ -51,14 +51,24 @@
     <div id="sub_class_buttons" class="sub_class_buttons">
         <div id="admitere_butons" class="admitere_butons" onmouseover="activate_admitere()"
             onmouseleave="deactivate_admitere()">
-            <button><a>Rezultate 2023</a></button>
-            <button><a>Format cerere</a></button>
+            <button onclick="rezultate()"><a>Rezultate 2023</a></button>
+            <button onclick="format()"><a>Format cerere</a></button>
         </div>
         <div id="elevi_butons" class="elevi_butons" onmouseover="activate_elevi()" onmouseleave="deactivate_elevi()">
-            <button><a>Orarul Lecțiilor</a></button>
-            <button><a>Orarul Sunetelor</a></button>
-            <button><a>Agenda Electrocă</a></button>
+            <button onclick="lecti()"><a>Orarul Lecțiilor</a></button>
+            <button onclick="sunete()"><a>Orarul Sunetelor</a></button>
+            <button onclick="olimpiade()"><a>Orarul Olimpiadelor</a></button>
+            <button onclick="examene()"><a>Examene 2024</a></button>
+            <button onclick="teze()"><a>Teze 2024</a></button>
+            <button onclick="agenda()"><a>Agenda Electrocă</a></button>
+        </div>
+        <div id="desrpe_butons" class="desrpe_butons" onmouseover="activate_despre()" onmouseleave="deactivate_despre()">
+            <button><a>Mesajul directoarei</a></button>
+            <button><a>Istoria scolii</a></button>
             <button><a>Orarul Olimpiadelor</a></button>
+            <button><a>Examene 2024</a></button>
+            <button><a>Teze 2024</a></button>
+            <button><a>Agenda Electrocă</a></button>
         </div>
     </div>
 
@@ -94,7 +104,8 @@
                     onmouseleave="deactivate_admitere()" id="admitere_button"><a>Admitere</a></button>
                 <button id="elevi_buton" touchend="toggle_active_elevi()" onmouseover="activate_elevi()"
                     onmouseleave="deactivate_elevi()">Elevi</button>
-                <button onclick="about()">Despre</button>
+                <button id="despre_buton" touchend="toggle_active_despre()" onmouseover="activate_despre()"
+                onmouseleave="deactivate_despre()">Despre</button>
                 <button onclick="students()">Contacte</button>
             </div>
         </div>

@@ -1,6 +1,6 @@
-function admitere()
+function home()
 {
-
+    window.location.href = "./index.html";
 }
 
 function news()
@@ -8,12 +8,62 @@ function news()
     window.location.href = "./noutati.html";
 }
 
-function about()
+function rezultate()
 {
-    window.location.href = "./despre.html";
+    window.location.href = "./rezultate.html";
 }
 
-function contacts()
+function format()
 {
-    
+    window.location.href = "./format.html";
+}
+
+function lecti()
+{
+    window.location.href = "./lecti.html";
+}
+
+function sunete()
+{
+    window.location.href = "./sunete.html";
+}
+
+function olimpiade()
+{
+    window.location.href = "./olimpiade.html";
+}
+
+function examene()
+{
+    window.location.href = "./examene.html";
+}
+
+function teze()
+{
+    window.location.href = "./teze.html";
+}
+
+function agenda()
+{
+    window.location.href = "https://agenda.sime.md";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function minister()
+{
+    window.location.href = "https://mec.gov.md";
 }
