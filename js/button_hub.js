@@ -67,3 +67,28 @@ function minister()
 {
     window.location.href = "https://mec.gov.md";
 }
+
+function directia()
+{
+    window.location.href = "https://educatieorhei.md";
+}
+
+function evaluare()
+{
+    window.location.href = "https://ance.gov.md";
+}
+
+function sime()
+{
+    window.location.href = "https://sime.md";
+}
+
+function facebook()
+{
+    window.location.href = "https://www.facebook.com/L.T.I.L.Caragiale";
+}
+
+function instagram()
+{
+    window.location.href = "https://www.instagram.com/consiliul.elevilor.caragiale?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
+}
