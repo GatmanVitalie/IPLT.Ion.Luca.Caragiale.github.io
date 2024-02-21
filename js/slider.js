@@ -1,5 +1,5 @@
 let intervalID;
-var interval = 5000;
+var interval = 500000;
 let x = document.getElementsByClassName("slide");
 let timerID;
 let milliseconds = 0;

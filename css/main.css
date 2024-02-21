@@ -18,6 +18,11 @@ body {
   z-index: 2;
   /* overflow-clip-margin: content-box;
   overflow: clip; */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .Continut * {
