@@ -287,7 +287,11 @@ header {
   height: 0cm;
   overflow: clip;
   border-bottom: 0mm solid rgb(204, 204, 204);
+<<<<<<< HEAD
   transition: all 300ms ease 0s;
+=======
+  transition: all 400ms ease 0s;
+>>>>>>> edc7169219655d216945237a7e1c57314207dbcb
 }
 
 .desrpe_butons button {
@@ -318,7 +322,11 @@ header {
 
 .desrpe_butons.active {
   border-bottom: 1mm solid rgb(253, 200, 0);
+<<<<<<< HEAD
   height: 3.45cm !important;
+=======
+  height: 6.9cm !important;
+>>>>>>> edc7169219655d216945237a7e1c57314207dbcb
 }
 
 
