@@ -62,11 +62,10 @@
             <button onclick="teze()"><a>Teze 2024</a></button>
             <button onclick="agenda()"><a>Agenda Electrocă</a></button>
         </div>
-        <div id="desrpe_butons" class="desrpe_butons" onmouseover="activate_despre()"
-            onmouseleave="deactivate_despre()">
-            <button><a>Mesajul directoarei</a></button>
-            <button><a>Istoria scolii</a></button>
-            <button><a>Achiziți publice</a></button>
+        <div id="desrpe_butons" class="desrpe_butons" onmouseover="activate_despre()" onmouseleave="deactivate_despre()">
+            <button onclick="directoare()"><a>Mesajul directoarei</a></button>
+            <button onclick="istorie()"><a>Istoria scolii</a></button>
+            <button onclick="info()"><a>Orarul Olimpiadelor</a></button>
 
         </div>
     </div>
@@ -105,7 +104,7 @@
                     onmouseleave="deactivate_elevi()">Elevi</button>
                 <button id="despre_buton" touchend="toggle_active_despre()" onmouseover="activate_despre()"
                     onmouseleave="deactivate_despre()">Despre</button>
-                <button onclick="students()">Contacte</button>
+                <button onclick="contacts()">Contacte</button>
             </div>
         </div>
 
@@ -138,8 +137,8 @@
                 <div class="text">
                     <h1>Liceul Nostru</h1>
                     <h2>Liceul "Ion Luca Caragiale" este cel mai mare<br> din raionul Orhei, ce include 1412 elevi si 78
-                        de profesori.<br> Echipamentele si resursele completează experiența noastră educațională
-                        <br>pregătindu-ne pentru experiențile vieții.</h2>
+                        de profesori.<br> Echipamentele si resursele completează experiența noastră<br>educațională
+                        pregătindu-ne pentru experiențile vieții.</h2>
                     <button onclick="More1()" id="MoreB" onmouseover="stopSlides()" onmouseleave="beginSlides()">Află
                         mai multe</button>
                 </div>
@@ -148,8 +147,8 @@
                 <img src="images/Profesori2.webp">
                 <div class="text">
                     <h1>Profesori nostri</h1>
-                    <h2>Liceul deține un număr mare de cadre didactice pasionate de predare și dedicate<br>înțelegeri
-                        elevilor. Ei sunt mentorii ce modelează caracterul și valorile noastre,<br>încurajând
+                    <h2>Liceul deține un număr mare de cadre didactice<br>pasionate de predare și dedicateînțelegeri
+                        elevilor.<br>Ei sunt mentorii ce modelează caracterul și valorile noastre,<br>încurajând
                         colaborare, comunicare și dezvolatarea abilităților.</h2>
                     <button onclick="More1()" id="MoreB" onmouseover="stopSlides()" onmouseleave="beginSlides()">Află
                         mai multe</button>
@@ -333,13 +332,7 @@
             </div>
         </div>
 
-        <!-- <div class="backround_image_desktop" id="backround_image_desktop">
-            <img src="images/Caragiale.jpg">
-        </div>
-
-        <div class="backround_image_phone" id="backround_image_phone">
-            <img src="images/Caragieale_Phone.jpg">
-        </div> -->
+     
 
 
         <div class="statistici" id="statistici">
@@ -534,11 +527,11 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="map_container">
+            <div class="map_container">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2701.5883971471244!2d28.8260516!3d47.3809514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cbef0642c373fd%3A0xe9ec7fcd9087aff5!2sLiceul%20Teoretic%20%2C%2CIon%20Luca-Caragiale%22!5e0!3m2!1sen!2s!4v1705342341455!5m2!1sen!2s"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> -->
+            </div>
         </div>
     </div>
 
