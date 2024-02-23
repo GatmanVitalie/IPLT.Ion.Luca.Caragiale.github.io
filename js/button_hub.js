@@ -48,25 +48,6 @@ function agenda()
     window.location.href = "https://agenda.sime.md";
 }
 
-function contacts()
-{
-    window.location.href = "./contacts.html";
-}
-
-function info()
-{
-    window.location.href = "./info.html";
-}
-
-function directoare()
-{
-    window.location.href = "./directoare.html";
-}
-
-function istorie()
-{
-    window.location.href = "./istorie.html";
-}
 
 
 
