@@ -48,6 +48,10 @@ function agenda()
     window.location.href = "https://agenda.sime.md";
 }
 
+function about()
+{
+    window.location.href = "./despre.html";
+}
 
 
 

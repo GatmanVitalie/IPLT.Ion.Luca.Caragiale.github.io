@@ -1,0 +1,24 @@
+.despre_continut
+{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2cm;
+    margin-bottom: 4cm;
+}
+
+.despre_continut img
+{
+    height: 70vh;
+    max-width: 40vw;
+}
+
+.despre_continut h2
+{
+    width: 80%;
+    font-size: 2rem;
+}
