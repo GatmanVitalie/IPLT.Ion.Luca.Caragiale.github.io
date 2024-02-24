@@ -127,11 +127,11 @@ header {
 
 .Butons button {
   height: 1.6cm;
-  width: 3.1cm;
+  width: 3.6cm;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   border: none;
-  font-size: 5.5mm;
+  font-size: 6mm;
   cursor: pointer;
   text-decoration: none;
   transition: text-decoration 0.9s ease 0s;
