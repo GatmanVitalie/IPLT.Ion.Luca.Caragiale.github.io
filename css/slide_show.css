@@ -130,7 +130,8 @@
 .text {
   position: absolute;
   height: auto;
-  width: 90%;
+  width: 100%;
+  max-width: 24.2cm;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -138,6 +139,11 @@
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  justify-content: center;
+  align-content: center;
 }
 
 .text h1 {
@@ -145,6 +151,9 @@
   color: rgb(253, 200, 0);
   vertical-align: text-bottom;
   height: 1.4cm;
+  text-wrap: nowrap;
+  margin-top: 0%;
+  margin-bottom: 1cm;
   top: 10px;
 }
 
@@ -152,6 +161,9 @@
   text-align: text-top;
   font-size: 0.8cm;
   color: #ffffff;
+  text-wrap: pretty;
+  width: 100%;
+  margin-top: 0;
 }
 
 .text button {
@@ -185,4 +197,19 @@
 .text button.clicked {
   background: #ffffff12;
   color: #fdc800;
+}
+
+
+@media (max-width: 1000px) {
+  .text h1
+  {
+     font-size: 6vw; 
+  }
+  .text h2
+  {
+     font-size: 2.5vw; 
+     width: 85%;
+  }
+
+
 }

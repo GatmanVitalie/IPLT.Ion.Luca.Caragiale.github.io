@@ -56,3 +56,11 @@ body {
   margin-top: 1.5cm;
   margin-bottom: 0.9cm;
 }
+
+
+@media (max-width: 1000px) {
+  .title_show
+  {
+    font-size: 10svw;
+  }
+} 

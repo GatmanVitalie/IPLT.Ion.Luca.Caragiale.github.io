@@ -208,3 +208,50 @@
   -ms-border-radius: 2mm;
   -o-border-radius: 2mm;
 }
+
+@media (max-width: 1000px) {
+  .subsol {
+    flex-direction: column;
+    height: 100svh;
+  }
+  .container_subsol {
+    flex-direction: column;
+    width: 85%;
+    display: grid !important;
+    height: 100%;
+  }
+  .subsol h1 {
+    font-size: 8svw;
+    margin-bottom: 3svw;
+  }
+  .linkuri_externe_list li {
+    font-size: 5svw;
+  }
+  .retele_sociale button {
+    height: 14svw;
+    width: 50svw;
+    border-radius: 4svw;
+  }
+  .retele_sociale h2 {
+    font-size: 7svw;
+  }
+  .butnons_container {
+    gap: 4svw;
+  }
+  .contcate_subsol a {
+    font-size: 5svw;
+  }
+  .contcate_subsol * img
+  {
+    height: 6svw;
+  }
+  .contcate_subsol
+  {
+    margin-bottom: 6svw;
+  }
+  .map_container
+  {
+    height: 70%;
+    aspect-ratio: 1/1;
+  }
+}

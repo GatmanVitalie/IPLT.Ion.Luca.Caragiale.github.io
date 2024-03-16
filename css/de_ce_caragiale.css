@@ -112,3 +112,10 @@
   display: table;
   clear: both;
 }
+
+@media (max-width: 1000px) {
+  .de_ce_caragiale
+  {
+    display: none;
+  }
+} 
