@@ -10,8 +10,9 @@
   z-index: 0;
   background-color: #57585c;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-end;
 }
 
 .container_subsol {
@@ -221,25 +222,25 @@
     height: 90%;
   }
   .subsol h1 {
-    font-size: 8svw;
-    margin-bottom: 3svw;
+    font-size: 6svw;
+    margin-bottom: 2svw;
   }
   .linkuri_externe_list li {
-    font-size: 5svw;
+    font-size: 4.2svw;
   }
   .retele_sociale button {
-    height: 14svw;
-    width: 50svw;
-    border-radius: 4svw;
+    height: 13.5svw;
+    width: 48svw;
+    border-radius: 3.5svw;
   }
   .retele_sociale h2 {
-    font-size: 7svw;
+    font-size: 6svw;
   }
   .butnons_container {
     gap: 4svw;
   }
   .contcate_subsol a {
-    font-size: 5svw;
+    font-size: 4.2svw;
   }
   .contcate_subsol * img
   {
