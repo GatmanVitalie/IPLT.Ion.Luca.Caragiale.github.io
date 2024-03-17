@@ -1,73 +1,93 @@
 fetch('./js/news.json')
-.then(response => response.json())
-.then(data => {
-    // Get the articles array from the JSON data
-    const articles = data.news;
+    .then(response => response.json())
+    .then(data => {
+        // Get the articles array from the JSON data
+        const articles = data.news;
 
-    // Get the container where you want to insert the articles
-    const articlesContainer = document.getElementById('articole');
+        // Get the container where you want to insert the articles
+        const articlesContainer = document.getElementById('articole');
 
-    // Loop through the articles array
-    articles.forEach(article => {
-        // Create elements for the article
-        const articleElement = document.createElement('div');
-        articleElement.classList.add('article');
+        // Function to handle the click event
+        function handleButtonClick(buttonClass) {
+            console.log('Button clicked:', buttonClass);
+            if (buttonClass === 'facebook') {
+                window.location.href = "https://www.facebook.com/L.T.I.L.Caragiale";
+            }
+            else if (buttonClass === 'instagram') {
+                window.location.href = "https://www.instagram.com/consiliul.elevilor.caragiale?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
+            }
+            else if (buttonClass === 'twiter') {
+                window.location.href = "https://twitter.com/";
+            }
+            else {
+                window.location.href = "https://github.com/GatmanVitalie";
+            }
+        }
 
-        const titleElement = document.createElement('h2');
-        titleElement.textContent = article.title;
+        // Loop through the articles array
+        articles.forEach(article => {
+            // Create elements for the article
+            const articleElement = document.createElement('div');
+            articleElement.classList.add('article');
 
-        const imageHolderElement = document.createElement('div');
-        imageHolderElement.classList.add('image_holder');
+            const titleElement = document.createElement('h2');
+            titleElement.textContent = article.title;
 
-        const imageElement = document.createElement('img');
-        imageElement.src = article.image_link;
-        imageElement.alt = article.title;
+            const imageHolderElement = document.createElement('div');
+            imageHolderElement.classList.add('image_holder');
 
-        imageHolderElement.appendChild(imageElement);
+            const imageElement = document.createElement('img');
+            imageElement.src = article.image_link;
+            imageElement.alt = article.title;
 
-        const textHolderElement = document.createElement('div');
-        textHolderElement.classList.add('text_holder');
+            imageHolderElement.appendChild(imageElement);
 
-        const descriptionElement = document.createElement('a');
-        descriptionElement.textContent = article.descriere;
+            const textHolderElement = document.createElement('div');
+            textHolderElement.classList.add('text_holder');
 
-        textHolderElement.appendChild(descriptionElement);
+            const descriptionElement = document.createElement('a');
+            descriptionElement.textContent = article.descriere;
 
-        const dateElement = document.createElement('h3');
-        dateElement.textContent = article.data;
+            textHolderElement.appendChild(descriptionElement);
 
-        const buttonHolderElement = document.createElement('div');
-        buttonHolderElement.classList.add('button_holder');
+            const dateElement = document.createElement('h3');
+            dateElement.textContent = article.data;
 
-        // Create buttons for social media
-        const socialMediaButtons = [
-            { class: 'facebook', image: '.././images/Facebook_Logo_Secondary.png' },
-            { class: 'instagram', image: '.././images/Instagram_logo_2022.svg' },
-            { class: 'twiter', image: '.././images/logo.svg' },
-            { class: 'github', image: '.././images/github-mark-white.svg' }
-        ];
+            const buttonHolderElement = document.createElement('div');
+            buttonHolderElement.classList.add('button_holder');
 
-        socialMediaButtons.forEach(button => {
-            const socialButton = document.createElement('button');
-            socialButton.type = 'button';
-            socialButton.classList.add(button.class);
+            // Create buttons for social media
+            const socialMediaButtons = [
+                { class: 'facebook', image: '.././images/Facebook_Logo_Secondary.png' },
+                { class: 'instagram', image: '.././images/Instagram_logo_2022.svg' },
+                { class: 'twiter', image: '.././images/logo.svg' }, // Fixed typo here
+                { class: 'github', image: '.././images/github-mark-white.svg' }
+            ];
 
-            const socialImage = document.createElement('img');
-            socialImage.src = button.image;
+            socialMediaButtons.forEach(button => {
+                const socialButton = document.createElement('button');
+                socialButton.type = 'button';
+                socialButton.classList.add(button.class);
 
-            socialButton.appendChild(socialImage);
-            buttonHolderElement.appendChild(socialButton);
+                // Add onclick event listener to the button
+                socialButton.addEventListener('click', () => handleButtonClick(button.class));
+
+                const socialImage = document.createElement('img');
+                socialImage.src = button.image;
+
+                socialButton.appendChild(socialImage);
+                buttonHolderElement.appendChild(socialButton);
+            });
+
+            // Append elements to the article container
+            articleElement.appendChild(titleElement);
+            articleElement.appendChild(imageHolderElement);
+            articleElement.appendChild(textHolderElement);
+            articleElement.appendChild(dateElement);
+            articleElement.appendChild(buttonHolderElement);
+
+            // Append the article container to the articles container
+            articlesContainer.appendChild(articleElement);
         });
-
-        // Append elements to the article container
-        articleElement.appendChild(titleElement);
-        articleElement.appendChild(imageHolderElement);
-        articleElement.appendChild(textHolderElement);
-        articleElement.appendChild(dateElement);
-        articleElement.appendChild(buttonHolderElement);
-
-        // Append the article container to the articles container
-        articlesContainer.appendChild(articleElement);
-    });
-})
-.catch(error => console.error('Error fetching data:', error));
+    })
+    .catch(error => console.error('Error fetching data:', error));
