@@ -218,7 +218,7 @@
     flex-direction: column;
     width: 85%;
     display: grid !important;
-    height: 100%;
+    height: 90%;
   }
   .subsol h1 {
     font-size: 8svw;
