@@ -24,6 +24,11 @@
 .argument_stanga
 {
   max-width: 26cm;
+  border:  6px solid #ffc800;
+  border-radius: 80px;
+  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0);
+  display: flex;
+  align-items: center;
 }
 
 .argument_dreapta
@@ -59,22 +64,21 @@
 }
 
 .argumente h2 {
-  font-size: 0.7cm;
+  font-size: 1.3cm;
   color: rgb(41, 41, 41);
-  text-decoration: underline 1mm rgb(253, 200, 0);
+  /* text-decoration: underline 1mm #ffc800; */
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    margin-bottom: 2mm;
-   
+  /* margin-bottom: 2mm; */
 }
 
 .argumente h3 {
   font-size: 0.6cm;
+  display: none;
   color: rgb(41, 41, 41);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-bottom: 1mm;
-
   margin-top: 0mm;
 }
 
