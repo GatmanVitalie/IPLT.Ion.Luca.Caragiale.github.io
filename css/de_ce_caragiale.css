@@ -1,6 +1,6 @@
 .de_ce_caragiale {
   z-index: 600;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   height: auto;
   width: 100%;
   padding-top: 1px;
@@ -9,52 +9,47 @@
   align-items: center;
   justify-content: flex-start;
   padding-bottom: 2cm;
-  box-shadow: black 0 1mm 5mm 0mm;
+  box-shadow: black 0px 1mm 5mm 0mm;
 }
 
 .argumente {
-  width: calc(100% - 3cm);
+  width: calc(100% - 113.386px);
   max-width: 49cm;
   display: grid;
   flex-direction: column;
   align-content: space-around;
   justify-items: stretch;
-  text-wrap: pretty-block;
   margin-top: 20px;
 }
 
-.argument_stanga
-{
+.argument_stanga {
   max-width: 26cm;
-  border:  6px solid #ffc800;
+  border: 6px solid rgb(255, 200, 0);
   border-radius: 80px;
-  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0);
+  box-shadow: rgb(0, 0, 0) 1px 1px 8px 0px;
   display: flex;
   align-items: center;
   height: 190px;
   margin-bottom: 80px;
   margin-left: -1cm;
   transform: scale(0.9);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease 0s;
   overflow: hidden;
   flex-direction: column;
 }
 
-.argument_stanga:hover
-{
+.argument_stanga:hover {
   cursor: pointer;
-  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0);
+  box-shadow: rgb(0, 0, 0) 1px 1px 12px 0px;
   transform: scale(0.909);
 }
 
-.argument_dreapta
-{
-  /* position: relative; */
+.argument_dreapta {
   justify-self: right;
   max-width: 27cm;
-  border:  6px solid #ffc800;
+  border: 6px solid rgb(255, 200, 0);
   border-radius: 80px;
-  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0);
+  box-shadow: rgb(0, 0, 0) 1px 1px 8px 0px;
   display: flex;
   align-items: center;
   height: 190px;
@@ -62,43 +57,37 @@
   margin-bottom: 80px;
   margin-right: -1cm;
   transform: scale(0.9);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease 0s;
   overflow: hidden;
 }
 
-.argument_dreapta:hover
-{
+.argument_dreapta:hover {
   cursor: pointer;
-  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0);
+  box-shadow: rgb(0, 0, 0) 1px 1px 12px 0px;
   transform: scale(0.909);
 }
 
-.resized
-{
+.resized {
   transform: scale(0.95);
   height: 400px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease 0s;
 }
 
-.arg_title_s
-{
+.arg_title_s {
   width: 100%;
   height: 190px;
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: flex-start;
+  place-content: center flex-start;
   align-items: center;
 }
 
-.arg_title_d
-{
+.arg_title_d {
   width: 100%;
   height: 190px;
   display: flex;
   flex-direction: row-reverse;
-  align-content: center;
-  justify-content: flex-start;
+  place-content: center flex-start;
   align-items: center;
 }
 
@@ -107,33 +96,25 @@
   width: 5cm;
   height: 5cm;
   margin: 5mm;
-  border-radius: 50%;
   shape-outside: circle();
-
-  background: #ccc;
+  background: rgb(204, 204, 204);
   display: flex;
-  justify-content: center;
-  align-content: center;
+  place-content: center;
   align-items: center;
-  border: 1.4mm dashed #121619;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  border: 1.4mm dashed rgb(18, 22, 25);
+  border-radius: 50%;
 }
 
 .nr_arg {
-  color: #121619;
+  color: rgb(18, 22, 25);
   font-size: 4.1cm;
   margin-left: 49.2px;
   margin-right: 32.2px;
   font-family: sans-serif;
-  /* font-style: italic; */
   font-weight: bolder;
 }
 
-.arg_title_d h1
-{
+.arg_title_d h1 {
   margin-right: 49.2px;
   margin-left: 32.2px;
 }
@@ -141,17 +122,13 @@
 .argumente h2 {
   font-size: 1.4cm;
   color: rgb(41, 41, 41);
-  /* text-decoration: underline 1mm #ffc800; */
   text-transform: uppercase;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  /* margin-bottom: 2mm; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-wrap: balance;
 }
 
 .argumente h3 {
   font-size: 0.9cm;
-  /* display: none; */
   color: rgb(41, 41, 41);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-bottom: 1mm;
@@ -164,30 +141,24 @@
   width: 5cm;
   height: 5cm;
   margin: 20px;
-  border-radius: 50%;
   shape-outside: circle();
-
-  background: #ccc;
+  background: rgb(204, 204, 204);
   display: flex;
-  justify-content: center;
-  align-content: center;
+  place-content: center;
   align-items: center;
-  border: 1.4mm dashed #121619;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  border: 1.4mm dashed rgb(18, 22, 25);
+  border-radius: 50%;
 }
 
 .argument_dreapta h2 {
   text-align: right;
+  width: 82.9%;
 }
 
 .argument_dreapta h3 {
   text-align: right;
 }
 
-/* Additional style to clear float and prevent overlapping with the next element */
 .argument_dreapta::after {
   content: "";
   display: table;
@@ -195,8 +166,7 @@
 }
 
 @media (max-width: 1000px) {
-  .de_ce_caragiale
-  {
-    display: none;
+  .de_ce_caragiale {
+      display: none;
   }
-} 
+}
