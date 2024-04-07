@@ -38,7 +38,7 @@ body {
 }
 
 .title_show {
-  font-size: 1.6cm;
+  font-size: 2cm;
   color: #2a2a2a;
   text-decoration: underline #fdc800;
   top: 0px;
@@ -46,7 +46,7 @@ body {
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-top: 2cm;
+  margin-top: 1.7cm;
   margin-bottom: 1cm;
   z-index: 2;
 }

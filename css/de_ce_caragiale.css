@@ -19,6 +19,8 @@
   flex-direction: column;
   align-content: space-around;
   justify-items: stretch;
+  text-wrap: pretty-block;
+  margin-top: 20px;
 }
 
 .argument_stanga
@@ -29,13 +31,75 @@
   box-shadow: 1px 1px 8px 0px rgba(0, 0, 0);
   display: flex;
   align-items: center;
+  height: 190px;
+  margin-bottom: 80px;
+  margin-left: -1cm;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.argument_stanga:hover
+{
+  cursor: pointer;
+  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0);
+  transform: scale(0.909);
 }
 
 .argument_dreapta
 {
   /* position: relative; */
   justify-self: right;
-  max-width: 26cm;
+  max-width: 27cm;
+  border:  6px solid #ffc800;
+  border-radius: 80px;
+  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0);
+  display: flex;
+  align-items: center;
+  height: 190px;
+  flex-direction: column;
+  margin-bottom: 80px;
+  margin-right: -1cm;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.argument_dreapta:hover
+{
+  cursor: pointer;
+  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0);
+  transform: scale(0.909);
+}
+
+.resized
+{
+  transform: scale(0.95);
+  height: 400px;
+  transition: all 0.3s ease;
+}
+
+.arg_title_s
+{
+  width: 100%;
+  height: 190px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.arg_title_d
+{
+  width: 100%;
+  height: 190px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #circle {
@@ -58,28 +122,41 @@
   -o-border-radius: 50%;
 }
 
-#circle h1 {
+.nr_arg {
   color: #121619;
-  font-size: 2cm;
+  font-size: 4.1cm;
+  margin-left: 49.2px;
+  margin-right: 32.2px;
+  font-family: sans-serif;
+  /* font-style: italic; */
+  font-weight: bolder;
+}
+
+.arg_title_d h1
+{
+  margin-right: 49.2px;
+  margin-left: 32.2px;
 }
 
 .argumente h2 {
-  font-size: 1.3cm;
+  font-size: 1.4cm;
   color: rgb(41, 41, 41);
   /* text-decoration: underline 1mm #ffc800; */
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   /* margin-bottom: 2mm; */
+  text-wrap: balance;
 }
 
 .argumente h3 {
-  font-size: 0.6cm;
-  display: none;
+  font-size: 0.9cm;
+  /* display: none; */
   color: rgb(41, 41, 41);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-bottom: 1mm;
   margin-top: 0mm;
+  width: 90%;
 }
 
 .argument_dreapta #circle {
