@@ -53,7 +53,7 @@
   position: relative;
   width: 100%;
   /* min-height: 42vw; */
-  max-height: 19cm;
+  max-height: 20cm;
   height: calc(100svh - 3.4cm);
   background-color: rgb(0, 0, 0);
   overflow-x: hidden;
@@ -72,6 +72,7 @@
   display: flex;
   right: 0%;
   transition: all 0s ease-in-out 0s;
+  
 }
 
 .slide.slideout {
@@ -133,9 +134,11 @@
   margin-top: 0%;
   margin-bottom: 18px;
   opacity: 0;
+  animation: downrise 400ms ease-in-out forwards;
 }
 .slide.slideout .text h1 {
   opacity: 0;
+  animation: downrise 400ms ease-in-out forwards;
 }
 .slide.slidein .text h1 {
   opacity: 0;
@@ -153,6 +156,16 @@
     opacity: 1;
   }
 }
+@keyframes downrise {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+}
 
 .text button {
   cursor: pointer;
@@ -166,12 +179,18 @@
   background: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(3px);
   box-shadow: rgb(253, 200, 0) 0cm 0cm 0cm 0cm inset;
-  transition: all 0.2s ease-in-out 0s;
+   transition: all 0.2s ease-in-out 0s; 
+  animation: downrise 400ms ease-in-out forwards;
+  animation-delay: 100ms;
   opacity: 0;
 }
 
+.slide.slideout.text button{
+  animation: downrise 400ms ease-in-out forwards;
+  animation-delay: 100ms;
+}
+
 .slide.slidein .text button {
-  opacity: 0;
   animation: uprise 400ms ease-in-out forwards;
   animation-delay: 1.8s;
 }
