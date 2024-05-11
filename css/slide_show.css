@@ -166,6 +166,20 @@
     opacity: 0;
   }
 }
+@keyframes butonfly {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+}
 
 .text button {
   cursor: pointer;
@@ -180,14 +194,12 @@
   backdrop-filter: blur(3px);
   box-shadow: rgb(253, 200, 0) 0cm 0cm 0cm 0cm inset;
    transition: all 0.2s ease-in-out 0s; 
-  animation: downrise 400ms ease-in-out forwards;
-  animation-delay: 100ms;
+  animation: butonfly 500ms ease-in-out forwards;
   opacity: 0;
 }
 
 .slide.slideout.text button{
-  animation: downrise 400ms ease-in-out forwards;
-  animation-delay: 100ms;
+  animation: butonfly 500ms ease-in-out forwards;
 }
 
 .slide.slidein .text button {
@@ -207,12 +219,7 @@
 }
 
 @media (max-width: 1000px) {
-  .text h1 {
-    font-size: 6vw;
-  }
-
-  .text h2 {
-    font-size: 2.5vw;
-    width: 85%;
+  .image_Show {
+    display: none;
   }
 }
