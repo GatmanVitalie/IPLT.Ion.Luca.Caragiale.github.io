@@ -328,3 +328,9 @@ header {
 {
   font-weight: 200;
 }
+
+@media (max-width: 1000px) {
+  .Antet_Imob {
+  height: 13.3svw;
+  }
+}
