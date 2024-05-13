@@ -1,5 +1,8 @@
-let elements = document.querySelectorAll('.stat h2');
-let animationTime = [1, 1.6, 2.2, 2.8]; // s
+let elements = document.querySelectorAll('.stat');
+let stath2 = document.querySelectorAll('.stat h2');
+var startvalue = 3;
+var delta = 1.4;
+let animationTime = [startvalue, startvalue+delta, startvalue+2*delta, startvalue+3*delta]; // s
 let vmax = [1.437, 8.16, 73, 26];
 let digits = [4, 2, 0, 0];
 let booleans = [false, false, false, false];
@@ -16,9 +19,12 @@ window.addEventListener('scroll', function () {
     var screenHeight = window.innerHeight;
     for (var i = 0; i < elements.length; i++) {
         var position = elements[i].getBoundingClientRect().top;
-        if (position < screenHeight * 0.9 && !booleans[i]) {
+        // console.log(position/screenHeight);
+        if (position < screenHeight * 0.79 && !booleans[i]) {
+            // alert("scroll");
+            console.log(animationTime[i]);
             booleans[i] = true;
-            startAnimation(elements[i], i);
+            startAnimation(stath2[i], i);
         }
     }
 });
