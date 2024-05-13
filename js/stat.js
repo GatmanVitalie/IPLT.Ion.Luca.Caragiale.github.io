@@ -1,22 +1,53 @@
-window.addEventListener('scroll', function() {
-    var elements = document.querySelectorAll('.stat');
-  
-    elements.forEach(function(element) {
-      var position = element.getBoundingClientRect().top;
-      var screenHeight = window.innerHeight;
-  
-      if (position < screenHeight * 0.75) {
-      var t1=1, t2=1.1, t3=1.2, t4=1.3;
-      var v1=1.437, v2=8.16, v3=73, v4=26;
-      var t=0;
-      while (t < t4*1000)
-        {
-            setTimeout(function() {t+=10;}, 10);
-            element.style.transform = 'translateY(' + (v1*Math.sin(t/t1) + v2*Math.sin(t/t2) + v3*Math.sin(t/t3) + v4*Math.sin(t/t4)) + 'px)';
-            console.log(t);
+let elements = document.querySelectorAll('.stat h2');
+let animationTime = [1, 1.6, 2.2, 2.8]; // s
+let vmax = [1.437, 8.16, 73, 26];
+let digits = [4, 2, 0, 0];
+let booleans = [false, false, false, false];
+let animations = []; // Array to store animation information for each element
+
+// Calculate constants for each animation
+// let as = vmax.map((v, i) => (3 * v) / (animationTime[i] * animationTime[i]));
+// let bs = vmax.map((v, i) => (2 * v) / (animationTime[i] * animationTime[i] * animationTime[i]));
+let as = vmax.map((v, i) => v);
+let bs = vmax.map((v, i) => Math.pow(v, 1/3));
+let cs = vmax.map((v, i) => animationTime[i] / bs[i]);
+
+window.addEventListener('scroll', function () {
+    var screenHeight = window.innerHeight;
+    for (var i = 0; i < elements.length; i++) {
+        var position = elements[i].getBoundingClientRect().top;
+        if (position < screenHeight * 0.9 && !booleans[i]) {
+            booleans[i] = true;
+            startAnimation(elements[i], i);
         }
     }
-    });
-  });
+});
 
-  
+function startAnimation(element, index) {
+    let startTime = performance.now(); // Get the start time of the animation
+    let endTime = startTime + animationTime[index] * 1000; // Convert animationTime to milliseconds
+
+    animations[index] = {
+        startTime: startTime,
+        endTime: endTime,
+        element: element
+    };
+
+    requestAnimationFrame(function animate(currentTime) {
+        let progress = (currentTime - startTime) / (endTime - startTime);
+        if (progress < 1) {
+            updateElementValue(index, progress);
+            requestAnimationFrame(animate);
+        } else {
+            updateElementValue(index, 1); // Ensure final value is accurate
+        }
+    });
+}
+
+function updateElementValue(index, progress) {
+    let time = progress * animationTime[index]; // Calculate the current time within the animation
+    // let value = time * time * (as[index] - bs[index] * time);
+    let value = as[index] - Math.pow(bs[index] - time/cs[index], 3);
+    let formattedValue = value.toFixed(digits[index]);
+    animations[index].element.textContent = formattedValue.toString();
+}
