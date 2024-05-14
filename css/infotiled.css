@@ -156,7 +156,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {
   .infotiled {
     display: flex;
     align-items: center;
@@ -164,4 +164,14 @@
     align-content: center;
     flex-direction: column;
   }
-}
+}*/
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+    .infotiled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    }
+    }
