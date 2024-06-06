@@ -63,21 +63,21 @@ header {
   margin-bottom: 0.56cm;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 0.8cm;
+  justify-content: space-around;
+  gap: 0.5cm;
 }
 
 .Contacte * {
   display: flex;
   align-items: center;
-  font-size: 4.5mm;
+  font-size: 4.9mm;
 }
 
 .Contacte img {
+  aspect-ratio: 1/1;
   position: relative;
   margin-right: 0.2cm;
-  height: 0.54cm;
-  width: 0.54cm;
+  width: 0.58cm;
   object-fit: contain;
 }
 
@@ -127,7 +127,7 @@ header {
 
 .Butons button {
   height: 1.6cm;
-  width: 3.6cm;
+  width: 3.4cm;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   border: none;

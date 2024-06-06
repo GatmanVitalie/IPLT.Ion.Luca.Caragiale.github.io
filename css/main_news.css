@@ -102,10 +102,10 @@
 .button_holder button {
   width: 1.35cm;
   height: 1.35cm;
-
   border-radius: 1.6mm;
   display: flex;
   align-items: center;
+  overflow: hidden;
   justify-content: center;
 }
 
@@ -121,11 +121,6 @@
 }
 
 .instagram {
-  border-radius: 0% !important;
-  -webkit-border-radius: 0% !important;
-  -moz-border-radius: 0% !important;
-  -ms-border-radius: 0% !important;
-  -o-border-radius: 0% !important;
   padding: 0%;
 }
 
@@ -147,7 +142,7 @@
 }
 
 .github {
-  background-color: #24292f;
+  background-color: #46484b;
 }
 
 .button_holder button:hover {
