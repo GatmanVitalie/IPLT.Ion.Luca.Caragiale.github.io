@@ -166,7 +166,7 @@
   }
 }*/
 
-@media only screen and (orientation: portrait) and (max-width: 1000px) {
+@media (orientation: portrait) {
     .infotiled {
     display: flex;
     align-items: center;
