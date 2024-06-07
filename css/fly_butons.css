@@ -8,6 +8,7 @@
   transition: 2s ease-in-out;
   -webkit-transition: 0.8s ease;
   z-index: 2;
+  width: 100%;
 }
 
 #burger_butons button {
@@ -20,6 +21,10 @@
   border-bottom: 0.1cm solid #333;
 }
 
+#burger_butons button * {
+  margin-left: 2svw;
+}
+
 .burger_butons  {
   height: 100svh !important;
   display: flex;
@@ -27,7 +32,7 @@
 
 .lists
 {
-  width: 90%;
+  width: 100;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -107,7 +107,7 @@
             </div>
         </div>
 
-        <div id="HamburgerButton" class="HamburgerButton" onclick="togle(this)">
+        <div id="HamburgerButton" class="HamburgerButton" onclick="toggleMenu(this)">
             <div class="hamburger-lines">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -119,7 +119,7 @@
 
     </div>
 
-    <div id="burger_butons">
+    <!-- <div id="burger_butons">
         <button onclick="home()">Acasă</button>
         <button onclick="news()">Noutăți</button>
         <button onclick="format()">Admitere</button>
@@ -129,7 +129,33 @@
         </div>
         <button onclick="lecti()">Elevi</button>
         <button onclick="about()">Despre</button>
-    </div>
+    </div> -->
+
+    <nav id="mobileNav" class="mobileNav">
+        <ul>
+            <li><a href="#" onclick="home()">Acasă</a></li>
+            <li><a href="#" onclick="news()">Noutăți</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="toggleDropdown('admitereDropdown')">Admitere</a>
+                <ul id="admitereDropdown" class="dropdown-content">
+                    <li><a href="#" onclick="rezultate()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rezultate</a></li>
+                    <li><a href="#" onclick="format()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format cerere</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" onclick="toggleDropdown('eleviDropdown')">Elevi</a>
+                <ul id="eleviDropdown" class="dropdown-content">
+                    <li><a href="#" onclick="lecti()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orarul Lecțiilor</a></li>
+                    <li><a href="#" onclick="sunete()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orarul Sunetelor</a></li>
+                    <li><a href="#" onclick="olimpiade()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olimpiade</a></li>
+                    <li><a href="#" onclick="examene()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Examene</a></li>
+                    <li><a href="#" onclick="teze()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teze</a></li>
+                    <li><a href="#" onclick="agenda()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agenda Electrocă</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="about()">Despre</a></li>
+        </ul>
+    </nav>
 
     <div class="Continut">
         <div class="image_Show" id="image_Show">

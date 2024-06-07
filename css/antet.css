@@ -1,12 +1,12 @@
 @keyframes zoomout {
   0% {
-      height: 100%;
-      width: 100%;
+    height: 100%;
+    width: 100%;
   }
 
   100% {
-      height: 200%;
-      width: 200%;
+    height: 200%;
+    width: 200%;
   }
 }
 
@@ -83,8 +83,7 @@ header {
   object-fit: contain;
 }
 
-.Contacte a:hover
-{
+.Contacte a:hover {
   text-decoration: underline;
 }
 
@@ -192,8 +191,8 @@ header {
   filter: invert(70%);
 }
 
-.contcatns a:hover{
-  text-decoration:underline;
+.contcatns a:hover {
+  text-decoration: underline;
 }
 
 .admitere_butons {
@@ -286,8 +285,6 @@ header {
   height: 6.9cm !important;
 }
 
-
-
 .desrpe_butons {
   position: absolute;
   z-index: 10;
@@ -335,14 +332,56 @@ header {
   height: 3.45cm !important;
 }
 
-
-.sub_class_buttons
-{
+.sub_class_buttons {
   font-weight: 200;
+}
+
+.mobileNav {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  top: calc(2rem + 3.4cm);
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  border-bottom: 0.1cm solid rgb(253, 200, 0);
+}
+
+.mobileNav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobileNav ul li {
+  border-bottom: 1px solid #ddd;
+}
+
+.mobileNav ul li a {
+  display: block;
+  padding: 3svw;
+  font-size: 3svw;
+  text-decoration: none;
+  color: #333;
+}
+
+.mobileNav ul li a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.dropdown-content li {
+  border: none;
 }
 
 @media (max-width: 1000px) {
   .Antet_Imob {
-  height: 13.3svw;
+    height: 13.3svw;
   }
 }

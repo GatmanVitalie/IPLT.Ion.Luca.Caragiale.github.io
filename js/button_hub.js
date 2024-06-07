@@ -1,3 +1,14 @@
+function toggleMenu(button) {
+    const nav = document.getElementById('mobileNav');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    button.classList.toggle('active');
+}
+
+function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+}
+
 function home()
 {
     window.location.href = "./index.html";
