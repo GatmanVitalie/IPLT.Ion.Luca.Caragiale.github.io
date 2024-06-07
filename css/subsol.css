@@ -8,11 +8,10 @@
   bottom: 0px;
   position: sticky;
   z-index: 0;
-  background-color: #57585c;
+  background-color: rgb(87, 88, 92);
   display: flex;
-  justify-content: center;
+  place-content: center;
   align-items: center;
-  align-content: center;
   flex-direction: column;
 }
 
@@ -21,14 +20,13 @@
   width: 100%;
   max-width: 63cm;
   display: flex;
-  justify-content: space-evenly;
+  place-content: center space-evenly;
   align-items: flex-start;
-  align-content: center;
   justify-self: center;
 }
 
 .linkuri_externe_list {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 5.6mm;
 }
 
@@ -37,13 +35,13 @@
 }
 
 .linkuri_externe_list li:hover {
-  color: #fdc800;
+  color: rgb(253, 200, 0);
   text-decoration: underline;
   cursor: pointer;
 }
 
 .subsol h1 {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .linkuri_externe {
@@ -53,9 +51,8 @@
 
 .butnons_container {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: flex-start;
-  flex-wrap: wrap;
   gap: 4.5mm;
 }
 
@@ -74,14 +71,13 @@
   object-fit: contain;
   height: 1cm;
   filter: invert(1);
-  -webkit-filter: invert(1);
 }
 
 .contcate_subsol * {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .contcate_subsol_container {
@@ -110,10 +106,6 @@
   justify-content: flex-start;
   border: none;
   border-radius: 3mm;
-  -webkit-border-radius: 3mm;
-  -moz-border-radius: 3mm;
-  -ms-border-radius: 3mm;
-  -o-border-radius: 3mm;
 }
 
 .retele_sociale button img {
@@ -131,64 +123,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff !important;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgb(255, 255, 255) !important;
 }
 
 .facebook_subsol {
-  background-color: #3b5998;
-  transition: 200ms ease-in-out;
-  -webkit-transition: 200ms ease-in-out;
-  -moz-transition: 200ms ease-in-out;
-  -ms-transition: 200ms ease-in-out;
-  -o-transition: 200ms ease-in-out;
+  background-color: rgb(59, 89, 152);
+  transition: all 200ms ease-in-out 0s;
 }
 
 .instagram_subsol {
-  background: #f09433;
-  background: -moz-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-  transition: 400ms ease-in-out;
-  -webkit-transition: 400ms ease-in-out;
-  -moz-transition: 400ms ease-in-out;
-  -ms-transition: 400ms ease-in-out;
-  -o-transition: 400ms ease-in-out;
+  background: linear-gradient(45deg, rgb(240, 148, 51) 0%, rgb(230, 104, 60) 25%, rgb(220, 39, 67) 50%, rgb(204, 35, 102) 75%, rgb(188, 24, 136) 100%);
+  transition: all 400ms ease-in-out 0s;
 }
 
 .facebook_subsol:hover {
-  box-shadow: #345eb8 0mm 0mm 5mm 1mm;
+  box-shadow: rgb(52, 94, 184) 0mm 0mm 5mm 1mm;
   cursor: pointer;
 }
 
 .instagram_subsol:hover {
-  box-shadow: 3px -7px 25px 0 #f09433, 3px 10px 15px 0px #e6683c,
-    -10px -3px 15px 2px #dc2743, -5px 3px 5px 0px #bc1888,
-    9px -3px 15px 4px #cc2366;
-
+  box-shadow: rgb(240, 148, 51) 3px -7px 25px 0px, rgb(230, 104, 60) 3px 10px 15px 0px, rgb(220, 39, 67) -10px -3px 15px 2px, rgb(188, 24, 136) -5px 3px 5px 0px, rgb(204, 35, 102) 9px -3px 15px 4px;
   cursor: pointer;
 }
 
@@ -196,81 +151,84 @@
   position: relative;
   top: 8%;
   height: 85%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   width: auto !important;
 }
 
 .map_container iframe {
   height: 100%;
   width: 100%;
-  border: none !important;
   border-radius: 2mm;
-  -webkit-border-radius: 2mm;
-  -moz-border-radius: 2mm;
-  -ms-border-radius: 2mm;
-  -o-border-radius: 2mm;
+  border: none !important;
 }
 
 @media (max-width: 1000px) {
   .subsol {
-    flex-direction: column;
-    height: auto;
-    position: relative;
+      flex-direction: column;
+      height: auto;
+      position: relative;
   }
+
   .container_subsol {
-    flex-direction: column;
-    width: 85%;
-    display: grid !important;
-    height: 90%;
+      flex-direction: column;
+      width: 85%;
+      height: 90%;
+      display: grid !important;
+      justify-content: start;
+      justify-items: stretch;
   }
+
   .subsol h1 {
-    font-size: 6svw;
-    margin-bottom: 2svw;
+      font-size: 6svw;
+      margin-bottom: 2svw;
   }
+
   .linkuri_externe_list li {
-    font-size: 4.2svw;
+      font-size: 4.2svw;
   }
+
   .retele_sociale button {
-    height: 13.5svw;
-    width: 48svw;
-    border-radius: 3.5svw;
+      height: 13.5svw;
+      width: 48svw;
+      border-radius: 3.5svw 3.5svw 3.5svw 3.5svw / 3.5svw 3.5svw 3.5svw 3.5svw;
   }
+
   .retele_sociale h2 {
-    font-size: 6svw;
+      font-size: 6svw;
   }
+
   .butnons_container {
-    gap: 4svw;
+      gap: 4svw;
   }
+
   .contcate_subsol a {
-    font-size: 4.2svw;
+      font-size: 4.2svw;
   }
-  .contcate_subsol * img
-  {
-    height: 6svw;
+
+  .contcate_subsol * img {
+      height: 6svw;
   }
-  .contcate_subsol
-  {
-    margin-bottom: 6svw;
+
+  .contcate_subsol {
+      margin-bottom: 6svw;
   }
-  .map_container
-  {
-    height: 70%;
-    aspect-ratio: 1/1;
+
+  .map_container {
+      height: 70%;
+      aspect-ratio: 1 / 1;
   }
 }
 
-.copyright
-{
+.copyright {
   height: 1.5cm;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #57585c;
-  border-top: #d4d4d4e0 solid 1px;
+  background-color: rgb(87, 88, 92);
+  border-top: 1px solid rgba(212, 212, 212, 0.88);
   color: rgb(238, 240, 242);
   font-size: 100%;
   font-family: sans-serif;
   font-weight: 100;
-  /* position: fixed; */
 }

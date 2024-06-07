@@ -125,5 +125,4 @@ var burger_butons = document.getElementById("burger_butons");
 function togle(lines) {
     lines.classList.toggle("change");
     burger_butons.classList.toggle("burger_butons");
-
 }

@@ -100,14 +100,14 @@
                 <button onclick="home()">Acasă</button>
                 <button onclick="news()">Noutăți</button>
                 <button touchend="toggle_active_admitere()" onmouseover="activate_admitere()"
-                    onmouseleave="deactivate_admitere()" id="admitere_button"><a>Admitere</a></button>
+                    onmouseleave="deactivate_admitere()" id="admitere_button"><a>&nbsp; Admitere &#9662;</a></button>
                 <button id="elevi_buton" touchend="toggle_active_elevi()" onmouseover="activate_elevi()"
-                    onmouseleave="deactivate_elevi()">Elevi</button>
+                    onmouseleave="deactivate_elevi()">&nbsp;Elevi &#9662;</button>
                 <button onclick="about()">Despre</button>
             </div>
         </div>
 
-        <div id="HamburgerButton" class="HamburgerButton" onclick="toggleMenu(this)">
+        <div id="HamburgerButton" class="HamburgerButton" onclick="toggleMenu(this); togle(this);">
             <div class="hamburger-lines">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -136,14 +136,14 @@
             <li><a href="#" onclick="home()">Acasă</a></li>
             <li><a href="#" onclick="news()">Noutăți</a></li>
             <li class="dropdown">
-                <a href="#" onclick="toggleDropdown('admitereDropdown')">Admitere</a>
+                <a href="#" onclick="toggleDropdown('admitereDropdown')">Admitere &#9662;</a>
                 <ul id="admitereDropdown" class="dropdown-content">
                     <li><a href="#" onclick="rezultate()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rezultate</a></li>
                     <li><a href="#" onclick="format()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format cerere</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" onclick="toggleDropdown('eleviDropdown')">Elevi</a>
+                <a href="#" onclick="toggleDropdown('eleviDropdown')">Elevi &#9662;</a>
                 <ul id="eleviDropdown" class="dropdown-content">
                     <li><a href="#" onclick="lecti()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orarul Lecțiilor</a></li>
                     <li><a href="#" onclick="sunete()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orarul Sunetelor</a></li>

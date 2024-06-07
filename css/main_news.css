@@ -6,24 +6,18 @@
   width: 100%;
   padding-top: 1cm;
   padding-bottom: 3cm;
-  background-color: #ffff;
+  background-color: rgb(255, 255, 255);
   height: auto !important;
 }
 
-
-
 .articole {
   display: flex;
-  width: calc(100% - 1cm);
+  width: calc(100% - 37.7953px);
   max-width: 40cm;
-  /* padding: 5cm; */
+  flex-flow: wrap;
+  gap: 1cm 9mm;
+  place-content: flex-start center;
   height: auto !important;
-  flex-direction: row;
-  row-gap: 1cm;
-  column-gap: 9mm;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: flex-start;
 }
 
 .article {
@@ -44,8 +38,7 @@
   text-decoration: underline 0.8mm rgb(253, 200, 0);
   text-align: left;
   text-transform: uppercase;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-wrap: pretty;
 }
 
@@ -58,10 +51,6 @@
   display: flex;
   align-items: center;
   border-radius: 0.2cm;
-  -webkit-border-radius: 0.2cm;
-  -moz-border-radius: 0.2cm;
-  -ms-border-radius: 0.2cm;
-  -o-border-radius: 0.2cm;
 }
 
 .image_holder img {
@@ -88,15 +77,14 @@
   top: 0px;
   text-align: left;
   text-transform: uppercase;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .button_holder {
   width: 100%;
   height: auto;
   display: flex;
-  gap: 2mm;
+  gap: 3mm;
 }
 
 .button_holder button {
@@ -111,13 +99,13 @@
 
 .button_holder img {
   object-fit: contain;
-  aspect-ratio: 1/1 !important;
   width: auto;
   height: 82%;
+  aspect-ratio: 1 / 1 !important;
 }
 
 .facebook {
-  background-color: #0866ff !important;
+  background-color: rgb(8, 102, 255) !important;
 }
 
 .instagram {
@@ -127,13 +115,12 @@
 .instagram img {
   min-width: 100%;
   min-height: 100%;
-  background-color: #ffff;
+  background-color: rgb(255, 255, 255);
   object-fit: contain !important;
-  
 }
 
 .twiter {
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
 }
 
 .twiter img {
@@ -142,34 +129,34 @@
 }
 
 .github {
-  background-color: #46484b;
+  background-color: rgb(70, 72, 75);
 }
 
 .button_holder button:hover {
   cursor: pointer;
 }
 
-
 @media (max-width: 1000px) {
-  .article
-  {
-    width: 90%;
+  .article {
+      width: 90%;
   }
-  .article h2
-  {
-    font-size: 3rem;
+
+  .article h2 {
+      font-size: 5svw;
   }
-  .article a
-  {
-    font-size: 2rem;
+
+  .article a {
+      font-size: 2rem;
   }
-  .article h3
-  {
-    font-size: 2.2rem;
+
+  .article h3 {
+      font-size: 2.2rem;
   }
-  .button_holder button
-  {
-    width: 10svw;
-    height: 10svw;
+
+  .button_holder button {
+      width: 10svw;
+      height: 10svw;
+      border-radius: 15%;
+      gap: 2svw !important;
   }
-} 
+}
