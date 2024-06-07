@@ -21,6 +21,18 @@
 }
 
 .burger_butons  {
-  height: 18cm !important;
+  height: 100svh !important;
   display: flex;
+}
+
+.lists
+{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lists button {
+  background: #eeeeee !important;
 }

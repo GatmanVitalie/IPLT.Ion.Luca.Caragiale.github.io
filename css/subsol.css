@@ -214,7 +214,8 @@
 @media (max-width: 1000px) {
   .subsol {
     flex-direction: column;
-    height: 100svh;
+    height: auto;
+    position: relative;
   }
   .container_subsol {
     flex-direction: column;

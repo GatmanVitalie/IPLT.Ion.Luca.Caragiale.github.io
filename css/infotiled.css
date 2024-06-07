@@ -36,7 +36,7 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-top: -4svw;
-  margin-bottom: -10svw;
+  margin-bottom: 0svw;
   z-index: 2;
 }
 
@@ -51,6 +51,7 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   z-index: 2;
+  margin-top: -2svw;
 }
 .text_ph h3 {
   top: 0;
