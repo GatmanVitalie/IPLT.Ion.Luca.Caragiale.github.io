@@ -62,13 +62,13 @@ function shareToLinkedIn(button) {
 
 async function shareContent(button) {
     var article = button.closest('.article');
-    
+
 
     const shareData = {
         title: article.querySelector('h2').innerText,
-        text:  article.querySelector('a').innerText,
+        text: article.querySelector('a').innerText,
         url: window.location.href,
-      };
+    };
 
     try {
         await navigator.share(shareData);
