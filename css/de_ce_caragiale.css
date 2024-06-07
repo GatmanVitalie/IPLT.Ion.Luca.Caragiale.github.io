@@ -22,6 +22,23 @@
   margin-top: 20px;
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateY(80%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Create a class that uses the keyframes */
+.slide-in {
+  animation: slideIn 0.5s forwards ease-out; /* Animation name, duration, and fill mode */
+}
+
+
 .argument_stanga {
   max-width: 26cm;
   border: 6px solid rgb(255, 200, 0);
@@ -36,6 +53,7 @@
   transition: all 0.3s ease 0s;
   overflow: hidden;
   flex-direction: column;
+  opacity: 0;
 }
 
 .argument_stanga:hover {
@@ -46,7 +64,7 @@
 
 .argument_dreapta {
   justify-self: right;
-  max-width: 27cm;
+  max-width: 26cm;
   border: 6px solid rgb(255, 200, 0);
   border-radius: 80px;
   box-shadow: rgb(0, 0, 0) 1px 1px 8px 0px;
@@ -59,6 +77,7 @@
   transform: scale(0.9);
   transition: all 0.3s ease 0s;
   overflow: hidden;
+  opacity: 0;
 }
 
 .argument_dreapta:hover {
@@ -123,7 +142,8 @@
   font-size: 1.4cm;
   color: rgb(41, 41, 41);
   text-transform: uppercase;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-wrap: balance;
 }
 
@@ -167,6 +187,6 @@
 
 @media (max-width: 1000px) {
   .de_ce_caragiale {
-      display: none;
+    display: none;
   }
 }

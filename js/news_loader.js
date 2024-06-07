@@ -7,22 +7,6 @@ fetch('./js/news.json')
         // Get the container where you want to insert the articles
         const articlesContainer = document.getElementById('articole');
 
-        // Function to handle the click event
-        function handleButtonClick(buttonClass) {
-            console.log('Button clicked:', buttonClass);
-            if (buttonClass === 'facebook') {
-                window.location.href = "https://www.facebook.com/L.T.I.L.Caragiale";
-            }
-            else if (buttonClass === 'instagram') {
-                window.location.href = "https://www.instagram.com/consiliul.elevilor.caragiale?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
-            }
-            else if (buttonClass === 'twiter') {
-                window.location.href = "https://twitter.com/";
-            }
-            else {
-                window.location.href = "https://github.com/GatmanVitalie";
-            }
-        }
 
         // Loop through the articles array
         articles.forEach(article => {
@@ -58,26 +42,27 @@ fetch('./js/news.json')
 
             // Create buttons for social media
             const socialMediaButtons = [
-                { class: 'facebook', image: '.././images/Facebook_Logo_Secondary.png' },
-                { class: 'instagram', image: '.././images/Instagram_logo_2022.svg' },
+                { class: 'facebook', image: '.././images/Facebook_Logo_Secondary.png', },
+                { class: 'instagram', image: '.././images/linkedin_logo.png' },
                 { class: 'twiter', image: '.././images/logo.svg' }, // Fixed typo here
-                { class: 'github', image: '.././images/github-mark-white.svg' }
+                { class: 'github', image: '.././images/share.svg' }
             ];
 
-            socialMediaButtons.forEach(button => {
+            for (let i = 0; i < socialMediaButtons.length; i++) {
+                const button = socialMediaButtons[i];
                 const socialButton = document.createElement('button');
                 socialButton.type = 'button';
                 socialButton.classList.add(button.class);
-
+            
                 // Add onclick event listener to the button
-                socialButton.addEventListener('click', () => handleButtonClick(button.class));
-
+                socialButton.addEventListener('click', () => sharedata(button.class, article.title, article.image_link, article.descriere, article.data)); // Assuming handleButtonClick is a function defined elsewhere
+            
                 const socialImage = document.createElement('img');
                 socialImage.src = button.image;
-
+            
                 socialButton.appendChild(socialImage);
                 buttonHolderElement.appendChild(socialButton);
-            });
+            }
 
             // Append elements to the article container
             articleElement.appendChild(titleElement);
