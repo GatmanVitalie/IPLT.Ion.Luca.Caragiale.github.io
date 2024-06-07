@@ -7,7 +7,8 @@
     <meta name=" theme-color" media="(prefers-color-scheme: light)" content="rgb(253, 200, 0)" />
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
     <link rel="icon" href="images/Logo-Caragiale.png">
-    <meta property="og:description" content="Liceul Teoretc Ion Luca Caragiale este unul dintre cele mai mari licee din Raionul Orhei">
+    <meta property="og:description"
+        content="Liceul Teoretc Ion Luca Caragiale este unul dintre cele mai mari licee din Raionul Orhei">
     <meta property="og:image" content="images/Logo-Caragiale.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/slide_show.css">
@@ -165,6 +166,7 @@
                     onmouseover="stopSlides()" onmouseleave="beginSlides()"></img></button>
             <button class="nextButon" id="nextButon" onclick="forword()"><img src="images/next.png"
                     onmouseover="stopSlides()" onmouseleave="beginSlides()"></img></button>
+                    <button class="downButon" id="downButon" onclick="scrollDown()"><img src="images/up-arrow (1).png"></button>
         </div>
 
         <div class="infotiled" id="infotiled">
@@ -174,7 +176,8 @@
             <div class="text_ph" id="text_ph">
                 <h1>Liceul Teoretic</h1>
                 <h2>Ion Luca Caragiale</h2>
-                <h3 id="heder">Lorem ipsum dolor sit amet eos nulla diam sit. Et sit diam ipsum magna duo est in iriure diam. Rebum
+                <h3 id="heder">Lorem ipsum dolor sit amet eos nulla diam sit. Et sit diam ipsum magna duo est in iriure
+                    diam. Rebum
                     et lorem amet erat ea erat tincidunt quis invidunt dolor lorem gubergren. Commodo tempor ut lorem
                     dolore diam dolor. Duo ea est eos diam. Consetetur eos dolor et sed diam nisl et stet volutpat
                     tempor facilisis ipsum elit suscipit amet. Vel erat veniam consequat dolore ipsum molestie facilisis
@@ -237,17 +240,17 @@
                     </div>
                     <h3>06.02.2024</h3>
                     <div class="button_holder">
-                        <button type="button" class="facebook">
+                        <button type="button" class="facebook" onclick="shareToFacebook(this)">
                             <img src="images/Facebook_Logo_Secondary.png">
                         </button>
-                        <button type="button" class="instagram">
-                            <img src="images/Instagram_logo_2022.svg">
+                        <button type="button" class="instagram" onclick="shareToLinkedIn(this)">
+                            <img src="images/linkedin_logo.png">
                         </button>
-                        <button type="button" class="twiter">
+                        <button type="button" class="twiter" onclick="shareToTwitter(this)">
                             <img src="images/logo.svg">
                         </button>
-                        <button type="button" class="github">
-                            <img src="images/github-mark-white.svg">
+                        <button type="button" class="github" onclick="shareContent(this)">
+                            <img src="images/share.svg">
                         </button>
                     </div>
                 </div>
@@ -265,17 +268,17 @@
                     </div>
                     <h3>11.02.2024</h3>
                     <div class="button_holder">
-                        <button type="button" class="facebook">
+                        <button type="button" class="facebook" onclick="shareToFacebook(this)">
                             <img src="images/Facebook_Logo_Secondary.png">
                         </button>
-                        <button type="button" class="instagram">
-                            <img src="images/Instagram_logo_2022.svg">
+                        <button type="button" class="instagram" onclick="shareToLinkedIn(this)">
+                            <img src="images/linkedin_logo.png">
                         </button>
-                        <button type="button" class="twiter">
+                        <button type="button" class="twiter" onclick="shareToTwitter(this)">
                             <img src="images/logo.svg">
                         </button>
-                        <button type="button" class="github">
-                            <img src="images/github-mark-white.svg">
+                        <button type="button" class="github" onclick="shareContent(this)">
+                            <img src="images/share.svg">
                         </button>
                     </div>
                 </div>
@@ -291,17 +294,17 @@
                     </div>
                     <h3>19.02.2024</h3>
                     <div class="button_holder">
-                        <button type="button" class="facebook">
+                        <button type="button" class="facebook" onclick="shareToFacebook(this)">
                             <img src="images/Facebook_Logo_Secondary.png">
                         </button>
-                        <button type="button" class="instagram">
-                            <img src="images/Instagram_logo_2022.svg">
+                        <button type="button" class="instagram" onclick="shareToLinkedIn(this)">
+                            <img src="images/linkedin_logo.png">
                         </button>
-                        <button type="button" class="twiter">
+                        <button type="button" class="twiter" onclick="shareToTwitter(this)">
                             <img src="images/logo.svg">
                         </button>
-                        <button type="button" class="github">
-                            <img src="images/github-mark-white.svg">
+                        <button type="button" class="github" onclick="shareContent(this)">
+                            <img src="images/share.svg">
                         </button>
                     </div>
                 </div>
@@ -316,17 +319,17 @@
                     </div>
                     <h3>09.12.2023</h3>
                     <div class="button_holder">
-                        <button type="button" class="facebook">
+                        <button type="button" class="facebook" onclick="shareToFacebook(this)">
                             <img src="images/Facebook_Logo_Secondary.png">
                         </button>
-                        <button type="button" class="instagram">
-                            <img src="images/Instagram_logo_2022.svg">
+                        <button type="button" class="instagram" onclick="shareToLinkedIn(this)">
+                            <img src="images/linkedin_logo.png">
                         </button>
-                        <button type="button" class="twiter">
+                        <button type="button" class="twiter" onclick="shareToTwitter(this)">
                             <img src="images/logo.svg">
                         </button>
-                        <button type="button" class="github">
-                            <img src="images/github-mark-white.svg">
+                        <button type="button" class="github" onclick="shareContent(this)">
+                            <img src="images/share.svg">
                         </button>
                     </div>
                 </div>
@@ -345,17 +348,17 @@
                     </div>
                     <h3>23.05.2023</h3>
                     <div class="button_holder">
-                        <button type="button" class="facebook">
+                        <button type="button" class="facebook" onclick="shareToFacebook(this)">
                             <img src="images/Facebook_Logo_Secondary.png">
                         </button>
-                        <button type="button" class="instagram">
-                            <img src="images/Instagram_logo_2022.svg">
+                        <button type="button" class="instagram" onclick="shareToLinkedIn(this)">
+                            <img src="images/linkedin_logo.png">
                         </button>
-                        <button type="button" class="twiter">
+                        <button type="button" class="twiter" onclick="shareToTwitter(this)">
                             <img src="images/logo.svg">
                         </button>
-                        <button type="button" class="github">
-                            <img src="images/github-mark-white.svg">
+                        <button type="button" class="github" onclick="shareContent(this)">
+                            <img src="images/share.svg">
                         </button>
                     </div>
                 </div>

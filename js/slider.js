@@ -1,5 +1,5 @@
 let intervalID;
-var interval = 50000;
+var interval = 6000;
 let x = document.getElementsByClassName("slide");
 let timerID;
 let milliseconds = 0;
@@ -206,4 +206,12 @@ function More1() {
 function More1a() {
     // For example, you can add code to alert a message
     alert("Button clicked!");
+}
+
+function scrollDown() {
+    // You can adjust the values as per your requirement
+    window.scrollTo({
+        top: window.pageYOffset + window.innerHeight,
+        behavior: 'smooth' // This will make the scroll smooth
+    });
 }

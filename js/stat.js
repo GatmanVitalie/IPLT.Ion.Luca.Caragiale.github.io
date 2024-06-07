@@ -1,10 +1,10 @@
 let elements = document.querySelectorAll('.stat');
 let stath2 = document.querySelectorAll('.stat h2');
-var startvalue = 3;
-var delta = 1.4;
+var startvalue = 1.6;
+var delta = 0.2;
 let animationTime = [startvalue, startvalue+delta, startvalue+2*delta, startvalue+3*delta]; // s
 let vmax = [1.437, 8.16, 73, 26];
-let digits = [4, 2, 0, 0];
+let digits = [3, 2, 0, 0];
 let booleans = [false, false, false, false];
 let animations = []; // Array to store animation information for each element
 
