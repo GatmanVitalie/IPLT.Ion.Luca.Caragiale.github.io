@@ -27,37 +27,30 @@
 }
 
 .text_ph h1 {
-  color: rgb(255 202 0);
-  /* text-decoration: underline #fdc800; */
+  font-size: 10svw;
+  color: #2a2a2a;
+  text-decoration: underline #fdc800;
   top: 0px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 1000;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-top: -1svw;
-  margin-bottom: 1cm;
+  margin-top: -4svw;
+  margin-bottom: -10svw;
   z-index: 2;
-  font-size: 10.6svw;
-  opacity: 1;
 }
 
 
 
 .text_ph h2 {
-  color: rgb(255 202 0);
-  /* text-decoration: underline #fdc800; */
-  top: 0px;
+  font-size: 8svw;
+  color: #2a2a2a;
+  text-decoration: underline #fdc800;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 1000;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-top: -8.2svw;
-  margin-bottom: 1cm;
   z-index: 2;
-  font-size: 8.4svw;
-  opacity: 1;
 }
 .text_ph h3 {
   top: 0;
@@ -70,7 +63,7 @@
   margin-top: 0svw;
   text-align: center;
   width: 80svw;
-  color: rgb(244 195 0);
+  color: #6e6e67;
   display: block;
   opacity: 1;
 }
@@ -161,7 +154,7 @@
     /* height: 5svw; */
     position: relative;
     border-radius: 100%;
-    opacity: 0.7;
+    opacity: 1;
     margin-top: 10svw;
   }
   .downButon_inf img {
