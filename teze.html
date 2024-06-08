@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>IPLT Ion Luca Caragiale</title>
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="rgb(253, 200, 0)" />
+    <meta name=" theme-color" media="(prefers-color-scheme: light)" content="rgb(253, 200, 0)" />
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
     <link rel="icon" href="images/Logo-Caragiale.png">
+    <meta property="og:description"
+        content="Liceul Teoretc Ion Luca Caragiale este unul dintre cele mai mari licee din Raionul Orhei">
+    <meta property="og:image" content="images/Logo-Caragiale.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/antet.css">
     <link rel="stylesheet" href="css/hamburger_but.css">
@@ -28,15 +31,15 @@
     <div class="contcatns">
         <div class="nrTelefon">
             <img src="images/Phone.png"></img>
-            <a> +373 (12) 34 56 78</a>
+            <a href="tel:+023524907"> +0(235) 24 907</a>
         </div>
         <div class="locatie">
             <img src="images/pin.png"></img>
-            <a>str.Vasile Lupu 60/1, Orhei</a>
+            <a href="https://maps.app.goo.gl/poc4hTWV1MBoN5pJA">str.Vasile Lupu 60/1, Orhei</a>
         </div>
         <div class="email">
             <img src="images/email.png"></img>
-            <a>caragiale.liceu@gmail.com</a>
+            <a href="mailto:caragiale.liceu@gmail.com">caragiale.liceu@gmail.com</a>
         </div>
     </div>
 </div>
@@ -78,29 +81,29 @@
         <div class="Contacte">
             <div class="nrTelefon">
                 <img src="images/Phone.png"></img>
-                <a> +0(235) 24 907</a>
+                <a href="tel:+023524907"> +0(235) 24 907</a>
             </div>
             <div class="locatie">
                 <img src="images/pin.png"></img>
-                <a>str.Vasile Lupu 60/1, Orhei</a>
+                <a href="https://maps.app.goo.gl/poc4hTWV1MBoN5pJA">str.Vasile Lupu 60/1, Orhei</a>
             </div>
             <div class="locatie">
                 <img src="images/email.png"></img>
-                <a>caragiale.liceu@gmail.com</a>
+                <a href="mailto:caragiale.liceu@gmail.com">caragiale.liceu@gmail.com</a>
             </div>
         </div>
         <div class="Butons">
             <button onclick="home()">Acasă</button>
             <button onclick="news()">Noutăți</button>
             <button touchend="toggle_active_admitere()" onmouseover="activate_admitere()"
-                onmouseleave="deactivate_admitere()" id="admitere_button"><a>Admitere</a></button>
+                onmouseleave="deactivate_admitere()" id="admitere_button"><a>&nbsp; Admitere &#9662;</a></button>
             <button id="elevi_buton" touchend="toggle_active_elevi()" onmouseover="activate_elevi()"
-                onmouseleave="deactivate_elevi()">Elevi</button>
+                onmouseleave="deactivate_elevi()">&nbsp;Elevi &#9662;</button>
             <button onclick="about()">Despre</button>
         </div>
     </div>
 
-    <div id="HamburgerButton" class="HamburgerButton" onclick="togle(this)">
+    <div id="HamburgerButton" class="HamburgerButton" onclick="toggleMenu(this); togle(this);">
         <div class="hamburger-lines">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -112,17 +115,35 @@
 
 </div>
 
-<div id="burger_butons">
-    <button onclick="home()">Acasă</button>
-    <button onclick="news()">Noutăți</button>
-    <button onclick="format()">Admitere</button>
-    <button onclick="lecti()">Elevi</button>
-    <button onclick="about()">Despre</button>
-</div>
+<nav id="mobileNav" class="mobileNav">
+    <ul>
+        <li><a href="#" onclick="home()">Acasă</a></li>
+        <li><a href="#" onclick="news()">Noutăți</a></li>
+        <li class="dropdown">
+            <a href="#" onclick="toggleDropdown('admitereDropdown')">Admitere &#9662;</a>
+            <ul id="admitereDropdown" class="dropdown-content">
+                <li><a href="#" onclick="rezultate()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rezultate</a></li>
+                <li><a href="#" onclick="format()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format cerere</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" onclick="toggleDropdown('eleviDropdown')">Elevi &#9662;</a>
+            <ul id="eleviDropdown" class="dropdown-content">
+                <li><a href="#" onclick="lecti()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orarul Lecțiilor</a></li>
+                <li><a href="#" onclick="sunete()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orarul Sunetelor</a></li>
+                <li><a href="#" onclick="olimpiade()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olimpiade</a></li>
+                <li><a href="#" onclick="examene()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Examene</a></li>
+                <li><a href="#" onclick="teze()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teze</a></li>
+                <li><a href="#" onclick="agenda()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agenda Electrocă</a></li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="about()">Despre</a></li>
+    </ul>
+</nav>
 
     <div class="Continut">
         <h1 class="title_show">Teze</h1>
-        <embed src="images/Ordin-nr.-1583-din-09.11.2022-Cu-privire-la-tezele-semestriale-anul-de-studii-2022-2023.pdf" class="pdf_atachement"/>
+        <iframe src="images/Ordin-nr.-1583-din-09.11.2022-Cu-privire-la-tezele-semestriale-anul-de-studii-2022-2023.pdf" class="pdf_atachement"/>
     </div>
 
     <div class="subsol" id="subsol">
@@ -132,9 +153,9 @@
             <div class="linkuri_externe">
                 <h1>Linkuri externe</h1>
                 <ul class="linkuri_externe_list">
-                    <li onclick="minister()">Ministerul educației</li>
-                    <li onclick="directia()">Direcția de învățământ, Orhei</li>
-                    <li onclick="evaluare()">Agenția națională de evaluare</li>
+                    <li onclick="minister()">Ministerul Educației și Cercetării</li>
+                    <li onclick="directia()">Direcția Generală Educație Orhei</li>
+                    <li onclick="evaluare()">Agenția Națională de evaluare</li>
                     <li onclick="sime()">SIME</li>
                     <li onclick="agenda()">Agenda Electronică</li>
                 </ul>
@@ -142,11 +163,13 @@
             <div class="retele_sociale">
                 <h1>Retele Sociale:</h1>
                 <div class="butnons_container">
-                    <button class="facebook_subsol" type="button" onclick="facebook()"><img src="images/Facebook_Logo_Secondary.png">
+                    <button class="facebook_subsol" type="button" onclick="facebook()"><img
+                            src="images/Facebook_Logo_Secondary.png">
                         <h2>FaceBook</h2>
                     </button>
 
-                    <button class="instagram_subsol" type="button" onclick="instagram()"><img src="images/Instagram_Glyph_White.svg">
+                    <button class="instagram_subsol" type="button" onclick="instagram()"><img
+                            src="images/Instagram_Glyph_White.svg">
                         <h2>Instagram</h2>
                     </button>
                 </div>
@@ -174,6 +197,10 @@
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2701.5883971471244!2d28.8260516!3d47.3809514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cbef0642c373fd%3A0xe9ec7fcd9087aff5!2sLiceul%20Teoretic%20%2C%2CIon%20Luca-Caragiale%22!5e0!3m2!1sen!2s!4v1705342341455!5m2!1sen!2s"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </div>
+        <div class="copyright">
+            <h7>Copyright © 2024 Instituția Publică Liceul Teoretic "Ion Luca Caragiale" Theme by Gatman Vitalie & Luca
+                Marin</h7>
         </div>
     </div>
 

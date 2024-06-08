@@ -1,12 +1,29 @@
-.pdf_atachement{
+.pdf_atachement {
     max-width: 90%;
-    width: 90svw;
-    aspect-ratio: 2.2/1;
+    width: 90vw; 
+    height: 25cm;
+    max-height: 98svh; 
     outline: none;
     margin-bottom: 4cm;
 }
 
-.img_atachement
-{
+.img_atachement {
     margin-bottom: 2cm;
+    max-height: 100vh; 
+}
+
+.embed
+{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .pdf_atachement {
+        width: 97vw; /* Ensure it remains responsive at smaller widths */
+    }
+
+    .img_atachement {
+        width: 97vw; /* Ensure it remains responsive at smaller widths */
+    }
 }
