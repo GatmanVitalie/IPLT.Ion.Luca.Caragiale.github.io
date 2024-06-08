@@ -5,7 +5,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 2cm;
     margin-bottom: 4cm;
@@ -19,6 +19,6 @@
 
 .despre_continut h2
 {
-    width: 80%;
-    font-size: 2rem;
+    width: 95%;
+    font-size: 1.4rem;
 }

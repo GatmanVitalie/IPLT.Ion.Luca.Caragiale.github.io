@@ -21,64 +21,14 @@
 
 <body>
     <div id="LoadScrean"><svg class="spinner" viewBox="0 0 50 50">
-        <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
-    </svg></div>
-<script src="js/load.js"></script>
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg></div>
+    <script src="js/load.js"></script>
 
-<div id="dpi" style="height: 1in; width: 1in; left: 100%; position: fixed; top: 100%;"></div>
+    <div id="dpi" style="height: 1in; width: 1in; left: 100%; position: fixed; top: 100%;"></div>
 
-<div class="contcatns_container" id="contcatns_container">
-    <div class="contcatns">
-        <div class="nrTelefon">
-            <img src="images/Phone.png"></img>
-            <a href="tel:+023524907"> +0(235) 24 907</a>
-        </div>
-        <div class="locatie">
-            <img src="images/pin.png"></img>
-            <a href="https://maps.app.goo.gl/poc4hTWV1MBoN5pJA">str.Vasile Lupu 60/1, Orhei</a>
-        </div>
-        <div class="email">
-            <img src="images/email.png"></img>
-            <a href="mailto:caragiale.liceu@gmail.com">caragiale.liceu@gmail.com</a>
-        </div>
-    </div>
-</div>
-
-<div id="sub_class_buttons" class="sub_class_buttons">
-    <div id="admitere_butons" class="admitere_butons" onmouseover="activate_admitere()"
-        onmouseleave="deactivate_admitere()">
-        <button onclick="rezultate()"><a>Rezultate 2023</a></button>
-        <button onclick="format()"><a>Format cerere</a></button>
-    </div>
-    <div id="elevi_butons" class="elevi_butons" onmouseover="activate_elevi()" onmouseleave="deactivate_elevi()">
-        <button onclick="lecti()"><a>Orarul Lecțiilor</a></button>
-        <button onclick="sunete()"><a>Orarul Sunetelor</a></button>
-        <button onclick="olimpiade()"><a>Orarul Olimpiadelor</a></button>
-        <button onclick="examene()"><a>Examene 2024</a></button>
-        <button onclick="teze()"><a>Teze 2024</a></button>
-        <button onclick="agenda()"><a>Agenda Electrocă</a></button>
-    </div>
-    <div id="desrpe_butons" class="desrpe_butons" onmouseover="activate_despre()"
-        onmouseleave="deactivate_despre()">
-        <button><a>Mesajul directoarei</a></button>
-        <button><a>Istoria scolii</a></button>
-        <button><a>Achiziți publice</a></button>
-
-    </div>
-</div>
-
-<div class="Antet_Imob" id="Antet_Imob">
-
-    <div class="stanga">
-        <div class="Logo">
-            <img src="images/Logo-Caragiale.png"></img>
-        </div>
-        <div class="Denumirea">
-            <img src="images/Denumire.png"></img>
-        </div>
-    </div>
-    <div class="dreapta" id="dreapta">
-        <div class="Contacte">
+    <div class="contcatns_container" id="contcatns_container">
+        <div class="contcatns">
             <div class="nrTelefon">
                 <img src="images/Phone.png"></img>
                 <a href="tel:+023524907"> +0(235) 24 907</a>
@@ -87,65 +37,183 @@
                 <img src="images/pin.png"></img>
                 <a href="https://maps.app.goo.gl/poc4hTWV1MBoN5pJA">str.Vasile Lupu 60/1, Orhei</a>
             </div>
-            <div class="locatie">
+            <div class="email">
                 <img src="images/email.png"></img>
                 <a href="mailto:caragiale.liceu@gmail.com">caragiale.liceu@gmail.com</a>
             </div>
         </div>
-        <div class="Butons">
-            <button onclick="home()">Acasă</button>
-            <button onclick="news()">Noutăți</button>
-            <button touchend="toggle_active_admitere()" onmouseover="activate_admitere()"
-                onmouseleave="deactivate_admitere()" id="admitere_button"><a>&nbsp; Admitere &#9662;</a></button>
-            <button id="elevi_buton" touchend="toggle_active_elevi()" onmouseover="activate_elevi()"
-                onmouseleave="deactivate_elevi()">&nbsp;Elevi &#9662;</button>
-            <button onclick="about()">Despre</button>
+    </div>
+
+    <div id="sub_class_buttons" class="sub_class_buttons">
+        <div id="admitere_butons" class="admitere_butons" onmouseover="activate_admitere()"
+            onmouseleave="deactivate_admitere()">
+            <button onclick="rezultate()"><a>Rezultate 2023</a></button>
+            <button onclick="format()"><a>Format cerere</a></button>
+        </div>
+        <div id="elevi_butons" class="elevi_butons" onmouseover="activate_elevi()" onmouseleave="deactivate_elevi()">
+            <button onclick="lecti()"><a>Orarul Lecțiilor</a></button>
+            <button onclick="sunete()"><a>Orarul Sunetelor</a></button>
+            <button onclick="olimpiade()"><a>Orarul Olimpiadelor</a></button>
+            <button onclick="examene()"><a>Examene 2024</a></button>
+            <button onclick="teze()"><a>Teze 2024</a></button>
+            <button onclick="agenda()"><a>Agenda Electrocă</a></button>
+        </div>
+        <div id="desrpe_butons" class="desrpe_butons" onmouseover="activate_despre()"
+            onmouseleave="deactivate_despre()">
+            <button><a>Mesajul directoarei</a></button>
+            <button><a>Istoria scolii</a></button>
+            <button><a>Achiziți publice</a></button>
+
         </div>
     </div>
 
-    <div id="HamburgerButton" class="HamburgerButton" onclick="toggleMenu(this); togle(this);">
-        <div class="hamburger-lines">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+    <div class="Antet_Imob" id="Antet_Imob">
+
+        <div class="stanga">
+            <div class="Logo">
+                <img src="images/Logo-Caragiale.png"></img>
+            </div>
+            <div class="Denumirea">
+                <img src="images/Denumire.png"></img>
+            </div>
         </div>
+        <div class="dreapta" id="dreapta">
+            <div class="Contacte">
+                <div class="nrTelefon">
+                    <img src="images/Phone.png"></img>
+                    <a href="tel:+023524907"> +0(235) 24 907</a>
+                </div>
+                <div class="locatie">
+                    <img src="images/pin.png"></img>
+                    <a href="https://maps.app.goo.gl/poc4hTWV1MBoN5pJA">str.Vasile Lupu 60/1, Orhei</a>
+                </div>
+                <div class="locatie">
+                    <img src="images/email.png"></img>
+                    <a href="mailto:caragiale.liceu@gmail.com">caragiale.liceu@gmail.com</a>
+                </div>
+            </div>
+            <div class="Butons">
+                <button onclick="home()">Acasă</button>
+                <button onclick="news()">Noutăți</button>
+                <button touchend="toggle_active_admitere()" onmouseover="activate_admitere()"
+                    onmouseleave="deactivate_admitere()" id="admitere_button"><a>&nbsp; Admitere &#9662;</a></button>
+                <button id="elevi_buton" touchend="toggle_active_elevi()" onmouseover="activate_elevi()"
+                    onmouseleave="deactivate_elevi()">&nbsp;Elevi &#9662;</button>
+                <button onclick="about()">Despre</button>
+            </div>
+        </div>
+
+        <div id="HamburgerButton" class="HamburgerButton" onclick="toggleMenu(this); togle(this);">
+            <div class="hamburger-lines">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+
+
+
     </div>
 
-
-
-</div>
-
-<nav id="mobileNav" class="mobileNav">
-    <ul>
-        <li><a href="#" onclick="home()">Acasă</a></li>
-        <li><a href="#" onclick="news()">Noutăți</a></li>
-        <li class="dropdown">
-            <a href="#" onclick="toggleDropdown('admitereDropdown')">Admitere &#9662;</a>
-            <ul id="admitereDropdown" class="dropdown-content">
-                <li><a href="#" onclick="rezultate()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rezultate</a></li>
-                <li><a href="#" onclick="format()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format cerere</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#" onclick="toggleDropdown('eleviDropdown')">Elevi &#9662;</a>
-            <ul id="eleviDropdown" class="dropdown-content">
-                <li><a href="#" onclick="lecti()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orarul Lecțiilor</a></li>
-                <li><a href="#" onclick="sunete()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orarul Sunetelor</a></li>
-                <li><a href="#" onclick="olimpiade()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olimpiade</a></li>
-                <li><a href="#" onclick="examene()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Examene</a></li>
-                <li><a href="#" onclick="teze()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teze</a></li>
-                <li><a href="#" onclick="agenda()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agenda Electrocă</a></li>
-            </ul>
-        </li>
-        <li><a href="#" onclick="about()">Despre</a></li>
-    </ul>
-</nav>
+    <nav id="mobileNav" class="mobileNav">
+        <ul>
+            <li><a href="#" onclick="home()">Acasă</a></li>
+            <li><a href="#" onclick="news()">Noutăți</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="toggleDropdown('admitereDropdown')">Admitere &#9662;</a>
+                <ul id="admitereDropdown" class="dropdown-content">
+                    <li><a href="#" onclick="rezultate()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rezultate</a></li>
+                    <li><a href="#" onclick="format()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format cerere</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" onclick="toggleDropdown('eleviDropdown')">Elevi &#9662;</a>
+                <ul id="eleviDropdown" class="dropdown-content">
+                    <li><a href="#" onclick="lecti()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orarul Lecțiilor</a></li>
+                    <li><a href="#" onclick="sunete()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orarul Sunetelor</a></li>
+                    <li><a href="#" onclick="olimpiade()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Olimpiade</a></li>
+                    <li><a href="#" onclick="examene()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Examene</a></li>
+                    <li><a href="#" onclick="teze()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teze</a></li>
+                    <li><a href="#" onclick="agenda()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agenda Electrocă</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="about()">Despre</a></li>
+        </ul>
+    </nav>
 
     <div class="Continut">
         <h1 class="title_show">Despre</h1>
         <div class="despre_continut">
-            <h2>În inima orașului se ridică impunătoarea școală cu patru etaje, împărțită în trei blocuri distincte: A, B și C. Fiecare bloc este o lume în sine, cu săli de clasă luminoase, laboratoare bine echipate și spații administrative eficiente. Blocul A adăpostește clasele inferioare, oferindu-le copiilor un start solid în educație, în timp ce blocul B este dedicat claselor intermediare, pregătindu-i pentru provocările viitoare. Blocul C, cu etajele sale superioare, găzduiește clasele superioare, oferind elevilor un mediu stimulativ pentru dezvoltare academică avansată. Coridoarele spațioase leagă blocurile, oferind un flux constant de elevi într-un mediu de învățare dinamic și diversificat.</h2>
-            <img src="images/Caragieale_Phone.jpg"></img>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În inima orașului se ridică impunătoarea școală cu patru etaje, împărțită
+                în trei blocuri distincte: A, B și C. Fiecare bloc este o lume în sine, cu săli de clasă luminoase,
+                laboratoare bine echipate și spații administrative eficiente. Blocul A adăpostește clasele inferioare,
+                oferindu-le copiilor un start solid în educație, în timp ce blocul B este dedicat claselor intermediare,
+                pregătindu-i pentru provocările viitoare. Blocul C, cu etajele sale superioare, găzduiește clasele
+                superioare, oferind elevilor un mediu stimulativ pentru dezvoltare academică avansată. Coridoarele
+                spațioase leagă blocurile, oferind un flux constant de elevi într-un mediu de învățare dinamic și
+                diversificat.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Elevii își
+                vor dezvolta competențe și abilități specifice prin implicarea obligatorie în diverse
+                activități comunitare, culturale, creative, științifice alegând să urmeze una dintre
+                opțiunile modulului III. Activitățile date se vor desfășura în afara orelor de curs
+                (se permite eventual și în afara teritoriului instituției), dar vor fi monitorizate de
+                către instituția de învățământ. Numărul minimal de ore anual de implicare – 70.
+                Activitățile vor fi evaluate în baza prezentării Rapoartelor semestriale și anuale. <br>
+                Învăţămîntul liceal reprezintă ciclul II, nivelul 3 (învăţămîntul secundar general) al sistemului de
+                învăţămînt din Republica Moldova (conform Clasificării Internaţionale Standard a Educaţiei ISCED-
+                2011).<br>
+
+
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Învăţămîntul liceal este organizat în filierele (a) teoretică, cu
+                profilurile umanist şi real şi (b)
+                vocaţională, cu profilurile de arte, de sport, teologic, militar.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Învăţămîntul liceal se încheie cu examenul naţional de bacalaureat şi
+                obţinerea diplomei de bacalaureat.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Misiunea învăţămîntului liceal este:<br>
+
+
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) dezvoltarea la elevi a competenţelor
+                definite;<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) consilierea elevilor în alegerea
+                traseului educaţional sau profesional individual către învăţământul
+                superior sau învăţământul profesional tehnic postsecundar nonterţiar, în funcţie de potenţial, vocaţie
+                şi performanţe.<br>
+
+
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În învăţămîntul liceal sunt admişi absolvenţii de gimnaziu, în bază de
+                concurs, conform metodologiei
+                aprobate de către Ministerul Educaţiei (Resurse pentru elevi si părinţi.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conţinutul învăţămîntul liceal are la bază Curriculumul naţional şi
+                Planul-cadru conform profilurilor,
+                aprobat anual de Ministerul Educaţiei.<br>
+
+
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Învăţămîntul liceal cu durata de 3 ani (clasele X-XII) este organizat în
+                licee cu frecvenţă la zi şi cu
+                durata de 4 ani (clasele a X-XIII) organizat în licee cu frecvenţă redusă.<br>
+
+
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ciclul liceal este constituit din şase semestre, ce includ 5 sesiuni de
+                susţinere a tezelor semestriale,
+                stabilite de Ministerul Educaţiei, eşalonate pe durata a 3 ani de studii.<br>
+
+
+
+                În Republica Moldova învăţămîntul liceal este organizat începînd cu anul 1991. Actualmente activează 466
+                licee dintre care 448 instituţii de învăţămînt publice şi 18 instituţii de învăţămînt private.
+
+
+
+            </h2>
         </div>
     </div>
 
