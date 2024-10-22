@@ -1,6 +1,24 @@
 {
     "news": [
         {
+            "title": "hhh",
+            "image_link": "server_images/E5BIiM.jpg",
+            "descriere": "ggergergt<br>egerge",
+            "data": "11.06.2024"
+        },
+        {
+            "title": "Ultimul Sunet",
+            "image_link": "https://scontent-otp1-1.xx.fbcdn.net/v/t39.30808-6/447246869_961549282428787_5358875966908326287_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=x_RaxRS6WrwQ7kNvgF0qU2H&_nc_ht=scontent-otp1-1.xx&oh=00_AYAekhzWlZvqHhg2KlLuXQQpNgpPi_2C1_8HCdsTKW1shw&oe=6669E8E0",
+            "descriere": "Activitatea festivă dedicată ultimului sunet de clopoțel al anului de studii 2023-2024 a fost trăită cu emoții de toți cei prezenți.De la bucuria înaintea unei vacanțe mari până la nostalgia anilor de liceu, elevii, părinții și profesorii și-au dăruit cuvinte înălțătoare și de recunoștință. Prezenți la eveniment, reprezentanții APL au acordat diplome de merit instituției și elevilor.     Să vină vacanța!",
+            "data": "31.05.2024"
+        },
+        {
+            "title": "Gala Olimpicilor",
+            "image_link": "https://scontent-otp1-1.xx.fbcdn.net/v/t39.30808-6/445227997_959743439276038_1968111371822587002_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=iwz_ZAeadRsQ7kNvgF5hVUF&_nc_ht=scontent-otp1-1.xx&oh=00_AYDHRmlgZJsQ54F9e6CSiLxj4StKrgZdJRbAcTNYvJfrpA&oe=6669FA4A",
+            "descriere": "Gala Laureaților 2024 Astăzi, în incinta instituției, au fost decernați elevii premianți la diversele concursuri naționale și internaționale desfășurate pe diverse domenii de interes: limba română, limbi străine, istorie, robotică, muzică, științe, sport.  Alături de elevii premianți ai concursurilor raionale în cadrul festivității organizate la nivel de raion (peste 75 la număr) s-au alăturat peste încă 150 de elevi implicați. Profesorii, alături de discipoli, s-au bucurat de aceste frumoase realizări. Împreună, am trăit un moment plin de mândrie și recunoaștere, am celebrat excelența, determinarea și perseverența manifestate de către acești tineri și pedagogi remarcabili. Vivat Profesorilor și Elevilor performanți!",
+            "data": "29.05.2024"
+        },
+        {
             "title": "Ambasadorul Europei",
             "image_link": "images/Europa.jpg",
             "descriere": "Cu bucurie și onoare, Școala Ion Luca Caragiale din Orhei a găzduit ambasadorului Uniunii Europene, Janis Mazeiks. Elevii și profesorii au avut ocazia să interacționeze direct cu reprezentantul unei entități politice și economice de prim rang. Ambasadorul a susținut o prezentare captivantă despre rolul și importanța UE, stimulând spiritul critic și implicarea activă a elevilor în dezbateri sociale și politice. Vizita a consolidat legăturile cu UE și a promovat înțelegerea și cooperarea între tinerii noștri și partenerii europeni",

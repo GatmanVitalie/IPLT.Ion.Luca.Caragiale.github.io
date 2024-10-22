@@ -84,7 +84,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  gap: 3mm;
+  gap: 2mm;
 }
 
 .button_holder button {
